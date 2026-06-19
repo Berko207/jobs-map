@@ -29,9 +29,25 @@ const SECTOR_KEYWORDS = {
   "Telemetry / IoT": ["telemetria", "iot", "gps"],
   "Robotics / Automation": ["automatizacion", "robotics", "controls"],
   "Manufacturing / Automotive": ["manufactura", "produccion", "automotriz"],
+  "Medical / Biomedical": [
+    "medico",
+    "enfermer",
+    "farmaceut",
+    "biomed",
+    "biotecn",
+    "laboratorio clinico",
+    "hospital",
+  ],
   Media: ["medios", "periodista", "contenido"],
   Mobility: ["logistica", "transporte"],
 };
+
+/** Retail, food service, and personal services — not career-target employers. */
+const EXCLUDE_CODE_PREFIXES = ["46", "47", "72", "81", "812"];
+
+/** Micro-businesses misclassified under manufacturing codes in DENUE. */
+const EXCLUDE_ACTIVITY =
+  /tortilla|panificaci[oó]n tradicional|abarrote|llanta|neum[aá]t|vulcaniz|revitalizaci[oó]n de llantas|peluquer|belleza|restaurante|ferreter[ií]a|miscel[aá]nea|lavander|tintorer|joyer[ií]a de metales|taquer|fonda|minisuper|dulces y materias primas|cerveza|plantas y flores|art[ií]culos usados|embutidos y otras conservas|helados y paletas|botanas|preparaci[oó]n de alimentos frescos|comercio al por menor/i;
 
 const AGENCY_TERMS = [
   "reclutamiento",
@@ -83,9 +99,37 @@ function mapPerOcu(text) {
   return undefined;
 }
 
+function shouldExcludeDenueRow(codigoAct, nombreAct, nomEstab) {
+  const code = String(codigoAct ?? "").trim();
+  if (EXCLUDE_CODE_PREFIXES.some((prefix) => code.startsWith(prefix))) {
+    return true;
+  }
+  const text = `${nombreAct ?? ""} ${nomEstab ?? ""}`;
+  return EXCLUDE_ACTIVITY.test(text);
+}
+
 function categorize(codigoAct, nombreAct) {
   const code = String(codigoAct ?? "").trim();
   const act = String(nombreAct ?? "").toLowerCase();
+
+  if (
+    code.startsWith("3254") ||
+    code.startsWith("33911") ||
+    code.startsWith("541714") ||
+    code.startsWith("541380") ||
+    code.startsWith("6215") ||
+    code.startsWith("622") ||
+    /^621[1-9]/.test(code)
+  ) {
+    return "Medical / Biomedical";
+  }
+  if (
+    /farmac[eé]utic|biotecn|biomed|equipo m[eé]dico|dispositivo m[eé]dic|instrumento.*m[eé]dic|laboratorio cl[ií]nico|hospital|cl[ií]nica/i.test(
+      act,
+    )
+  ) {
+    return "Medical / Biomedical";
+  }
 
   if (code.startsWith("561422") || code.startsWith("5614")) {
     return "Call Center / BPO";
@@ -164,6 +208,8 @@ function parseDenueCsvGz() {
     if (!name) continue;
 
     const activity = String(row.nombre_act ?? "").trim();
+    if (shouldExcludeDenueRow(row.codigo_act, activity, name)) continue;
+
     const category = categorize(row.codigo_act, activity);
     if (!category) continue;
 

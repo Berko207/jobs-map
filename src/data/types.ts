@@ -4,6 +4,7 @@ export type Category =
   | "Telemetry / IoT"
   | "Robotics / Automation"
   | "Manufacturing / Automotive"
+  | "Medical / Biomedical"
   | "Media"
   | "Mobility"
   | "Coworking"
@@ -38,6 +39,7 @@ export const CATEGORY_COLORS: Record<Category, string> = {
   "Telemetry / IoT": "#2DD4BF",
   "Robotics / Automation": "#FB923C",
   "Manufacturing / Automotive": "#F59E0B",
+  "Medical / Biomedical": "#22D3EE",
   Media: "#F472B6",
   Mobility: "#34D399",
   Coworking: "#FBBF24",

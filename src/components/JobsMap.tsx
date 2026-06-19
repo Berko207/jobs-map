@@ -9,7 +9,6 @@ import {
   useMap,
 } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
-import L from "leaflet";
 import {
   CATEGORY_COLORS,
   Category,
@@ -49,18 +48,15 @@ function matchesSearch(company: Company, query: string): boolean {
 }
 
 function FlyToCompany({
-  company,
+  target,
 }: {
-  company: { lat: number; lng: number } | null;
+  target: { lat: number; lng: number; token: number } | null;
 }) {
   const map = useMap();
   useEffect(() => {
-    if (company) {
-      map.flyTo([company.lat, company.lng], 15, {
-        duration: company ? 1 : 0,
-      });
-    }
-  }, [company, map]);
+    if (!target) return;
+    map.flyTo([target.lat, target.lng], 15, { duration: 1 });
+  }, [target, map]);
   return null;
 }
 
@@ -83,21 +79,30 @@ function RecenterOnCity({
   return null;
 }
 
-function PopupOpener({
-  companyId,
-  markerRefs,
+function SelectedCompanyPopup({
+  company,
+  saved,
+  applied,
+  onToggleSaved,
+  onToggleApplied,
 }: {
-  companyId: string | null;
-  markerRefs: React.MutableRefObject<Map<string, L.CircleMarker>>;
+  company: Company;
+  saved: boolean;
+  applied: boolean;
+  onToggleSaved: () => void;
+  onToggleApplied: () => void;
 }) {
-  useEffect(() => {
-    if (!companyId) return;
-    const marker = markerRefs.current.get(companyId);
-    if (marker) {
-      marker.openPopup();
-    }
-  }, [companyId, markerRefs]);
-  return null;
+  return (
+    <Popup position={[company.lat, company.lng]} autoPan>
+      <MapPopupContent
+        company={company}
+        saved={saved}
+        applied={applied}
+        onToggleSaved={onToggleSaved}
+        onToggleApplied={onToggleApplied}
+      />
+    </Popup>
+  );
 }
 
 function MapPopupContent({
@@ -219,9 +224,18 @@ export default function JobsMap() {
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(
     null,
   );
+  // Bumped on every selection so the popup re-mounts (and thus re-opens) even
+  // when the same company is picked again after its popup was closed.
+  const [openToken, setOpenToken] = useState(0);
+  // Only set when a selection should recenter the map (sidebar clicks), so
+  // clicking a marker that is already visible doesn't yank the viewport.
+  const [flyTarget, setFlyTarget] = useState<{
+    lat: number;
+    lng: number;
+    token: number;
+  } | null>(null);
   const [companyStates, setCompanyStates] = useState<CompanyStates>({});
   const [loaded, setLoaded] = useState(false);
-  const markerRefs = useRef<Map<string, L.CircleMarker>>(new Map());
 
   useEffect(() => {
     loadCompanyStates().then((states) => {
@@ -249,6 +263,17 @@ export default function JobsMap() {
     },
     [],
   );
+
+  const selectCompany = useCallback((companyId: string, recenter: boolean) => {
+    setSelectedCompanyId(companyId);
+    setOpenToken((t) => t + 1);
+    if (recenter) {
+      const company = COMPANIES.find((c) => c.id === companyId);
+      if (company) {
+        setFlyTarget({ lat: company.lat, lng: company.lng, token: Date.now() });
+      }
+    }
+  }, []);
 
   const cityCompanies = useMemo(
     () => COMPANIES.filter((c) => (c.city ?? HOME_CITY) === city),
@@ -316,10 +341,6 @@ export default function JobsMap() {
 
   const activeCity = cityConfig(city);
 
-  const flyTarget = selectedCompany
-    ? { lat: selectedCompany.lat, lng: selectedCompany.lng }
-    : null;
-
   if (!loaded) {
     return (
       <div className="flex h-screen items-center justify-center bg-zinc-50">
@@ -344,7 +365,7 @@ export default function JobsMap() {
           companies={filteredCompanies}
           companyStates={companyStates}
           selectedCompanyId={selectedCompanyId}
-          onSelectCompany={setSelectedCompanyId}
+          onSelectCompany={(id) => selectCompany(id, true)}
           onToggleSaved={(id) => updateState(id, "saved")}
           onToggleApplied={(id) => updateState(id, "applied")}
           search={search}
@@ -367,19 +388,23 @@ export default function JobsMap() {
           >
             <TileLayer url={CARTO_TILE} attribution={CARTO_ATTRIBUTION} />
             <RecenterOnCity center={activeCity.center} zoom={activeCity.zoom} />
-            <FlyToCompany company={flyTarget} />
-            <PopupOpener
-              companyId={selectedCompanyId}
-              markerRefs={markerRefs}
-            />
-            <MarkerClusterGroup chunkedLoading>
+            <FlyToCompany target={flyTarget} />
+            {selectedCompany && (
+              <SelectedCompanyPopup
+                key={openToken}
+                company={selectedCompany}
+                saved={companyStates[selectedCompany.id]?.saved ?? false}
+                applied={companyStates[selectedCompany.id]?.applied ?? false}
+                onToggleSaved={() => updateState(selectedCompany.id, "saved")}
+                onToggleApplied={() =>
+                  updateState(selectedCompany.id, "applied")
+                }
+              />
+            )}
+            <MarkerClusterGroup chunkedLoading spiderfyOnMaxZoom={false}>
               {filteredCompanies.map((company) => {
                 const color = CATEGORY_COLORS[company.category];
                 const hiring = isHiring(company);
-                const state = companyStates[company.id] ?? {
-                  saved: false,
-                  applied: false,
-                };
                 const radius = sizeRadius(company.size, hiring);
                 return (
                   <Fragment key={company.id}>
@@ -394,7 +419,7 @@ export default function JobsMap() {
                           opacity: 0.85,
                         }}
                         eventHandlers={{
-                          click: () => setSelectedCompanyId(company.id),
+                          click: () => selectCompany(company.id, false),
                         }}
                       />
                     )}
@@ -407,29 +432,10 @@ export default function JobsMap() {
                         color: hiring ? "#10b981" : "#fff",
                         weight: hiring ? 3 : 2,
                       }}
-                    ref={(ref) => {
-                      if (ref) {
-                        markerRefs.current.set(company.id, ref);
-                      } else {
-                        markerRefs.current.delete(company.id);
-                      }
-                    }}
-                    eventHandlers={{
-                      click: () => setSelectedCompanyId(company.id),
-                    }}
-                  >
-                    <Popup>
-                      <MapPopupContent
-                        company={company}
-                        saved={state.saved}
-                        applied={state.applied}
-                        onToggleSaved={() => updateState(company.id, "saved")}
-                        onToggleApplied={() =>
-                          updateState(company.id, "applied")
-                        }
-                      />
-                    </Popup>
-                  </CircleMarker>
+                      eventHandlers={{
+                        click: () => selectCompany(company.id, false),
+                      }}
+                    />
                   </Fragment>
                 );
               })}

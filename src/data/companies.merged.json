@@ -1,5 +1,20 @@
 [
   {
+    "id": "animal-nutri-mexico",
+    "name": "Animal Nutri Mexico",
+    "category": "Veterinary / Animal Health",
+    "zone": "Parque Industrial (Sur)",
+    "lat": 29.0262596,
+    "lng": -110.9118207,
+    "size": "51–200",
+    "note": "Animal nutrition manufacturing; livestock & pet feed.",
+    "featured": true,
+    "source": [
+      "curated"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "avanti-grand-kino",
     "name": "Avanti Grand Kino",
     "category": "Coworking",
@@ -132,6 +147,23 @@
       "curated",
       "denue",
       "adzuna"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "laboratorios-pisa",
+    "name": "Laboratorios PISA",
+    "category": "Pharmaceutical",
+    "zone": "Parque Industrial (Sur)",
+    "lat": 28.9953327,
+    "lng": -110.9085082,
+    "website": "https://www.pisa.com.mx",
+    "size": "1–10",
+    "note": "Major pharma manufacturer; injectables, hospital products, distribution.",
+    "featured": true,
+    "source": [
+      "curated",
+      "denue"
     ],
     "city": "Hermosillo"
   },
@@ -423,7 +455,7 @@
   {
     "id": "abedijena-bienestar",
     "name": "ABEDIJENA BIENESTAR",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09056975,
     "lng": -110.97192252,
@@ -846,6 +878,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "africa-veterinaria",
+    "name": "AFRICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08191283,
+    "lng": -110.97516828,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "aftivate-fisioterapia",
     "name": "AFTIVATE FISIOTERAPIA",
     "category": "Medical / Biomedical",
@@ -913,11 +958,25 @@
   {
     "id": "agribrands-purina-mexico-planta-hermosillo",
     "name": "AGRIBRANDS PURINA MEXICO PLANTA HERMOSILLO",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.08954346,
     "lng": -111.04699205,
     "website": "WWW.NUTRIMENTOSPURINA.COM",
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agriga",
+    "name": "AGRIGA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09731049,
+    "lng": -110.92821895,
+    "website": "WWW.AGRIGA.COM.MX",
     "size": "11–50",
     "source": [
       "denue"
@@ -952,13 +1011,105 @@
     "city": "Hermosillo"
   },
   {
+    "id": "agropecuaria-dasa",
+    "name": "AGROPECUARIA DASA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09672671,
+    "lng": -110.96295267,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agropecuaria-el-roy",
+    "name": "AGROPECUARIA EL ROY",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.16999411,
+    "lng": -110.90087102,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agropecuaria-huasabas",
+    "name": "AGROPECUARIA HUASABAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.05476243,
+    "lng": -110.93010741,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agropecuaria-las-cruces",
+    "name": "AGROPECUARIA LAS CRUCES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03207398,
+    "lng": -110.9384996,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "agropecuaria-martya",
     "name": "AGROPECUARIA MARTYA",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.26202315,
     "lng": -110.88703196,
     "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agroveterinaria-de-sonora",
+    "name": "AGROVETERINARIA DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08141934,
+    "lng": -110.9450665,
+    "website": "WWW.AGROVETERINARIA.COM.MX",
+    "size": "51–200",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agroveterinaria-de-sonora-centro-de-distribucion",
+    "name": "AGROVETERINARIA DE SONORA CENTRO DE DISTRIBUCION",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03011805,
+    "lng": -110.91264855,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "agroveterinaria-el-gallo-loco",
+    "name": "AGROVETERINARIA EL GALLO LOCO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.14680129,
+    "lng": -110.99661432,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -2900,12 +3051,51 @@
     "city": "Hermosillo"
   },
   {
+    "id": "ali-vet",
+    "name": "ALI VET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11943122,
+    "lng": -110.9602489,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "align-dentista",
     "name": "ALIGN DENTISTA",
     "category": "Medical / Biomedical",
     "zone": "Hermosillo",
     "lat": 29.13414175,
     "lng": -110.9529659,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "alimentos-para-animales-el-palenque",
+    "name": "ALIMENTOS PARA ANIMALES EL PALENQUE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03091717,
+    "lng": -110.95250714,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "alimentos-para-gallos-la-guadalupana",
+    "name": "ALIMENTOS PARA GALLOS LA GUADALUPANA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.13827771,
+    "lng": -111.00711731,
     "size": "1–10",
     "source": [
       "denue"
@@ -3711,13 +3901,53 @@
     "city": "Hermosillo"
   },
   {
+    "id": "animal-home",
+    "name": "ANIMAL HOME",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07334437,
+    "lng": -110.97258185,
+    "website": "ANIMALHOMEVETERINARIA.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "animal-kit-veterinaria",
+    "name": "ANIMAL KIT VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08850617,
+    "lng": -110.99221747,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "animal-nutri-mexico-hermosillo",
     "name": "ANIMAL NUTRI MEXICO HERMOSILLO",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.02625956,
     "lng": -110.91182069,
     "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "animal-pet-veterinaria",
+    "name": "ANIMAL PET VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09259926,
+    "lng": -111.02244043,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -3769,6 +3999,20 @@
     "zone": "Hermosillo",
     "lat": 29.08549222,
     "lng": -110.95366361,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "aqua-biomar",
+    "name": "AQUA BIOMAR",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09385112,
+    "lng": -110.96485713,
+    "website": "WWW.ACUABIOMAR.COM.MX",
     "size": "1–10",
     "source": [
       "denue"
@@ -4338,6 +4582,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "atencion-veterinaria",
+    "name": "ATENCION VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09599939,
+    "lng": -110.95840827,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "atencion-y-cuidado-del-pie",
     "name": "ATENCION Y CUIDADO DEL PIE",
     "category": "Medical / Biomedical",
@@ -4697,7 +4954,7 @@
   {
     "id": "aximilab",
     "name": "AXIMILAB",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.07304621,
     "lng": -110.96532107,
@@ -4777,7 +5034,7 @@
   {
     "id": "bachoco-pa-costa-mar",
     "name": "BACHOCO PA COSTA MAR",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.08175456,
     "lng": -111.0730496,
@@ -4937,7 +5194,7 @@
   {
     "id": "bc-proveedora-hospitalaria",
     "name": "BC PROVEEDORA HOSPITALARIA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09200459,
     "lng": -110.9702052,
@@ -5699,7 +5956,7 @@
   {
     "id": "bodega-de-int-y-servicios-inda",
     "name": "BODEGA DE INT Y SERVICIOS INDA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09211559,
     "lng": -110.96018281,
@@ -6120,7 +6377,7 @@
   {
     "id": "borregas-y-chivos-ramirez",
     "name": "BORREGAS Y CHIVOS RAMIREZ",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.10660716,
     "lng": -110.91246771,
@@ -6712,6 +6969,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "canelos-clinica-veterinaria",
+    "name": "CANELOS CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.04428688,
+    "lng": -110.99339971,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "capi-clinica-de-atencion-psicologica-integral",
     "name": "CAPI CLINICA DE ATENCION PSICOLOGICA INTEGRAL",
     "category": "Medical / Biomedical",
@@ -6886,7 +7156,7 @@
   {
     "id": "cargil",
     "name": "CARGIL",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.02642805,
     "lng": -110.91226973,
@@ -8833,7 +9103,7 @@
   {
     "id": "casa-valdivia",
     "name": "CASA VALDIVIA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08755882,
     "lng": -110.95501995,
@@ -9157,6 +9427,19 @@
     "lat": 29.11038591,
     "lng": -110.99227618,
     "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "centro-de-atencion-canina-y-felina",
+    "name": "CENTRO DE ATENCION CANINA Y FELINA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11109299,
+    "lng": -110.99026206,
+    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -9550,6 +9833,19 @@
     "lat": 28.84937621,
     "lng": -111.5008607,
     "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "centro-de-salud-animal",
+    "name": "CENTRO DE SALUD ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10521297,
+    "lng": -110.97353421,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -10112,6 +10408,32 @@
     "city": "Hermosillo"
   },
   {
+    "id": "centro-veterinario-andrade",
+    "name": "CENTRO VETERINARIO ANDRADE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.141392,
+    "lng": -110.97872144,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "centro-veterinario-hermosillo",
+    "name": "CENTRO VETERINARIO HERMOSILLO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08211909,
+    "lng": -110.98421991,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "ceramicas-de-cuernavaca",
     "name": "CERAMICAS DE CUERNAVACA",
     "category": "Manufacturing / Automotive",
@@ -10218,7 +10540,7 @@
   {
     "id": "chavez-oxigeno",
     "name": "CHAVEZ OXIGENO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.04600196,
     "lng": -110.99221249,
@@ -10257,7 +10579,7 @@
   {
     "id": "chemical-pro",
     "name": "CHEMICAL PRO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.01668413,
     "lng": -110.92378556,
@@ -10270,7 +10592,7 @@
   {
     "id": "chemie-nrw-productos-quimicos-industriales",
     "name": "CHEMIE NRW PRODUCTOS QUIMICOS INDUSTRIALES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02787431,
     "lng": -110.91860843,
@@ -10887,7 +11209,7 @@
   {
     "id": "clarvi",
     "name": "CLARVI",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02869883,
     "lng": -110.90680792,
@@ -11301,6 +11623,19 @@
     "zone": "Hermosillo",
     "lat": 29.11614464,
     "lng": -110.95981405,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-de-esterilzacion-gsl",
+    "name": "CLINICA DE ESTERILZACION GSL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11894661,
+    "lng": -110.99780805,
     "size": "1–10",
     "source": [
       "denue"
@@ -12876,12 +13211,208 @@
     "city": "Hermosillo"
   },
   {
+    "id": "clinica-veterinaria",
+    "name": "CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09115905,
+    "lng": -110.9599383,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-28",
+    "name": "CLINICA VETERINARIA 28",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11572984,
+    "lng": -110.99059375,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-animal-pet",
+    "name": "CLINICA VETERINARIA ANIMAL PET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12323213,
+    "lng": -110.98401202,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-bienestar-animal",
+    "name": "CLINICA VETERINARIA BIENESTAR ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.0908525,
+    "lng": -110.95414839,
+    "website": "CLINICAVIENESTARANIMAL.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-check-up-pet",
+    "name": "CLINICA VETERINARIA CHECK UP PET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07461252,
+    "lng": -110.97437162,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-dr-icedo",
+    "name": "CLINICA VETERINARIA DR ICEDO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11465077,
+    "lng": -110.97376151,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-figval",
+    "name": "CLINICA VETERINARIA FIGVAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08481715,
+    "lng": -110.99746951,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-huellitas",
+    "name": "CLINICA VETERINARIA HUELLITAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.06231102,
+    "lng": -110.98550689,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-mon-ami",
+    "name": "CLINICA VETERINARIA MON AMI",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.0721325,
+    "lng": -110.97364923,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-nueva-era",
+    "name": "CLINICA VETERINARIA NUEVA ERA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12228196,
+    "lng": -111.02945889,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-odin",
+    "name": "CLINICA VETERINARIA ODIN",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11507368,
+    "lng": -110.95953896,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-san-antonio-abad",
+    "name": "CLINICA VETERINARIA SAN ANTONIO ABAD",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.0094862,
+    "lng": -110.92904706,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-vetson",
+    "name": "CLINICA VETERINARIA VETSON",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11573188,
+    "lng": -110.98809062,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinica-veterinaria-vida-animal",
+    "name": "CLINICA VETERINARIA VIDA ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.05491064,
+    "lng": -110.95512543,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "clinicas-de-consultorios-medicos-del-sector-priv",
     "name": "CLÍNICAS DE CONSULTORIOS MÉDICOS DEL SECTOR PRIVADO",
     "category": "Medical / Biomedical",
     "zone": "Hermosillo",
     "lat": 29.07571763,
     "lng": -110.96745644,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "clinicat-veterinaria-dra-wendy",
+    "name": "CLINICAT VETERINARIA DRA. WENDY",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09615911,
+    "lng": -110.99254935,
     "size": "1–10",
     "source": [
       "denue"
@@ -13085,6 +13616,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "coco-bongo-pets-veterinaria",
+    "name": "COCO BONGO PETS VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.1434124,
+    "lng": -111.01107993,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "cocos-tecoman",
     "name": "COCOS TECOMAN",
     "category": "Manufacturing / Automotive",
@@ -13100,7 +13644,7 @@
   {
     "id": "coheteria-sandoval",
     "name": "COHETERIA SANDOVAL",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11596229,
     "lng": -111.00910217,
@@ -13243,6 +13787,32 @@
     "city": "Hermosillo"
   },
   {
+    "id": "comercial-roda",
+    "name": "COMERCIAL RODA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10207766,
+    "lng": -110.95965438,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "comercializacion-de-materia-prima-para-consumo-a",
+    "name": "COMERCIALIZACION DE MATERIA PRIMA PARA CONSUMO ANIMAL PROGRA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09430065,
+    "lng": -111.01868246,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "comercializadora-balvac-del-norte",
     "name": "COMERCIALIZADORA BALVAC DEL NORTE",
     "category": "Manufacturing / Automotive",
@@ -13250,6 +13820,19 @@
     "lat": 29.11389921,
     "lng": -110.99943683,
     "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "comercializadora-de-productos-para-consumo-anima",
+    "name": "COMERCIALIZADORA DE PRODUCTOS PARA CONSUMO ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.1178751,
+    "lng": -110.89927422,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -13298,11 +13881,24 @@
   {
     "id": "comermex-xxi",
     "name": "COMERMEX XXI",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08540283,
     "lng": -110.99136188,
     "website": "WWW.COMERMEDICS.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "comite-de-campana-para-la-erradicacion-de-la-tub",
+    "name": "COMITE DE CAMPAÑA PARA LA ERRADICACION DE LA TUBERCULOSIS BONINA Y BRUSELOSIS EN EL ESTADO DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03847321,
+    "lng": -110.93512774,
     "size": "1–10",
     "source": [
       "denue"
@@ -13363,9 +13959,22 @@
     "city": "Hermosillo"
   },
   {
+    "id": "compra-y-venta-de-alfalfa",
+    "name": "COMPRA Y VENTA DE ALFALFA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03419065,
+    "lng": -111.00476148,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "compra-y-venta-de-tanques-de-gas-de-oxigeno",
     "name": "COMPRA Y VENTA DE TANQUES DE GAS DE OXIGENO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02912587,
     "lng": -110.96231517,
@@ -16724,6 +17333,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "consultorio-doc-payan",
+    "name": "CONSULTORIO DOC PAYAN",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10983507,
+    "lng": -111.00076171,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "consultorio-doctor-jose-roberto-victoria-nandaya",
     "name": "CONSULTORIO DOCTOR JOSE ROBERTO VICTORIA NANDAYAPA",
     "category": "Medical / Biomedical",
@@ -19154,6 +19776,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "corepa",
+    "name": "COREPA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11353882,
+    "lng": -111.03673962,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "coresei",
     "name": "CORESEI",
     "category": "Medical / Biomedical",
@@ -19875,7 +20510,7 @@
   {
     "id": "covar",
     "name": "COVAR",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10993025,
     "lng": -111.00615636,
@@ -19889,7 +20524,7 @@
   {
     "id": "covoro-mining-solutions-mexicana",
     "name": "COVORO MINING SOLUTIONS MEXICANA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 28.99435568,
     "lng": -110.90734347,
@@ -20193,6 +20828,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "cuadra-el-huisache",
+    "name": "CUADRA EL HUISACHE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.19083872,
+    "lng": -110.88206025,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "cuadropolis",
     "name": "CUADROPOLIS",
     "category": "Manufacturing / Automotive",
@@ -20261,7 +20909,7 @@
   {
     "id": "cumelab",
     "name": "CUMELAB",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11044549,
     "lng": -110.96963529,
@@ -20500,7 +21148,7 @@
   {
     "id": "dayar-distribuciones-medicas",
     "name": "DAYAR DISTRIBUCIONES MEDICAS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10393105,
     "lng": -110.95862286,
@@ -20617,6 +21265,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "de-milan-veterinaria",
+    "name": "DE MILAN VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09229983,
+    "lng": -110.94841726,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "de-ochoa-muebles-carpinteria",
     "name": "DE OCHOA MUEBLES CARPINTERIA",
     "category": "Manufacturing / Automotive",
@@ -20672,7 +21333,7 @@
   {
     "id": "del-rio-seguridad-y-productos-quimicos",
     "name": "DEL RIO SEGURIDAD Y PRODUCTOS QUIMICOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.12268483,
     "lng": -110.99808959,
@@ -21693,7 +22354,7 @@
   {
     "id": "devenish",
     "name": "DEVENISH",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.014733,
     "lng": -110.91038332,
@@ -21867,6 +22528,20 @@
     "city": "Hermosillo"
   },
   {
+    "id": "difarvet",
+    "name": "DIFARVET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08822105,
+    "lng": -110.9563395,
+    "website": "WWW.DIFARVET.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "dila-desarrollo-integral-de-lenguaje",
     "name": "DILA DESARROLLO INTEGRAL DE LENGUAJE",
     "category": "Medical / Biomedical",
@@ -21901,6 +22576,32 @@
     "lng": -111.0119891,
     "website": "WWW.DINAMICAVIAL.COM",
     "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "dinapce",
+    "name": "DINAPCE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09894316,
+    "lng": -110.9253182,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "dino-veterinaria",
+    "name": "DINO VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.01414856,
+    "lng": -110.94334248,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -22092,7 +22793,7 @@
   {
     "id": "dispositivos-medicos-y-cateteres",
     "name": "DISPOSITIVOS MEDICOS Y CATETERES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08690889,
     "lng": -110.97839601,
@@ -22106,7 +22807,7 @@
   {
     "id": "distlab",
     "name": "DISTLAB",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08988058,
     "lng": -111.04310044,
@@ -22145,9 +22846,22 @@
     "city": "Hermosillo"
   },
   {
+    "id": "distribuidora-chinoin",
+    "name": "DISTRIBUIDORA CHINOIN",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10243372,
+    "lng": -110.9898912,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "distribuidora-de-medicamento",
     "name": "DISTRIBUIDORA DE MEDICAMENTO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11684224,
     "lng": -110.98191673,
@@ -22160,7 +22874,7 @@
   {
     "id": "distribuidora-farmacia-alivio",
     "name": "DISTRIBUIDORA FARMACIA ALIVIO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09841578,
     "lng": -110.96636215,
@@ -22173,10 +22887,23 @@
   {
     "id": "distribuidora-farmat",
     "name": "DISTRIBUIDORA FARMAT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11449603,
     "lng": -110.97497436,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "distribuidora-veterinaria-el-vaquero-de-sonora",
+    "name": "DISTRIBUIDORA VETERINARIA EL VAQUERO DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.02544903,
+    "lng": -110.95164648,
     "size": "1–10",
     "source": [
       "denue"
@@ -22218,6 +22945,19 @@
     "lat": 29.03016069,
     "lng": -110.91054581,
     "website": "WWW.DISTRIBUIDORAZR.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "divalco",
+    "name": "DIVALCO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10474664,
+    "lng": -110.97244286,
     "size": "1–10",
     "source": [
       "denue"
@@ -22270,6 +23010,19 @@
     "zone": "Hermosillo",
     "lat": 29.11513569,
     "lng": -110.94983749,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "doc-vet",
+    "name": "DOC-VET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.06069195,
+    "lng": -110.95617206,
     "size": "1–10",
     "source": [
       "denue"
@@ -22427,6 +23180,19 @@
     "zone": "Hermosillo",
     "lat": 29.17881663,
     "lng": -110.88459102,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "dogcatvet",
+    "name": "DOGCATVET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10962279,
+    "lng": -110.97017504,
     "size": "1–10",
     "source": [
       "denue"
@@ -24823,6 +25589,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "dwhoopi-veterinaria-y-spa",
+    "name": "DWHOOPI VETERINARIA Y SPA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.1177879,
+    "lng": -111.00569435,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "dyd",
     "name": "DYD",
     "category": "Manufacturing / Automotive",
@@ -24890,7 +25669,7 @@
   {
     "id": "ecocan-croquetas",
     "name": "ECOCAN CROQUETAS",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.12763488,
     "lng": -110.98774658,
@@ -25847,7 +26626,7 @@
   {
     "id": "enaex-mexico",
     "name": "ENAEX MEXICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08077434,
     "lng": -110.98259228,
@@ -26151,7 +26930,7 @@
   {
     "id": "equilibrio-farmaceutico",
     "name": "EQUILIBRIO FARMACEUTICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10876502,
     "lng": -110.95659537,
@@ -26218,7 +26997,7 @@
   {
     "id": "equipos-y-explosivos-del-noreste",
     "name": "EQUIPOS Y EXPLOSIVOS DEL NORESTE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10688326,
     "lng": -110.95133806,
@@ -26522,6 +27301,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "estetica-canina-patitas-cartas",
+    "name": "ESTETICA CANINA PATITAS CARTAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.00198857,
+    "lng": -110.91697214,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "estetica-de-los-pies-salome",
     "name": "ESTETICA DE LOS PIES SALOME",
     "category": "Medical / Biomedical",
@@ -26723,7 +27515,7 @@
   {
     "id": "explonitratos",
     "name": "EXPLONITRATOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.05105251,
     "lng": -110.95812559,
@@ -26737,7 +27529,7 @@
   {
     "id": "explosivos-del-pitic",
     "name": "EXPLOSIVOS DEL PITIC",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.12431483,
     "lng": -111.03515365,
@@ -27472,7 +28264,7 @@
   {
     "id": "farmaceutica-romero",
     "name": "FARMACEUTICA ROMERO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08289807,
     "lng": -110.97477284,
@@ -27485,10 +28277,23 @@
   {
     "id": "farmacia",
     "name": "FARMACIA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 28.82548783,
     "lng": -111.93401734,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "farmacia-agropecuaria-el-vaquero",
+    "name": "FARMACIA AGROPECUARIA EL VAQUERO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11193906,
+    "lng": -110.97552069,
     "size": "1–10",
     "source": [
       "denue"
@@ -27550,7 +28355,7 @@
   {
     "id": "farmacia-margarita",
     "name": "FARMACIA MARGARITA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.07774956,
     "lng": -110.95523408,
@@ -27580,6 +28385,32 @@
     "zone": "Hermosillo",
     "lat": 29.02292387,
     "lng": -110.94319236,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "farmacia-y-clinica-veterinaria-del-campo",
+    "name": "FARMACIA Y CLINICA VETERINARIA DEL CAMPO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 28.82662347,
+    "lng": -111.94177002,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "farmacia-y-clinica-veterinaria-el-llano",
+    "name": "FARMACIA Y CLINICA VETERINARIA EL LLANO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09476444,
+    "lng": -111.0127226,
     "size": "1–10",
     "source": [
       "denue"
@@ -27711,7 +28542,7 @@
   {
     "id": "farmacos-nacionales",
     "name": "FARMACOS NACIONALES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08435213,
     "lng": -110.95569729,
@@ -27725,7 +28556,7 @@
   {
     "id": "farmamigo-hermosillo-f283",
     "name": "FARMAMIGO HERMOSILLO F283",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.06269706,
     "lng": -110.96685639,
@@ -27904,6 +28735,33 @@
     "zone": "Hermosillo",
     "lat": 28.82236639,
     "lng": -111.94216089,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "figval-veterinaria",
+    "name": "FIGVAL VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09835504,
+    "lng": -110.9592451,
+    "website": "WWW.VETERINARIAFIGVET.COM",
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "figvet-veterinaria",
+    "name": "FIGVET VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08171795,
+    "lng": -111.02011061,
     "size": "1–10",
     "source": [
       "denue"
@@ -28183,6 +29041,71 @@
     "zone": "Hermosillo",
     "lat": 29.09923726,
     "lng": -110.98069644,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "forrajera-ssn-juan",
+    "name": "FORRAJERA SSN JUAN",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03396455,
+    "lng": -111.00460168,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "forrajes-de-la-granja",
+    "name": "FORRAJES DE LA GRANJA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.04457272,
+    "lng": -110.99082638,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "forrajes-el-barrio",
+    "name": "FORRAJES EL BARRIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03118845,
+    "lng": -111.00642546,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "forrajes-el-papalote",
+    "name": "FORRAJES EL PAPALOTE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.16832536,
+    "lng": -110.90312654,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "forrajes-el-potrerito",
+    "name": "FORRAJES EL POTRERITO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.02109637,
+    "lng": -110.93322551,
     "size": "1–10",
     "source": [
       "denue"
@@ -28509,7 +29432,7 @@
   {
     "id": "gaches-chimie-mexico",
     "name": "GACHES CHIMIE MEXICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08540283,
     "lng": -110.99136188,
@@ -28760,7 +29683,7 @@
   {
     "id": "gases-soldaduras-y-equipos",
     "name": "GASES SOLDADURAS Y EQUIPOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.04722285,
     "lng": -110.95656566,
@@ -28773,7 +29696,7 @@
   {
     "id": "gases-y-equipos-de-hermosillo",
     "name": "GASES Y EQUIPOS DE HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11630293,
     "lng": -111.0152149,
@@ -28829,6 +29752,19 @@
     "zone": "Hermosillo",
     "lat": 29.05790868,
     "lng": -111.0119278,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "gaumiau-veterinaria",
+    "name": "GAUMIAU VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.17441124,
+    "lng": -111.01112735,
     "size": "1–10",
     "source": [
       "denue"
@@ -29247,7 +30183,7 @@
   {
     "id": "goldenmedica-del-pacifico",
     "name": "GOLDENMEDICA DEL PACIFICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09153665,
     "lng": -111.0392813,
@@ -29371,6 +30307,20 @@
     "lat": 29.10760111,
     "lng": -111.03365934,
     "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "grupac",
+    "name": "GRUPAC",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09467474,
+    "lng": -110.94470067,
+    "website": "WWW.GRUPAC.COM.MX",
+    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -30010,7 +30960,7 @@
   {
     "id": "hanka",
     "name": "HANKA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10927669,
     "lng": -110.9583212,
@@ -30042,6 +30992,19 @@
     "lat": 29.11596732,
     "lng": -110.97701077,
     "website": "WWW.HARODOOR.COM.MX",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "haros-veterinaria",
+    "name": "HAROS VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10992189,
+    "lng": -111.0025504,
     "size": "1–10",
     "source": [
       "denue"
@@ -30239,7 +31202,7 @@
   {
     "id": "hermosillo",
     "name": "HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.00314166,
     "lng": -110.91154137,
@@ -31233,6 +32196,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "high-care-veterinaria",
+    "name": "HIGH CARE VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.17343332,
+    "lng": -110.89625601,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "high-performance",
     "name": "HIGH PERFORMANCE",
     "category": "Medical / Biomedical",
@@ -31364,6 +32340,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "hospital-central-veterinario",
+    "name": "HOSPITAL CENTRAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10346,
+    "lng": -110.95846049,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "hospital-cima",
     "name": "HOSPITAL CIMA",
     "category": "Medical / Biomedical",
@@ -31385,6 +32374,20 @@
     "lat": 29.10531072,
     "lng": -110.95249905,
     "size": "500+",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "hospital-de-urgencias-veterinarias-borges",
+    "name": "HOSPITAL DE URGENCIAS VETERINARIAS BORGES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07270272,
+    "lng": -110.9804515,
+    "website": "WWW.VETERINARIASBORGES.COM",
+    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -31499,6 +32502,58 @@
     "city": "Hermosillo"
   },
   {
+    "id": "hospital-veterinario-artemisa",
+    "name": "HOSPITAL VETERINARIO ARTEMISA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11137774,
+    "lng": -110.96150169,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "hospital-veterinario-econo-pets",
+    "name": "HOSPITAL VETERINARIO ECONO PETS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11153642,
+    "lng": -110.9881501,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "hospital-veterinario-monzalvo-sucursal-colosio",
+    "name": "HOSPITAL VETERINARIO MONZALVO SUCURSAL COLOSIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08131148,
+    "lng": -111.02815587,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "hospital-veterinario-mundo-canino",
+    "name": "HOSPITAL VETERINARIO MUNDO CANINO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10955155,
+    "lng": -110.98051067,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "hospitales-del-sector-privado-de-otras-especiali",
     "name": "HOSPITALES DEL SECTOR PRIVADO DE OTRAS ESPECIALIDADES MÉDICAS SIN NOMBRE",
     "category": "Medical / Biomedical",
@@ -31518,6 +32573,19 @@
     "zone": "Hermosillo",
     "lat": 29.12757744,
     "lng": -110.99270043,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "hotel-de-mascotas",
+    "name": "HOTEL DE MASCOTAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08902322,
+    "lng": -110.94367236,
     "size": "1–10",
     "source": [
       "denue"
@@ -31571,6 +32639,19 @@
     "lat": 29.07648981,
     "lng": -110.95642975,
     "website": "WWW.HUUPA.COFFEE",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "hven-hospital-veterinario",
+    "name": "HVEN HOSPITAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10814395,
+    "lng": -110.98010921,
     "size": "1–10",
     "source": [
       "denue"
@@ -32592,6 +33673,20 @@
     "city": "Hermosillo"
   },
   {
+    "id": "impulsora-farmaceutica-veterinaria",
+    "name": "IMPULSORA FARMACEUTICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09569518,
+    "lng": -110.94472779,
+    "website": "WWW.GRUPAC.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "impulsora-vinicola-decima",
     "name": "IMPULSORA VINICOLA DECIMA",
     "category": "Manufacturing / Automotive",
@@ -32873,7 +33968,7 @@
   {
     "id": "infra",
     "name": "INFRA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.13553525,
     "lng": -110.99454415,
@@ -32945,6 +34040,33 @@
     "lat": 29.09966855,
     "lng": -110.9725352,
     "website": "WWW.INNCRATIVA.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "innovaciones-acuicolas",
+    "name": "INNOVACIONES ACUICOLAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09161741,
+    "lng": -110.9713404,
+    "website": "WWW.CODEMET.COM.MX",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "inovacion-agricola",
+    "name": "INOVACION AGRICOLA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09581565,
+    "lng": -111.0407875,
     "size": "1–10",
     "source": [
       "denue"
@@ -33030,9 +34152,22 @@
     "city": "Hermosillo"
   },
   {
+    "id": "inprovet",
+    "name": "INPROVET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08808448,
+    "lng": -110.95401568,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "instalaciones-y-servicios-inda",
     "name": "INSTALACIONES Y SERVICIOS INDA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09198582,
     "lng": -110.96023151,
@@ -33541,7 +34676,7 @@
   {
     "id": "jav-minerales-y-nutrientes",
     "name": "JAV MINERALES Y NUTRIENTES",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.11804927,
     "lng": -110.90572359,
@@ -33801,6 +34936,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "jr-agropecuaria",
+    "name": "JR AGROPECUARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07412367,
+    "lng": -110.98119673,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "juego-y-aprendo-mas",
     "name": "JUEGO Y APRENDO MAS",
     "category": "Medical / Biomedical",
@@ -33926,6 +35074,19 @@
     "lat": 29.14046067,
     "lng": -110.98063726,
     "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "kc-clinica-veterinaria",
+    "name": "KC CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09920104,
+    "lng": -110.95304952,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -34140,6 +35301,19 @@
     "zone": "Hermosillo",
     "lat": 29.03092801,
     "lng": -110.9386312,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "la-nueva-veterinaria",
+    "name": "LA NUEVA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08090247,
+    "lng": -110.9919681,
     "size": "1–10",
     "source": [
       "denue"
@@ -34575,6 +35749,19 @@
     "zone": "Hermosillo",
     "lat": 29.09810909,
     "lng": -110.9683188,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "laboratorio-de-estudios-clinicos-especializados-",
+    "name": "LABORATORIO DE ESTUDIOS CLINICOS ESPECIALIZADOS DE SANIDAD ANIMAL DE SONORA ECESAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.04232092,
+    "lng": -110.9368775,
     "size": "1–10",
     "source": [
       "denue"
@@ -35187,23 +36374,9 @@
     "city": "Hermosillo"
   },
   {
-    "id": "laboratorios-pisa",
-    "name": "LABORATORIOS PISA",
-    "category": "Medical / Biomedical",
-    "zone": "Hermosillo",
-    "lat": 28.99533267,
-    "lng": -110.90850818,
-    "website": "WWW.PISA.COM.MX",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "laboratorios-piza",
     "name": "LABORATORIOS PIZA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.0082417,
     "lng": -110.90816598,
@@ -35689,6 +36862,20 @@
     "city": "Hermosillo"
   },
   {
+    "id": "lavetson-laboratorio-clinico-veterinario",
+    "name": "LAVETSON LABORATORIO CLINICO VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09294361,
+    "lng": -110.97204372,
+    "website": "WWW.LAVETSON.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "laz-food-store",
     "name": "LAZ FOOD STORE",
     "category": "Manufacturing / Automotive",
@@ -35743,6 +36930,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "leija-hospital-veterinario",
+    "name": "LEIJA HOSPITAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07237963,
+    "lng": -110.94335882,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "leon-seguridad-asp",
     "name": "LEON SEGURIDAD ASP",
     "category": "Telemetry / IoT",
@@ -35785,11 +36985,24 @@
   {
     "id": "levic-distribuidora-de-medicamentos",
     "name": "LEVIC DISTRIBUIDORA DE MEDICAMENTOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09812777,
     "lng": -110.9722546,
     "size": "201–500",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "leyva-servicios-veterinarios",
+    "name": "LEYVA SERVICIOS VETERINARIOS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07665756,
+    "lng": -110.98654829,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -35891,7 +37104,7 @@
   {
     "id": "lican",
     "name": "LICAN",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.01928766,
     "lng": -110.90256647,
@@ -36225,7 +37438,7 @@
   {
     "id": "m-farmacos",
     "name": "M FARMACOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.07895179,
     "lng": -110.98165235,
@@ -36976,9 +38189,22 @@
     "city": "Hermosillo"
   },
   {
+    "id": "mario-el-veterinario",
+    "name": "MARIO EL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.14539549,
+    "lng": -110.96590325,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "marketin-medicinal-distribuidora",
     "name": "MARKETIN MEDICINAL DISTRIBUIDORA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09532683,
     "lng": -110.98911219,
@@ -37440,7 +38666,7 @@
   {
     "id": "mcf-productos-cientificos",
     "name": "MCF PRODUCTOS CIENTIFICOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08416354,
     "lng": -110.9978119,
@@ -37523,7 +38749,7 @@
   {
     "id": "medbella",
     "name": "MEDBELLA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11896408,
     "lng": -110.95309354,
@@ -37576,7 +38802,7 @@
   {
     "id": "medica-integral-hdm",
     "name": "MEDICA INTEGRAL HDM SA DE CV",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.14886449,
     "lng": -110.96488293,
@@ -37667,7 +38893,7 @@
   {
     "id": "medical-union",
     "name": "MEDICAL UNION",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10882179,
     "lng": -110.97717273,
@@ -37785,7 +39011,7 @@
   {
     "id": "medicine-depot",
     "name": "MEDICINE DEPOT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.0668642,
     "lng": -110.96448835,
@@ -37995,11 +39221,24 @@
   {
     "id": "mediemex-pharma",
     "name": "MEDIEMEX PHARMA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.07625565,
     "lng": -110.97966535,
     "website": "WWW.MEDIMEXPHARMA.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "megavet",
+    "name": "MEGAVET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10881565,
+    "lng": -110.98158105,
     "size": "1–10",
     "source": [
       "denue"
@@ -38206,6 +39445,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "mi-mascota-clinica-veterinaria",
+    "name": "MI MASCOTA CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08531686,
+    "lng": -110.94939048,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "mia-polanco-disenadora-de-modas",
     "name": "MIA POLANCO DISEÑADORA DE MODAS",
     "category": "Manufacturing / Automotive",
@@ -38248,7 +39500,7 @@
   {
     "id": "mifsa",
     "name": "MIFSA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11975436,
     "lng": -110.95358871,
@@ -38557,7 +39809,7 @@
   {
     "id": "molino",
     "name": "MOLINO",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.03381753,
     "lng": -110.92666551,
@@ -38650,6 +39902,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "monzalvo-hospital-veterinario",
+    "name": "MONZALVO HOSPITAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10445448,
+    "lng": -110.95075867,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "moosni-internacional",
     "name": "MOOSNI INTERNACIONAL",
     "category": "Manufacturing / Automotive",
@@ -38733,7 +39998,7 @@
   {
     "id": "mr-bones",
     "name": "MR BONES",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.11300087,
     "lng": -110.95066618,
@@ -39011,7 +40276,7 @@
   {
     "id": "multiservicios-metzor",
     "name": "MULTISERVICIOS METZOR",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09222312,
     "lng": -110.97040575,
@@ -39069,6 +40334,19 @@
     "lng": -110.963393,
     "website": "WWW.MULTISITEMAS.MX",
     "size": "51–200",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "mundo-canino",
+    "name": "MUNDO CANINO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11580695,
+    "lng": -111.01468433,
+    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -39854,6 +41132,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "nutrimentos-purina-el-mezquite",
+    "name": "NUTRIMENTOS PURINA EL MEZQUITE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.05147846,
+    "lng": -110.96327755,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "nutriologa",
     "name": "NUTRIOLOGA",
     "category": "Medical / Biomedical",
@@ -39973,7 +41264,7 @@
   {
     "id": "nutrionix",
     "name": "NUTRIONIX",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.02750374,
     "lng": -110.9160895,
@@ -40013,7 +41304,7 @@
   {
     "id": "oasa",
     "name": "OASA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10029068,
     "lng": -110.97260979,
@@ -40721,7 +42012,7 @@
   {
     "id": "orbex-chemical",
     "name": "ORBEX CHEMICAL",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02751255,
     "lng": -110.907774,
@@ -41195,10 +42486,23 @@
   {
     "id": "oxigeno-liquido",
     "name": "OXIGENO LIQUIDO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10164568,
     "lng": -111.01590061,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "pacas-y-forrajes-el-roy",
+    "name": "PACAS Y FORRAJES EL ROY",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.17135638,
+    "lng": -110.89902611,
     "size": "1–10",
     "source": [
       "denue"
@@ -41535,6 +42839,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "pc-veterinaria",
+    "name": "PC VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.17354972,
+    "lng": -110.89609875,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "pcbits",
     "name": "PCBITS",
     "category": "Call Center / BPO",
@@ -41555,6 +42872,19 @@
     "lat": 29.14031801,
     "lng": -110.96636652,
     "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "pecuaria-pima-noroeste",
+    "name": "PECUARIA PIMA NOROESTE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09582476,
+    "lng": -110.94474792,
+    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -41743,6 +43073,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "peiro-veterinaria",
+    "name": "PEIRO VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08583264,
+    "lng": -110.97129107,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "pensando-en-casa",
     "name": "PENSANDO EN CASA",
     "category": "Manufacturing / Automotive",
@@ -41876,6 +43219,20 @@
     "city": "Hermosillo"
   },
   {
+    "id": "pet-care-center",
+    "name": "PET CARE CENTER",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07987207,
+    "lng": -110.96796513,
+    "website": "WWW.PETCARETRAINNING.BLOGSPOT.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "petrogas",
     "name": "PETROGAS",
     "category": "Manufacturing / Automotive",
@@ -41890,9 +43247,61 @@
     "city": "Hermosillo"
   },
   {
+    "id": "pets-center",
+    "name": "PETS CENTER",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10985082,
+    "lng": -110.96139012,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "pets-clinic",
+    "name": "PETS CLINIC",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11466182,
+    "lng": -110.95946535,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "pets-house",
+    "name": "PETS HOUSE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.14432188,
+    "lng": -110.96853686,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "petxpress",
+    "name": "PETXPRESS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11407018,
+    "lng": -110.95310172,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "pharmaceutix-hermosillo",
     "name": "PHARMACEUTIX HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09516865,
     "lng": -110.9697565,
@@ -42407,7 +43816,7 @@
   {
     "id": "planta-de-alimentos-de-acuicola-season",
     "name": "PLANTA DE ALIMENTOS DE ACUICOLA SEASON",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.06709196,
     "lng": -111.09002488,
@@ -42607,7 +44016,7 @@
   {
     "id": "pochteca-materias-primas-sucursal-hermosillo",
     "name": "POCHTECA MATERIAS PRIMAS SUCURSAL HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02685509,
     "lng": -110.91426585,
@@ -42766,7 +44175,7 @@
   {
     "id": "praxair-mexico",
     "name": "PRAXAIR MEXICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09203771,
     "lng": -110.97085426,
@@ -43071,7 +44480,7 @@
   {
     "id": "productos-eifeel",
     "name": "PRODUCTOS EIFEEL",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09219264,
     "lng": -110.95719963,
@@ -43098,7 +44507,7 @@
   {
     "id": "productos-hospitalarios",
     "name": "PRODUCTOS HOSPITALARIOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10219928,
     "lng": -111.00387945,
@@ -43362,6 +44771,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "prominerales-y-suplementos-sonora",
+    "name": "PROMINERALES Y SUPLEMENTOS SONORA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.18520912,
+    "lng": -110.8887881,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "promo-logos",
     "name": "PROMO LOGOS",
     "category": "Manufacturing / Automotive",
@@ -43459,7 +44881,7 @@
   {
     "id": "provedora-hospitalaria-del-noroeste",
     "name": "PROVEDORA HOSPITALARIA DEL NOROESTE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.10564607,
     "lng": -111.00099811,
@@ -44713,7 +46135,7 @@
   {
     "id": "quimica-mexicana-hermosillo",
     "name": "QUIMICA MEXICANA HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.0947945,
     "lng": -110.924945,
@@ -44727,7 +46149,7 @@
   {
     "id": "quimica-pima",
     "name": "QUIMICA PIMA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02398405,
     "lng": -110.91175983,
@@ -45226,6 +46648,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "repro-farmacia",
+    "name": "REPRO FARMACIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09311721,
+    "lng": -110.96983116,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "reumatologia",
     "name": "REUMATOLOGIA",
     "category": "Medical / Biomedical",
@@ -45285,6 +46720,19 @@
     "lat": 29.08663145,
     "lng": -110.95493822,
     "website": "WWW.RINOFASTSONORA.COM.MX",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "rivas-veterinaria",
+    "name": "RIVAS VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.14474694,
+    "lng": -110.97183751,
     "size": "1–10",
     "source": [
       "denue"
@@ -45544,7 +46992,7 @@
   {
     "id": "rubio-pharma-y-asociados",
     "name": "RUBIO PHARMA Y ASOCIADOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09469253,
     "lng": -111.0114092,
@@ -45905,6 +47353,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "sams-veterinarios",
+    "name": "SAMS VETERINARIOS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10723764,
+    "lng": -110.95133628,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "san-antonio-clear-water",
     "name": "SAN ANTONIO CLEAR WATER",
     "category": "Manufacturing / Automotive",
@@ -45973,7 +47434,7 @@
   {
     "id": "sane",
     "name": "SANE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09309611,
     "lng": -110.94544683,
@@ -46025,7 +47486,7 @@
   {
     "id": "sante",
     "name": "SANTE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09915655,
     "lng": -110.96141985,
@@ -46372,7 +47833,7 @@
   {
     "id": "selecta-de-guaymas",
     "name": "SELECTA DE GUAYMAS",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "zone": "Hermosillo",
     "lat": 29.08246282,
     "lng": -111.06742812,
@@ -46626,7 +48087,7 @@
   {
     "id": "servi-gases-industriales",
     "name": "SERVI-GASES INDUSTRIALES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09520215,
     "lng": -110.96190499,
@@ -46788,6 +48249,19 @@
     "zone": "Hermosillo",
     "lat": 29.09536008,
     "lng": -110.96484,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "servicio-veterinario-sin-nombre",
+    "name": "SERVICIO VETERINARIO SIN NOMBRE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03977286,
+    "lng": -110.94631388,
     "size": "1–10",
     "source": [
       "denue"
@@ -47024,6 +48498,45 @@
     "zone": "Hermosillo",
     "lat": 29.10115957,
     "lng": -110.9837949,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "servicios-veterinarios-para-la-ganaderia-prestad",
+    "name": "SERVICIOS VETERINARIOS PARA LA GANADERÍA PRESTADOS POR EL SECTOR PRIVADO SIN NOMBRE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09455289,
+    "lng": -110.9325652,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "servicios-veterinarios-samaniego",
+    "name": "SERVICIOS VETERINARIOS SAMANIEGO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08932206,
+    "lng": -110.9398468,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "servicios-veterinarios-selecto-krsna",
+    "name": "SERVICIOS VETERINARIOS SELECTO KRSNA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10546988,
+    "lng": -110.96343569,
     "size": "1–10",
     "source": [
       "denue"
@@ -47781,6 +49294,20 @@
     "city": "Hermosillo"
   },
   {
+    "id": "socogos",
+    "name": "SOCOGOS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.04322299,
+    "lng": -110.93637984,
+    "website": "WWW.SOCOGOS.COM",
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "sodesi",
     "name": "SODESI",
     "category": "Manufacturing / Automotive",
@@ -48114,6 +49641,32 @@
     "city": "Hermosillo"
   },
   {
+    "id": "son-pets-veterianaria-y-estetica-canina",
+    "name": "SON PETS VETERIANARIA Y ESTETICA CANINA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12178558,
+    "lng": -111.03336916,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "son-pets-veterinaria-estetica",
+    "name": "SON PETS VETERINARIA & ESTETICA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11204133,
+    "lng": -110.97257773,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "son-pinatas",
     "name": "SON PIÑATAS",
     "category": "Manufacturing / Automotive",
@@ -48142,7 +49695,7 @@
   {
     "id": "sonnat",
     "name": "SONNAT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.0138803,
     "lng": -110.923211,
@@ -48170,7 +49723,7 @@
   {
     "id": "sonora",
     "name": "SONORA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.03638602,
     "lng": -110.95345023,
@@ -48363,6 +49916,19 @@
     "lat": 29.05503414,
     "lng": -110.97103082,
     "website": "SONORANPCS.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "sonpets-veterinaria-y-estetica",
+    "name": "SONPETS VETERINARIA Y ESTETICA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.14207841,
+    "lng": -110.97545306,
     "size": "1–10",
     "source": [
       "denue"
@@ -48594,6 +50160,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "sr-perro-estetica-canina-veterinaria",
+    "name": "SR. PERRO ESTETICA CANINA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.02341897,
+    "lng": -110.94463595,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "ssg",
     "name": "SSG",
     "category": "Call Center / BPO",
@@ -48739,7 +50318,7 @@
   {
     "id": "sucursal-hermosillo",
     "name": "SUCURSAL HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.11265888,
     "lng": -110.98830482,
@@ -48778,7 +50357,7 @@
   {
     "id": "super-naturista",
     "name": "SUPER NATURISTA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08002189,
     "lng": -110.95253391,
@@ -49146,7 +50725,7 @@
   {
     "id": "taller-de-camiones-de-quimica-pima",
     "name": "TALLER DE CAMIONES DE QUIMICA PIMA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.02860464,
     "lng": -110.91731031,
@@ -54359,6 +55938,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "venta-alimenos-para-gallos",
+    "name": "VENTA ALIMENOS PARA GALLOS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03005063,
+    "lng": -110.97796542,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "venta-de-agua-purificada-aqua-assul",
     "name": "VENTA DE AGUA PURIFICADA AQUA ASSUL",
     "category": "Manufacturing / Automotive",
@@ -54593,6 +56185,32 @@
     "city": "Hermosillo"
   },
   {
+    "id": "venta-de-pacas",
+    "name": "VENTA DE PACAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.18688461,
+    "lng": -110.88873682,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "venta-de-pakas",
+    "name": "VENTA DE PAKAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.0208412,
+    "lng": -110.93278474,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "venta-de-pinatas-sin-nombre",
     "name": "VENTA DE PIÑATAS SIN NOMBRE",
     "category": "Manufacturing / Automotive",
@@ -54697,6 +56315,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "ventas-de-pacas-de-alfalfa-sin-nombre",
+    "name": "VENTAS DE PACAS DE ALFALFA SIN NOMBRE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03491106,
+    "lng": -110.94912535,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "ventas-holcim-hermosillo",
     "name": "VENTAS HOLCIM HERMOSILLO",
     "category": "Manufacturing / Automotive",
@@ -54758,6 +56389,528 @@
     "lat": 29.11195891,
     "lng": -110.98830037,
     "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinari-animalia-veterinaria-integral",
+    "name": "VETERINARI ANIMALIA VETERINARIA INTEGRAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10491935,
+    "lng": -110.97116694,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria",
+    "name": "VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.00409648,
+    "lng": -110.93856619,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-altares",
+    "name": "VETERINARIA ALTARES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.01170289,
+    "lng": -110.94356574,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-amipets",
+    "name": "VETERINARIA AMIPETS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11848603,
+    "lng": -110.96758159,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-animal-home",
+    "name": "VETERINARIA ANIMAL HOME",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11384849,
+    "lng": -110.9856281,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-blues",
+    "name": "VETERINARIA BLUES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.14727782,
+    "lng": -110.9700774,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-borges",
+    "name": "VETERINARIA BORGES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08228841,
+    "lng": -111.02272623,
+    "website": "WWW.VETERINARIASBORGES.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-campeon",
+    "name": "VETERINARIA CAMPEON",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.01685753,
+    "lng": -110.93189368,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-cannis-feliss",
+    "name": "VETERINARIA CANNIS-FELISS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03143059,
+    "lng": -110.9576472,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-carranza",
+    "name": "VETERINARIA CARRANZA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09882206,
+    "lng": -110.92110737,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-de-la-dr-lizeth",
+    "name": "VETERINARIA DE LA DR LIZETH",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10343165,
+    "lng": -111.00654613,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-del-campo",
+    "name": "VETERINARIA DEL CAMPO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 28.83955826,
+    "lng": -111.47703385,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-del-carmen",
+    "name": "VETERINARIA DEL CARMEN",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07528438,
+    "lng": -110.94822726,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-del-norte",
+    "name": "VETERINARIA DEL NORTE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.13363779,
+    "lng": -110.99341011,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-del-valle",
+    "name": "VETERINARIA DEL VALLE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10030811,
+    "lng": -111.01332676,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-el-moro-de-cumpas",
+    "name": "VETERINARIA EL MORO DE CUMPAS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 28.82389648,
+    "lng": -111.94090717,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-el-ranchito",
+    "name": "VETERINARIA EL RANCHITO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08245272,
+    "lng": -110.9207897,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-francisco-javier-pohls-padilla",
+    "name": "VETERINARIA FRANCISCO JAVIER POHLS PADILLA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07879965,
+    "lng": -110.94003405,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-guaperrisimo",
+    "name": "VETERINARIA GUAPERRISIMO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.04313931,
+    "lng": -110.94489792,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-hereford",
+    "name": "VETERINARIA HEREFORD",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.0562152,
+    "lng": -110.9554393,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-los-jardines",
+    "name": "VETERINARIA LOS JARDINES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12960612,
+    "lng": -110.98292203,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-los-parientes",
+    "name": "VETERINARIA LOS PARIENTES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.05678119,
+    "lng": -110.96764239,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-lovet",
+    "name": "VETERINARIA LOVET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09541457,
+    "lng": -110.95677476,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-mininos-kan",
+    "name": "VETERINARIA MININOS KAN",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.0635278,
+    "lng": -110.99010802,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-mundo-animal",
+    "name": "VETERINARIA MUNDO ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12069839,
+    "lng": -111.02341064,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-palo-verde",
+    "name": "VETERINARIA PALO VERDE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.05607524,
+    "lng": -110.96398919,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-paola",
+    "name": "VETERINARIA PAOLA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09654599,
+    "lng": -110.95861169,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-pedigree",
+    "name": "VETERINARIA PEDIGREE",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12445702,
+    "lng": -110.98892698,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-pequenas-especies",
+    "name": "VETERINARIA PEQUEÑAS ESPECIES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.1071804,
+    "lng": -110.98200403,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-perros-y-gatos",
+    "name": "VETERINARIA PERROS Y GATOS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.09074926,
+    "lng": -110.94996603,
+    "website": "VETERINARIAPERROSYGATOS.COM",
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-pets-pets",
+    "name": "VETERINARIA PETS & PETS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11797608,
+    "lng": -110.9993382,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-playpets",
+    "name": "VETERINARIA PLAYPETS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03924132,
+    "lng": -110.94509744,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-rosa-pet",
+    "name": "VETERINARIA ROSA PET",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10209081,
+    "lng": -111.00299939,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-san-pedro",
+    "name": "VETERINARIA SAN PEDRO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.17806088,
+    "lng": -110.8880806,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-spay-sonora",
+    "name": "VETERINARIA SPAY SONORA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11755365,
+    "lng": -110.96554754,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-tecnoanimal",
+    "name": "VETERINARIA TECNOANIMAL",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.04317414,
+    "lng": -110.96408743,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-vet-shop",
+    "name": "VETERINARIA VET SHOP",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.10539566,
+    "lng": -111.0231789,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-vetgo",
+    "name": "VETERINARIA VETGO",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.11392324,
+    "lng": -110.96681684,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-y-estetica",
+    "name": "VETERINARIA Y ESTETICA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.12394585,
+    "lng": -110.9834341,
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "veterinaria-ysaac",
+    "name": "VETERINARIA YSAAC",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.061782,
+    "lng": -110.96654819,
+    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -54961,6 +57114,20 @@
     "city": "Hermosillo"
   },
   {
+    "id": "vimifos",
+    "name": "VIMIFOS",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.07829478,
+    "lng": -111.07444798,
+    "website": "VIMIFOS.COM",
+    "size": "11–50",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "vincco-centro-de-contacto",
     "name": "VINCCO CENTRO DE CONTACTO",
     "category": "Call Center / BPO",
@@ -55121,7 +57288,7 @@
   {
     "id": "vm-vitamex",
     "name": "VM VITAMEX",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.08407869,
     "lng": -110.9914546,
@@ -55303,9 +57470,22 @@
     "city": "Hermosillo"
   },
   {
+    "id": "wildlife-veterinaria",
+    "name": "WILDLIFE VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08997807,
+    "lng": -110.97035561,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "winnemucca-chemicals",
     "name": "WINNEMUCCA CHEMICALS SA DE CV",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "zone": "Hermosillo",
     "lat": 29.09743516,
     "lng": -110.94046572,
@@ -55501,6 +57681,19 @@
     "city": "Hermosillo"
   },
   {
+    "id": "z-supplies",
+    "name": "Z SUPPLIES",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.08174255,
+    "lng": -110.95703228,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
     "id": "zen-water",
     "name": "ZEN WATER",
     "category": "Manufacturing / Automotive",
@@ -55560,6 +57753,19 @@
     "zone": "Hermosillo",
     "lat": 29.09570475,
     "lng": -110.95599743,
+    "size": "1–10",
+    "source": [
+      "denue"
+    ],
+    "city": "Hermosillo"
+  },
+  {
+    "id": "zincore-veterinaria",
+    "name": "ZINCORE VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "zone": "Hermosillo",
+    "lat": 29.03553097,
+    "lng": -110.95034359,
     "size": "1–10",
     "source": [
       "denue"

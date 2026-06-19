@@ -49,11 +49,23 @@ const SECTOR_KEYWORDS = {
   "Medical / Biomedical": [
     "medico",
     "enfermer",
-    "farmaceut",
     "biomed",
-    "biotecn",
     "laboratorio clinico",
     "hospital",
+  ],
+  "Veterinary / Animal Health": [
+    "veterin",
+    "animal health",
+    "mascota",
+    "zootec",
+    "alimentos para animales",
+  ],
+  Pharmaceutical: [
+    "farmaceut",
+    "pharmaceutical",
+    "laboratorio",
+    "biotecn",
+    "quimico farmaceut",
   ],
   Media: ["medios", "periodista", "contenido"],
   Mobility: ["logistica", "transporte"],
@@ -120,6 +132,35 @@ function categorize(codigoAct, nombreAct) {
 
   if (
     code.startsWith("3254") ||
+    code.startsWith("433110") ||
+    code.startsWith("434222")
+  ) {
+    return "Pharmaceutical";
+  }
+  if (
+    /fabricaci[oó]n de preparaciones farmac[eé]uticas|productos farmac[eé]uticos|qu[ií]micos para la industria farmac[eé]utica/i.test(
+      act,
+    )
+  ) {
+    return "Pharmaceutical";
+  }
+
+  if (
+    code.startsWith("54194") ||
+    code.startsWith("434112") ||
+    code.startsWith("311110")
+  ) {
+    return "Veterinary / Animal Health";
+  }
+  if (
+    /servicios veterinarios|medicamentos veterinarios|alimentos para animales|zootec/i.test(
+      act,
+    )
+  ) {
+    return "Veterinary / Animal Health";
+  }
+
+  if (
     code.startsWith("33911") ||
     code.startsWith("541714") ||
     code.startsWith("541380") ||
@@ -130,7 +171,7 @@ function categorize(codigoAct, nombreAct) {
     return "Medical / Biomedical";
   }
   if (
-    /farmac[eé]utic|biotecn|biomed|equipo m[eé]dico|dispositivo m[eé]dic|instrumento.*m[eé]dic|laboratorio cl[ií]nico|hospital|cl[ií]nica/i.test(
+    /biomed|equipo m[eé]dico|dispositivo m[eé]dic|instrumento.*m[eé]dic|laboratorio cl[ií]nico|hospital|cl[ií]nica/i.test(
       act,
     )
   ) {

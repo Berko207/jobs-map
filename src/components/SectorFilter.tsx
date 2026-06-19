@@ -4,6 +4,7 @@ import {
   ALL_CATEGORIES,
   CATEGORY_COLORS,
   Category,
+  CITIES,
   Company,
   countHiring,
   isHiring,
@@ -15,6 +16,8 @@ interface SectorFilterProps {
   companies: Company[];
   hiringNow: boolean;
   onHiringNowChange: (value: boolean) => void;
+  city: string;
+  onCityChange: (city: string) => void;
 }
 
 export default function SectorFilter({
@@ -23,6 +26,8 @@ export default function SectorFilter({
   companies,
   hiringNow,
   onHiringNowChange,
+  city,
+  onCityChange,
 }: SectorFilterProps) {
   const counts = ALL_CATEGORIES.reduce(
     (acc, cat) => {
@@ -50,6 +55,23 @@ export default function SectorFilter({
   return (
     <div className="border-b border-zinc-200 bg-white/95 backdrop-blur-sm">
       <div className="flex flex-wrap items-center gap-2 px-3 py-2">
+        <label className="inline-flex items-center gap-1.5">
+          <span className="sr-only">City</span>
+          <select
+            value={city}
+            onChange={(e) => onCityChange(e.target.value)}
+            className="rounded-full border border-zinc-300 bg-white px-2.5 py-1 text-xs font-semibold text-zinc-800 focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200"
+            aria-label="City"
+          >
+            {CITIES.map((c) => (
+              <option key={c.name} value={c.name}>
+                {c.name}
+                {c.home ? "" : " (live roles)"}
+              </option>
+            ))}
+          </select>
+        </label>
+        <div className="hidden h-4 w-px bg-zinc-200 sm:block" />
         <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500">
           Sector
         </span>

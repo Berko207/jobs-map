@@ -15,11 +15,26 @@ function readJson(name) {
   return JSON.parse(fs.readFileSync(path.join(DATA, name), "utf8"));
 }
 
-const merged = mergeCompanies(
+function readJsonSafe(name, fallback) {
+  try {
+    return readJson(name);
+  } catch {
+    return fallback;
+  }
+}
+
+const HOME_CITY = "Hermosillo";
+
+const home = mergeCompanies(
   readJson("companies.denue.json"),
   readJson("companies.adzuna.json"),
   readJson("nominatim-cache.json"),
-);
+).map((c) => ({ ...c, city: c.city ?? HOME_CITY }));
+
+const outOfBound = readJsonSafe("companies.cities.json", []);
+const merged = [...home, ...outOfBound];
 
 fs.writeFileSync(OUT, JSON.stringify(merged, null, 2) + "\n");
-console.log(`Merged ${merged.length} companies → ${OUT}`);
+console.log(
+  `Merged ${home.length} ${HOME_CITY} + ${outOfBound.length} out-of-town = ${merged.length} companies → ${OUT}`,
+);

@@ -17,6 +17,7 @@ export interface Company {
   name: string;
   category: Category;
   zone: string;
+  city?: string;
   lat: number;
   lng: number;
   website?: string;
@@ -52,6 +53,48 @@ export const ALL_CATEGORIES: Category[] = Object.keys(
 
 export const HERMOSILLO_CENTER: [number, number] = [29.083, -110.96];
 export const DEFAULT_ZOOM = 12;
+
+/** Home city has full DENUE + Adzuna coverage; others are Adzuna-only (live roles). */
+export const HOME_CITY = "Hermosillo";
+
+export interface CityConfig {
+  /** Matches Company.city and the Adzuna `where` lookup. */
+  name: string;
+  /** Short label for compact UI (e.g. MTY). */
+  short: string;
+  center: [number, number];
+  zoom: number;
+  /** True for the DENUE-backed home city. */
+  home?: boolean;
+}
+
+/**
+ * Cities people from Hermosillo commonly relocate to for work.
+ * Out-of-bound cities are populated from live Adzuna job postings only.
+ */
+export const CITIES: CityConfig[] = [
+  {
+    name: "Hermosillo",
+    short: "HMO",
+    center: HERMOSILLO_CENTER,
+    zoom: DEFAULT_ZOOM,
+    home: true,
+  },
+  { name: "Monterrey", short: "MTY", center: [25.6866, -100.3161], zoom: 11 },
+  { name: "Guadalajara", short: "GDL", center: [20.6597, -103.3496], zoom: 11 },
+  { name: "Tijuana", short: "TIJ", center: [32.5149, -117.0382], zoom: 11 },
+  {
+    name: "Ciudad de México",
+    short: "CDMX",
+    center: [19.4326, -99.1332],
+    zoom: 11,
+  },
+  { name: "Querétaro", short: "QRO", center: [20.5888, -100.3899], zoom: 11 },
+];
+
+export function cityConfig(name: string): CityConfig {
+  return CITIES.find((c) => c.name === name) ?? CITIES[0];
+}
 
 /** Raw record shape written by scripts/build-denue.mjs */
 export interface DenueRecord {

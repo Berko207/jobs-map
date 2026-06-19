@@ -23,6 +23,22 @@ const ADZUNA_REQUEST_TIMEOUT_MS = 15_000;
 const ADZUNA_DELAY_MS = 300;
 const ADZUNA_MAX_PAGES = 3;
 
+const CITIES_OUT = path.join(ROOT, "src/data/companies.cities.json");
+const CITIES_TIMEOUT_MS = 120_000;
+
+/**
+ * Out-of-bound cities people from Hermosillo commonly relocate to.
+ * Populated from live Adzuna postings only (no DENUE census for other states).
+ * Keep `name`/`center` in sync with CITIES in src/data/types.ts.
+ */
+const OUT_OF_BOUND_CITIES = [
+  { name: "Monterrey", where: "Monterrey", center: [25.6866, -100.3161] },
+  { name: "Guadalajara", where: "Guadalajara", center: [20.6597, -103.3496] },
+  { name: "Tijuana", where: "Tijuana", center: [32.5149, -117.0382] },
+  { name: "Ciudad de México", where: "Ciudad de Mexico", center: [19.4326, -99.1332] },
+  { name: "Querétaro", where: "Queretaro", center: [20.5888, -100.3899] },
+];
+
 const SECTOR_KEYWORDS = {
   "Call Center / BPO": ["call center", "centro de contacto", "bilingual"],
   Software: ["software", "desarrollador", "developer"],
@@ -260,13 +276,13 @@ function adzunaHiringUrl(companyName) {
   return `https://www.adzuna.com.mx/search?q=${q}&w=Hermosillo%2C%20Sonora`;
 }
 
-async function fetchAdzunaPage(appId, appKey, page, keyword, signal) {
+async function fetchAdzunaPage(appId, appKey, page, keyword, where, signal) {
   const url =
     `https://api.adzuna.com/v1/api/jobs/mx/search/${page}` +
     `?app_id=${encodeURIComponent(appId)}` +
     `&app_key=${encodeURIComponent(appKey)}` +
     `&results_per_page=50` +
-    `&where=Hermosillo` +
+    `&where=${encodeURIComponent(where)}` +
     `&what=${encodeURIComponent(keyword)}` +
     `&content-type=application/json`;
 
@@ -314,6 +330,7 @@ async function fetchAdzuna() {
               appKey,
               page,
               keyword,
+              "Hermosillo",
               AbortSignal.timeout(ADZUNA_REQUEST_TIMEOUT_MS),
             );
           } catch (err) {
@@ -382,6 +399,156 @@ async function fetchAdzuna() {
   }
 }
 
+function slug(text) {
+  return (
+    normalizeName(text)
+      .replace(/\s+/g, "-")
+      .replace(/[^a-z0-9-]/g, "")
+      .slice(0, 48) || "x"
+  );
+}
+
+/** Stable pseudo-random offset (~±4km) so coord-less postings don't stack. */
+function jitterFromName(name, center) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) {
+    h = (h * 31 + name.charCodeAt(i)) >>> 0;
+  }
+  const dLat = ((h % 1000) / 1000 - 0.5) * 0.08;
+  const dLng = (((h >>> 10) % 1000) / 1000 - 0.5) * 0.08;
+  return [center[0] + dLat, center[1] + dLng];
+}
+
+function cityHiringUrl(name, where) {
+  const q = encodeURIComponent(name);
+  const w = encodeURIComponent(where);
+  return `https://www.adzuna.com.mx/search?q=${q}&w=${w}`;
+}
+
+/**
+ * Fetch live Adzuna postings for out-of-bound cities and shape them as
+ * Company records. One probe per sector keeps the build within budget.
+ */
+async function fetchOutOfBoundCities() {
+  const appId = process.env.ADZUNA_APP_ID;
+  const appKey = process.env.ADZUNA_APP_KEY;
+
+  if (!appId || !appKey) {
+    console.warn(
+      "Warning: ADZUNA_APP_ID / ADZUNA_APP_KEY not set — skipping out-of-bound cities.",
+    );
+    return readJson(CITIES_OUT, []);
+  }
+
+  const deadline = Date.now() + CITIES_TIMEOUT_MS;
+  const out = [];
+
+  try {
+    for (const city of OUT_OF_BOUND_CITIES) {
+      const byCompany = new Map();
+
+      for (const [category, keywords] of Object.entries(SECTOR_KEYWORDS)) {
+        if (Date.now() >= deadline) {
+          throw new Error("out-of-bound fetch exceeded overall time budget");
+        }
+
+        const keyword = keywords[0];
+        let data;
+        try {
+          data = await fetchAdzunaPage(
+            appId,
+            appKey,
+            1,
+            keyword,
+            city.where,
+            AbortSignal.timeout(ADZUNA_REQUEST_TIMEOUT_MS),
+          );
+        } catch (err) {
+          console.warn(
+            `  ${city.name}/${keyword}: ${err instanceof Error ? err.message : err}`,
+          );
+          continue;
+        }
+
+        for (const job of data.results ?? []) {
+          const displayName = job.company?.display_name?.trim();
+          if (!displayName) continue;
+
+          const key = normalizeName(displayName);
+          let lat = job.location?.latitude ?? job.latitude ?? null;
+          let lng = job.location?.longitude ?? job.longitude ?? null;
+          if (
+            lat == null ||
+            lng == null ||
+            !Number.isFinite(Number(lat)) ||
+            !Number.isFinite(Number(lng))
+          ) {
+            [lat, lng] = jitterFromName(displayName, city.center);
+          } else {
+            lat = Number(lat);
+            lng = Number(lng);
+          }
+
+          let entry = byCompany.get(key);
+          if (!entry) {
+            entry = {
+              id: `${slug(city.name)}-${slug(displayName)}`,
+              name: displayName,
+              category,
+              zone: city.name,
+              city: city.name,
+              lat,
+              lng,
+              openRoles: 0,
+              lastPostedAt: "",
+              hiringUrl: cityHiringUrl(displayName, city.where),
+              isAgency: isAgency(displayName),
+              source: ["adzuna"],
+            };
+            byCompany.set(key, entry);
+          }
+
+          entry.openRoles += 1;
+          const created = job.created ?? "";
+          if (created > entry.lastPostedAt) entry.lastPostedAt = created;
+        }
+
+        await sleep(ADZUNA_DELAY_MS);
+      }
+
+      const cityList = [...byCompany.values()].sort(
+        (a, b) => b.openRoles - a.openRoles || a.name.localeCompare(b.name),
+      );
+      console.log(
+        `  ${city.name}: ${cityList.length} employers (${cityList.reduce(
+          (s, e) => s + e.openRoles,
+          0,
+        )} open roles)`,
+      );
+      out.push(...cityList);
+    }
+
+    const seen = new Set();
+    for (const r of out) {
+      let id = r.id;
+      let n = 2;
+      while (seen.has(id)) id = `${r.id}-${n++}`;
+      seen.add(id);
+      r.id = id;
+    }
+
+    return out;
+  } catch (err) {
+    console.warn(
+      `Warning: out-of-bound fetch failed — ${err instanceof Error ? err.message : err}`,
+    );
+    console.warn(
+      `  Continuing with existing ${path.relative(ROOT, CITIES_OUT)} or [].`,
+    );
+    return readJson(CITIES_OUT, []);
+  }
+}
+
 function runMerge() {
   const r = spawnSync(process.execPath, [path.join(__dirname, "write-merged.mjs")], {
     cwd: ROOT,
@@ -399,10 +566,15 @@ async function main() {
   writeJson(DENUE_OUT, denue);
   console.log(`  → ${denue.length} Hermosillo establishments`);
 
-  console.log("build-data: fetching Adzuna…");
+  console.log("build-data: fetching Adzuna (Hermosillo)…");
   const adzuna = await fetchAdzuna();
   writeJson(ADZUNA_OUT, adzuna);
   console.log(`  → ${adzuna.length} employers with open roles`);
+
+  console.log("build-data: fetching out-of-bound cities…");
+  const cities = await fetchOutOfBoundCities();
+  writeJson(CITIES_OUT, cities);
+  console.log(`  → ${cities.length} out-of-town employers`);
 
   console.log("build-data: merging sources…");
   runMerge();

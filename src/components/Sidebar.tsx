@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Company, isHiring, sizeSortValue, ZONES } from "@/data/companies";
+import { Company, HOME_CITY, isHiring, sizeSortValue } from "@/data/companies";
 import CompanyCard from "./CompanyCard";
 import { CompanyStates } from "@/lib/storage";
 
@@ -19,10 +19,12 @@ interface SidebarProps {
   onSearchChange: (value: string) => void;
   zone: string;
   onZoneChange: (value: string) => void;
+  zones: string[];
   sort: SortOption;
   onSortChange: (value: SortOption) => void;
   listView: ListView;
   onListViewChange: (value: ListView) => void;
+  city: string;
 }
 
 export default function Sidebar({
@@ -36,10 +38,12 @@ export default function Sidebar({
   onSearchChange,
   zone,
   onZoneChange,
+  zones,
   sort,
   onSortChange,
   listView,
   onListViewChange,
+  city,
 }: SidebarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -93,27 +97,29 @@ export default function Sidebar({
           />
         </label>
         <div className="flex gap-2">
-          <label className="flex-1">
-            <span className="sr-only">Filter by zone</span>
-            <select
-              value={zone}
-              onChange={(e) => onZoneChange(e.target.value)}
-              className="w-full rounded-lg border border-zinc-200 px-2 py-2 text-sm focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200"
-            >
-              <option value="">All zones</option>
-              {ZONES.map((z) => (
-                <option key={z} value={z}>
-                  {z}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
+          {zones.length > 1 && (
+            <label className="flex-1">
+              <span className="sr-only">Filter by zone</span>
+              <select
+                value={zone}
+                onChange={(e) => onZoneChange(e.target.value)}
+                className="w-full rounded-lg border border-zinc-200 px-2 py-2 text-sm focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200"
+              >
+                <option value="">All zones</option>
+                {zones.map((z) => (
+                  <option key={z} value={z}>
+                    {z}
+                  </option>
+                ))}
+              </select>
+            </label>
+          )}
+          <label className={zones.length > 1 ? "" : "flex-1"}>
             <span className="sr-only">Sort by</span>
             <select
               value={sort}
               onChange={(e) => onSortChange(e.target.value as SortOption)}
-              className="rounded-lg border border-zinc-200 px-2 py-2 text-sm focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200"
+              className="w-full rounded-lg border border-zinc-200 px-2 py-2 text-sm focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200"
             >
               <option value="hiring">Hiring first</option>
               <option value="rating">Rating</option>
@@ -198,7 +204,9 @@ export default function Sidebar({
             Hermosillo Jobs Map
           </h1>
           <p className="text-xs text-zinc-500">
-            Filter by sector to find where to apply
+            {city === HOME_CITY
+              ? "Filter by sector to find where to apply"
+              : `Live job postings in ${city}`}
           </p>
         </header>
         {content}

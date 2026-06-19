@@ -13,10 +13,12 @@ import L from "leaflet";
 import {
   CATEGORY_COLORS,
   Category,
+  cityConfig,
   COMPANIES,
   Company,
   DEFAULT_ZOOM,
   HERMOSILLO_CENTER,
+  HOME_CITY,
   isHiring,
   sizeRadius,
 } from "@/data/companies";
@@ -62,6 +64,25 @@ function FlyToCompany({
   return null;
 }
 
+function RecenterOnCity({
+  center,
+  zoom,
+}: {
+  center: [number, number];
+  zoom: number;
+}) {
+  const map = useMap();
+  const first = useRef(true);
+  useEffect(() => {
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    map.flyTo(center, zoom, { duration: 1 });
+  }, [center, zoom, map]);
+  return null;
+}
+
 function PopupOpener({
   companyId,
   markerRefs,
@@ -92,7 +113,7 @@ function MapPopupContent({
   onToggleSaved: () => void;
   onToggleApplied: () => void;
 }) {
-  const links = jobLinks(company.name);
+  const links = jobLinks(company.name, company.city ?? HOME_CITY);
   const color = CATEGORY_COLORS[company.category];
   const hiring = isHiring(company);
 
@@ -188,6 +209,7 @@ function MapPopupContent({
 }
 
 export default function JobsMap() {
+  const [city, setCity] = useState<string>(HOME_CITY);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([]);
   const [search, setSearch] = useState("");
   const [zone, setZone] = useState("");
@@ -228,8 +250,18 @@ export default function JobsMap() {
     [],
   );
 
+  const cityCompanies = useMemo(
+    () => COMPANIES.filter((c) => (c.city ?? HOME_CITY) === city),
+    [city],
+  );
+
+  const cityZones = useMemo(
+    () => [...new Set(cityCompanies.map((c) => c.zone))].sort(),
+    [cityCompanies],
+  );
+
   const filteredCompanies = useMemo(() => {
-    return COMPANIES.filter((c) => {
+    return cityCompanies.filter((c) => {
       if (
         selectedCategories.length > 0 &&
         !selectedCategories.includes(c.category)
@@ -244,10 +276,18 @@ export default function JobsMap() {
       if (hiringNow && !isHiring(c)) return false;
       return true;
     });
-  }, [selectedCategories, zone, search, listView, companyStates, hiringNow]);
+  }, [
+    cityCompanies,
+    selectedCategories,
+    zone,
+    search,
+    listView,
+    companyStates,
+    hiringNow,
+  ]);
 
   const sectorFilterCompanies = useMemo(() => {
-    return COMPANIES.filter((c) => {
+    return cityCompanies.filter((c) => {
       if (
         selectedCategories.length > 0 &&
         !selectedCategories.includes(c.category)
@@ -261,12 +301,20 @@ export default function JobsMap() {
       if (listView === "applied" && !state?.applied) return false;
       return true;
     });
-  }, [selectedCategories, zone, search, listView, companyStates]);
+  }, [cityCompanies, selectedCategories, zone, search, listView, companyStates]);
+
+  const handleCityChange = useCallback((next: string) => {
+    setCity(next);
+    setZone("");
+    setSelectedCompanyId(null);
+  }, []);
 
   const selectedCompany = useMemo(
     () => COMPANIES.find((c) => c.id === selectedCompanyId) ?? null,
     [selectedCompanyId],
   );
+
+  const activeCity = cityConfig(city);
 
   const flyTarget = selectedCompany
     ? { lat: selectedCompany.lat, lng: selectedCompany.lng }
@@ -288,6 +336,8 @@ export default function JobsMap() {
         companies={sectorFilterCompanies}
         hiringNow={hiringNow}
         onHiringNowChange={setHiringNow}
+        city={city}
+        onCityChange={handleCityChange}
       />
       <div className="relative flex flex-1 overflow-hidden">
         <Sidebar
@@ -301,10 +351,12 @@ export default function JobsMap() {
           onSearchChange={setSearch}
           zone={zone}
           onZoneChange={setZone}
+          zones={cityZones}
           sort={sort}
           onSortChange={setSort}
           listView={listView}
           onListViewChange={setListView}
+          city={city}
         />
         <div className="relative flex-1 pb-12 md:pb-0">
           <MapContainer
@@ -314,6 +366,7 @@ export default function JobsMap() {
             scrollWheelZoom
           >
             <TileLayer url={CARTO_TILE} attribution={CARTO_ATTRIBUTION} />
+            <RecenterOnCity center={activeCity.center} zoom={activeCity.zoom} />
             <FlyToCompany company={flyTarget} />
             <PopupOpener
               companyId={selectedCompanyId}

@@ -136,9 +136,6 @@ export default function SectorFilter({
         </summary>
         <LegendGrid />
       </details>
-      <div className="hidden border-t border-zinc-100 px-3 py-1.5 sm:block">
-        <LegendGrid />
-      </div>
     </div>
   );
 }

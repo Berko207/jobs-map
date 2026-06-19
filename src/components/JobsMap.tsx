@@ -35,6 +35,17 @@ const CARTO_TILE =
 const CARTO_ATTRIBUTION =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
 
+function matchesSearch(company: Company, query: string): boolean {
+  if (!query) return true;
+  const needle = query.toLowerCase();
+  return (
+    company.name.toLowerCase().includes(needle) ||
+    company.category.toLowerCase().includes(needle) ||
+    company.zone.toLowerCase().includes(needle) ||
+    (company.note?.toLowerCase().includes(needle) ?? false)
+  );
+}
+
 function FlyToCompany({
   company,
 }: {
@@ -180,7 +191,7 @@ export default function JobsMap() {
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([]);
   const [search, setSearch] = useState("");
   const [zone, setZone] = useState("");
-  const [sort, setSort] = useState<SortOption>("rating");
+  const [sort, setSort] = useState<SortOption>("hiring");
   const [listView, setListView] = useState<ListView>("all");
   const [hiringNow, setHiringNow] = useState(false);
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(
@@ -226,9 +237,7 @@ export default function JobsMap() {
         return false;
       }
       if (zone && c.zone !== zone) return false;
-      if (search && !c.name.toLowerCase().includes(search.toLowerCase())) {
-        return false;
-      }
+      if (!matchesSearch(c, search)) return false;
       const state = companyStates[c.id];
       if (listView === "saved" && !state?.saved) return false;
       if (listView === "applied" && !state?.applied) return false;
@@ -246,9 +255,7 @@ export default function JobsMap() {
         return false;
       }
       if (zone && c.zone !== zone) return false;
-      if (search && !c.name.toLowerCase().includes(search.toLowerCase())) {
-        return false;
-      }
+      if (!matchesSearch(c, search)) return false;
       const state = companyStates[c.id];
       if (listView === "saved" && !state?.saved) return false;
       if (listView === "applied" && !state?.applied) return false;

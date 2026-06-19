@@ -1,11 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Company, sizeSortValue, ZONES } from "@/data/companies";
+import { Company, isHiring, sizeSortValue, ZONES } from "@/data/companies";
 import CompanyCard from "./CompanyCard";
 import { CompanyStates } from "@/lib/storage";
 
-export type SortOption = "rating" | "size" | "name";
+export type SortOption = "hiring" | "rating" | "size" | "name";
 export type ListView = "all" | "saved" | "applied";
 
 interface SidebarProps {
@@ -49,6 +49,13 @@ export default function Sidebar({
       const agency = (a.isAgency ? 1 : 0) - (b.isAgency ? 1 : 0);
       if (agency !== 0) return agency;
       switch (sort) {
+        case "hiring": {
+          const hiringDelta = (isHiring(b) ? 1 : 0) - (isHiring(a) ? 1 : 0);
+          if (hiringDelta !== 0) return hiringDelta;
+          const roles = (b.openRoles ?? 0) - (a.openRoles ?? 0);
+          if (roles !== 0) return roles;
+          return (b.googleRating ?? 0) - (a.googleRating ?? 0);
+        }
         case "rating":
           return (b.googleRating ?? 0) - (a.googleRating ?? 0);
         case "size":
@@ -108,6 +115,7 @@ export default function Sidebar({
               onChange={(e) => onSortChange(e.target.value as SortOption)}
               className="rounded-lg border border-zinc-200 px-2 py-2 text-sm focus:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-200"
             >
+              <option value="hiring">Hiring first</option>
               <option value="rating">Rating</option>
               <option value="size">Size</option>
               <option value="name">Name</option>

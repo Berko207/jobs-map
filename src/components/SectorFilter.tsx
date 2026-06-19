@@ -4,26 +4,35 @@ import {
   ALL_CATEGORIES,
   CATEGORY_COLORS,
   Category,
-  COMPANIES,
+  Company,
+  countHiring,
+  isHiring,
 } from "@/data/companies";
 
 interface SectorFilterProps {
   selected: Category[];
   onChange: (categories: Category[]) => void;
-  filteredCount?: number;
+  companies: Company[];
+  hiringNow: boolean;
+  onHiringNowChange: (value: boolean) => void;
 }
 
 export default function SectorFilter({
   selected,
   onChange,
+  companies,
+  hiringNow,
+  onHiringNowChange,
 }: SectorFilterProps) {
   const counts = ALL_CATEGORIES.reduce(
     (acc, cat) => {
-      acc[cat] = COMPANIES.filter((c) => c.category === cat).length;
+      acc[cat] = companies.filter((c) => c.category === cat).length;
       return acc;
     },
     {} as Record<Category, number>,
   );
+
+  const hiringCount = countHiring(companies);
 
   const toggle = (cat: Category) => {
     if (selected.includes(cat)) {
@@ -65,6 +74,23 @@ export default function SectorFilter({
             Clear
           </button>
         )}
+        <button
+          type="button"
+          onClick={() => onHiringNowChange(!hiringNow)}
+          aria-pressed={hiringNow}
+          className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 ${
+            hiringNow
+              ? "border-emerald-600 bg-emerald-600 text-white"
+              : "border-emerald-200 bg-white text-emerald-700 hover:border-emerald-300 hover:bg-emerald-50"
+          }`}
+        >
+          <span
+            className={`h-2 w-2 rounded-full ${hiringNow ? "bg-white" : "bg-emerald-500"}`}
+            aria-hidden
+          />
+          Hiring now
+          <span className="tabular-nums opacity-80">{hiringCount}</span>
+        </button>
         <div className="hidden h-4 w-px bg-zinc-200 sm:block" />
         <div className="flex flex-1 flex-wrap gap-1.5">
           {ALL_CATEGORIES.map((cat) => {
@@ -133,6 +159,12 @@ function LegendGrid() {
           {cat}
         </span>
       ))}
+      <span className="inline-flex items-center gap-1 text-[10px] text-zinc-500">
+        <span className="h-2 w-2 rounded-full ring-2 ring-emerald-500 ring-offset-1" />
+        Hiring now
+      </span>
     </div>
   );
 }
+
+export { isHiring };

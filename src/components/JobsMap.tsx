@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, Fragment } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -17,6 +17,7 @@ import {
   Company,
   DEFAULT_ZOOM,
   HERMOSILLO_CENTER,
+  isHiring,
   sizeRadius,
 } from "@/data/companies";
 import {
@@ -82,6 +83,7 @@ function MapPopupContent({
 }) {
   const links = jobLinks(company.name);
   const color = CATEGORY_COLORS[company.category];
+  const hiring = isHiring(company);
 
   return (
     <div className="min-w-[200px] max-w-[260px]">
@@ -93,11 +95,21 @@ function MapPopupContent({
         {company.category}
       </span>
       <p className="mt-1 text-xs text-zinc-500">{company.zone}</p>
-      <div className="mt-1 flex gap-2 text-xs text-zinc-600">
+      <div className="mt-1 flex flex-wrap gap-2 text-xs text-zinc-600">
         {company.googleRating != null && (
           <span>★ {company.googleRating.toFixed(1)}</span>
         )}
         {company.size && <span>{company.size}</span>}
+        {hiring && company.hiringUrl && (
+          <a
+            href={company.hiringUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-emerald-700 hover:underline"
+          >
+            {company.openRoles} open role{company.openRoles !== 1 ? "s" : ""}
+          </a>
+        )}
       </div>
       {company.note && (
         <p className="mt-1.5 text-xs leading-relaxed text-zinc-600">
@@ -170,6 +182,7 @@ export default function JobsMap() {
   const [zone, setZone] = useState("");
   const [sort, setSort] = useState<SortOption>("rating");
   const [listView, setListView] = useState<ListView>("all");
+  const [hiringNow, setHiringNow] = useState(false);
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(
     null,
   );
@@ -219,6 +232,26 @@ export default function JobsMap() {
       const state = companyStates[c.id];
       if (listView === "saved" && !state?.saved) return false;
       if (listView === "applied" && !state?.applied) return false;
+      if (hiringNow && !isHiring(c)) return false;
+      return true;
+    });
+  }, [selectedCategories, zone, search, listView, companyStates, hiringNow]);
+
+  const sectorFilterCompanies = useMemo(() => {
+    return COMPANIES.filter((c) => {
+      if (
+        selectedCategories.length > 0 &&
+        !selectedCategories.includes(c.category)
+      ) {
+        return false;
+      }
+      if (zone && c.zone !== zone) return false;
+      if (search && !c.name.toLowerCase().includes(search.toLowerCase())) {
+        return false;
+      }
+      const state = companyStates[c.id];
+      if (listView === "saved" && !state?.saved) return false;
+      if (listView === "applied" && !state?.applied) return false;
       return true;
     });
   }, [selectedCategories, zone, search, listView, companyStates]);
@@ -245,6 +278,9 @@ export default function JobsMap() {
       <SectorFilter
         selected={selectedCategories}
         onChange={setSelectedCategories}
+        companies={sectorFilterCompanies}
+        hiringNow={hiringNow}
+        onHiringNowChange={setHiringNow}
       />
       <div className="relative flex flex-1 overflow-hidden">
         <Sidebar
@@ -279,21 +315,38 @@ export default function JobsMap() {
             <MarkerClusterGroup chunkedLoading>
               {filteredCompanies.map((company) => {
                 const color = CATEGORY_COLORS[company.category];
+                const hiring = isHiring(company);
                 const state = companyStates[company.id] ?? {
                   saved: false,
                   applied: false,
                 };
+                const radius = sizeRadius(company.size, hiring);
                 return (
-                  <CircleMarker
-                    key={company.id}
-                    center={[company.lat, company.lng]}
-                    radius={sizeRadius(company.size)}
-                    pathOptions={{
-                      fillColor: color,
-                      fillOpacity: 0.85,
-                      color: "#fff",
-                      weight: 2,
-                    }}
+                  <Fragment key={company.id}>
+                    {hiring && (
+                      <CircleMarker
+                        center={[company.lat, company.lng]}
+                        radius={radius + 4}
+                        pathOptions={{
+                          fillOpacity: 0,
+                          color: "#10b981",
+                          weight: 3,
+                          opacity: 0.85,
+                        }}
+                        eventHandlers={{
+                          click: () => setSelectedCompanyId(company.id),
+                        }}
+                      />
+                    )}
+                    <CircleMarker
+                      center={[company.lat, company.lng]}
+                      radius={radius}
+                      pathOptions={{
+                        fillColor: color,
+                        fillOpacity: 0.85,
+                        color: hiring ? "#10b981" : "#fff",
+                        weight: hiring ? 3 : 2,
+                      }}
                     ref={(ref) => {
                       if (ref) {
                         markerRefs.current.set(company.id, ref);
@@ -317,6 +370,7 @@ export default function JobsMap() {
                       />
                     </Popup>
                   </CircleMarker>
+                  </Fragment>
                 );
               })}
             </MarkerClusterGroup>

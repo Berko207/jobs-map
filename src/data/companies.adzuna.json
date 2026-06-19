@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Intugo",
+    "category": "Call Center / BPO",
+    "openRoles": 8,
+    "lastPostedAt": "2025-05-12T00:00:00Z",
+    "lat": null,
+    "lng": null,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Intugo&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Ford Stamping & Assembly",
+    "category": "Manufacturing / Automotive",
+    "openRoles": 14,
+    "lastPostedAt": "2025-05-18T00:00:00Z",
+    "lat": null,
+    "lng": null,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Ford&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Coforge (ex-Nearsoft / Encora)",
+    "category": "Software",
+    "openRoles": 6,
+    "lastPostedAt": "2025-05-10T00:00:00Z",
+    "lat": null,
+    "lng": null,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Coforge&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Grupo Salinas Hermosillo",
+    "category": "Call Center / BPO",
+    "openRoles": 11,
+    "lastPostedAt": "2025-05-15T00:00:00Z",
+    "lat": 29.1024,
+    "lng": -110.9772,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Grupo%20Salinas&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Laboratorios Sanfer",
+    "category": "Manufacturing / Automotive",
+    "openRoles": 4,
+    "lastPostedAt": "2025-05-08T00:00:00Z",
+    "lat": 29.0891,
+    "lng": -110.9488,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Sanfer&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Ternium México",
+    "category": "Manufacturing / Automotive",
+    "openRoles": 9,
+    "lastPostedAt": "2025-05-20T00:00:00Z",
+    "lat": 29.0156,
+    "lng": -110.9312,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Ternium&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Konfio",
+    "category": "Software",
+    "openRoles": 3,
+    "lastPostedAt": "2025-05-06T00:00:00Z",
+    "lat": 29.0812,
+    "lng": -110.9589,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Konfio&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Skyworks Solutions",
+    "category": "Manufacturing / Automotive",
+    "openRoles": 7,
+    "lastPostedAt": "2025-05-14T00:00:00Z",
+    "lat": 29.1782,
+    "lng": -110.9954,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Skyworks&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Adecco Reclutamiento Hermosillo",
+    "category": "Call Center / BPO",
+    "openRoles": 22,
+    "lastPostedAt": "2025-05-19T00:00:00Z",
+    "lat": 29.0721,
+    "lng": -110.9698,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Adecco&w=Hermosillo%2C%20Sonora",
+    "isAgency": true
+  },
+  {
+    "name": "DHL Supply Chain",
+    "category": "Mobility",
+    "openRoles": 5,
+    "lastPostedAt": "2025-05-11T00:00:00Z",
+    "lat": 29.0456,
+    "lng": -110.9123,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=DHL&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Brixton",
+    "category": "Software",
+    "openRoles": 2,
+    "lastPostedAt": "2025-05-04T00:00:00Z",
+    "lat": 29.0945,
+    "lng": -111.0187,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Brixton&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  },
+  {
+    "name": "Helvex",
+    "category": "Manufacturing / Automotive",
+    "openRoles": 6,
+    "lastPostedAt": "2025-05-09T00:00:00Z",
+    "lat": 29.0267,
+    "lng": -110.8876,
+    "hiringUrl": "https://www.adzuna.com.mx/search?q=Helvex&w=Hermosillo%2C%20Sonora",
+    "isAgency": false
+  }
+]

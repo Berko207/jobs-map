@@ -27,14 +27,49 @@ Map tiles use **CARTO Voyager** (free). You must keep attribution visible: *© O
 - **Map** — colored `circleMarker` pins by sector, clustered when zoomed out.
 - **Sidebar** — search, zone filter, sort (rating / size / name), ranked employer cards.
 - **Find roles** — deep links to Indeed, Computrabajo, and Google job searches (no API).
+- **Hiring now** — filter employers with active Adzuna postings; open-role counts link to Adzuna searches.
 - **Save / Applied** — toggles persist in `localStorage` (default) or Supabase (optional).
+
+## Who's hiring scanners
+
+Employer data merges from three sources in `src/data/merge.ts`:
+
+| Source | File | Script |
+|--------|------|--------|
+| Curated featured | `curatedFeatured.ts` | hand-edited |
+| DENUE (INEGI) | `companies.denue.json` | `npm run scan:denue` |
+| Adzuna jobs | `companies.adzuna.json` | `npm run scan:adzuna` |
+
+```bash
+# Optional — skips gracefully if keys are missing
+npm run scan:all    # denue → adzuna → geocode missing coords
+```
+
+### Adzuna scanner
+
+1. Sign up at [developer.adzuna.com](https://developer.adzuna.com/) and create an app.
+2. Add to `.env.local`:
+
+   ```
+   ADZUNA_APP_ID=your-app-id
+   ADZUNA_APP_KEY=your-app-key
+   ```
+
+3. Run `npm run scan:adzuna` — writes `src/data/companies.adzuna.json`.
+
+Staffing agencies (Adecco, Manpower, etc.) are flagged `isAgency: true` and down-ranked in the list.
+
+### Geocoding fallback
+
+Employers without coordinates are geocoded via Nominatim (≤1 req/sec) into `nominatim-cache.json`:
+
+```bash
+npm run geocode:missing
+```
 
 ## Adding employers
 
-Edit `src/data/companies.ts`:
-
-1. Add a `Company` object with a unique `id`, `name`, `category`, `zone`, `lat`, `lng`, and optional fields.
-2. Pick an existing `Category` or extend the type and add a color to `CATEGORY_COLORS`.
+Edit `src/data/curatedFeatured.ts` for hand-picked pins:
 
 ### Geocoding with Nominatim (free)
 
@@ -84,8 +119,9 @@ If env vars are missing, the app silently falls back to `localStorage`.
 src/
   app/           # layout, page (dynamic JobsMap import)
   components/    # JobsMap, SectorFilter, Sidebar, CompanyCard
-  data/          # companies seed + category colors
+  data/          # merge.ts, curatedFeatured, scanner JSON, types
   lib/           # jobLinks, storage
+scripts/         # scan-adzuna, scan-denue, geocode-missing
 supabase/        # optional schema
 ```
 

@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scan:denue": "node scripts/scan-denue.mjs",
+    "scan:adzuna": "node scripts/scan-adzuna.mjs",
+    "geocode:missing": "node scripts/geocode-missing.mjs",
+    "scan:all": "npm run scan:denue && npm run scan:adzuna && npm run geocode:missing"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",

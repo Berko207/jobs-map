@@ -1,6 +1,6 @@
 "use client";
 
-import { CATEGORY_COLORS, Company } from "@/data/companies";
+import { CATEGORY_COLORS, Company, isHiring } from "@/data/companies";
 import { jobLinks } from "@/lib/jobLinks";
 
 interface CompanyCardProps {
@@ -26,13 +26,16 @@ export default function CompanyCard({
 }: CompanyCardProps) {
   const links = jobLinks(company.name);
   const color = CATEGORY_COLORS[company.category];
+  const hiring = isHiring(company);
 
   return (
     <article
       className={`rounded-lg border p-3 transition-colors motion-reduce:transition-none ${
         isSelected
           ? "border-sky-400 bg-sky-50/80 ring-1 ring-sky-300"
-          : "border-zinc-200 bg-white hover:border-zinc-300"
+          : company.isAgency
+            ? "border-zinc-100 bg-zinc-50/80 opacity-90"
+            : "border-zinc-200 bg-white hover:border-zinc-300"
       }`}
     >
       <button
@@ -59,6 +62,20 @@ export default function CompanyCard({
             <span className="text-[10px] text-zinc-500">{company.size}</span>
           )}
           <span className="text-[10px] text-zinc-400">{company.zone}</span>
+          {hiring && company.hiringUrl && (
+            <a
+              href={company.hiringUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-semibold text-emerald-800 hover:bg-emerald-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+            >
+              {company.openRoles} open role{company.openRoles !== 1 ? "s" : ""}
+            </a>
+          )}
+          {company.isAgency && (
+            <span className="text-[10px] text-zinc-400">Staffing agency</span>
+          )}
         </div>
         {!compact && company.note && (
           <p className="mt-1.5 text-xs leading-relaxed text-zinc-600">

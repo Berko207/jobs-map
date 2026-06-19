@@ -45,21 +45,20 @@ export default function Sidebar({
 
   const sorted = useMemo(() => {
     const list = [...companies];
-    switch (sort) {
-      case "rating":
-        list.sort(
-          (a, b) => (b.googleRating ?? 0) - (a.googleRating ?? 0),
-        );
-        break;
-      case "size":
-        list.sort(
-          (a, b) => sizeSortValue(b.size) - sizeSortValue(a.size),
-        );
-        break;
-      case "name":
-        list.sort((a, b) => a.name.localeCompare(b.name));
-        break;
-    }
+    list.sort((a, b) => {
+      const agency = (a.isAgency ? 1 : 0) - (b.isAgency ? 1 : 0);
+      if (agency !== 0) return agency;
+      switch (sort) {
+        case "rating":
+          return (b.googleRating ?? 0) - (a.googleRating ?? 0);
+        case "size":
+          return sizeSortValue(b.size) - sizeSortValue(a.size);
+        case "name":
+          return a.name.localeCompare(b.name);
+        default:
+          return 0;
+      }
+    });
     return list;
   }, [companies, sort]);
 

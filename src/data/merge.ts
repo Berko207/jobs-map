@@ -106,7 +106,8 @@ function applyDenue(map: Map<string, MergeBucket>, records: DenueRecord[]): void
         b.lng = d.lng;
       }
     }
-    if (d.size) b.size = d.size; // denue wins for size
+    if (d.size) b.size = d.size;
+    if (d.website && !b.website) b.website = d.website;
     b.sources.add("denue");
   }
 }

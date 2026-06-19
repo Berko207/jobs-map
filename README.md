@@ -42,8 +42,22 @@ Employer data merges from three sources in `src/data/merge.ts`:
 
 ```bash
 # Optional — skips gracefully if keys are missing
+npm run scan        # DENUE only (alias for scan:denue)
 npm run scan:all    # denue → adzuna → geocode missing coords
 ```
+
+### DENUE scanner
+
+1. Register for a free token at [INEGI DENUE API](https://www.inegi.org.mx/servicios/api_denue.html).
+2. Add to `.env.local`:
+
+   ```
+   DENUE_TOKEN=your-token
+   ```
+
+3. Run `npm run scan:denue` — writes `src/data/companies.denue.json`.
+
+The scanner searches Hermosillo metro (~14 km) by sector keywords and maps INEGI size strata to employer size buckets.
 
 ### Adzuna scanner
 

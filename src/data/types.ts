@@ -53,12 +53,16 @@ export const DEFAULT_ZOOM = 12;
 
 /** Raw record shape written by scripts/scan-denue.mjs */
 export interface DenueRecord {
+  id: string;
   name: string;
-  category: Category;
-  zone?: string;
+  activity: string;
+  sizeStrata?: number;
+  size?: string;
+  website?: string;
   lat: number;
   lng: number;
-  size?: string;
+  category: Category;
+  zone?: string;
 }
 
 /** Raw record shape written by scripts/scan-adzuna.mjs */

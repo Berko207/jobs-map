@@ -1,0 +1,68 @@
+const LEGAL_SUFFIXES =
+  /\b(s\.?\s*a\.?\s*de\s*c\.?\s*v\.?|s\.?\s*de\s*r\.?\s*l\.?|s\.?\s*a\.?\s*p\.?\s*i\.?|sapi|sa de cv|sa|sc)\b/gi;
+
+/** Staffing / recruitment firms — flagged and sorted below direct employers. */
+const AGENCY_TERMS = [
+  "reclutamiento",
+  "capital humano",
+  "recursos humanos",
+  "seleccion de personal",
+  "staffing",
+  "headhunt",
+  "outsourcing",
+  "manpower",
+  "adecco",
+  "kelly",
+  "randstad",
+  "sonora jobs",
+  "sonorajobs",
+  "bolsa de empleo",
+  "portal de empleo",
+];
+
+/** Known spam or aggregator labels on Adzuna — never treat as employers. */
+const ADZUNA_BLOCKLIST = new Set([
+  "unemplojorempleo",
+  "miempleojorempleo",
+  "tuempleojorempleo",
+]);
+
+const AGGREGATOR_TERMS = [
+  "jobijoba",
+  "jooble",
+  "neuvoo",
+  "opcionempleo",
+  "talenteca",
+  "occ mundo",
+  "bumeran",
+];
+
+function normalize(name: string): string {
+  return String(name ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .replace(LEGAL_SUFFIXES, " ")
+    .replace(/[^\w\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+export function isStaffingAgency(name: string): boolean {
+  const lower = normalize(name);
+  return AGENCY_TERMS.some((term) => lower.includes(term));
+}
+
+/** Drop junk Adzuna company names (spam labels, job-board masquerading as employers). */
+export function shouldExcludeAdzunaEmployer(name: string): boolean {
+  const norm = normalize(name);
+  const compact = norm.replace(/\s/g, "");
+
+  if (ADZUNA_BLOCKLIST.has(compact)) return true;
+  if (/empleo.*empleo|trabajo.*trabajo|vacante.*vacante|reclut.*reclut/.test(compact)) {
+    return true;
+  }
+  if (AGGREGATOR_TERMS.some((term) => norm.includes(term))) return true;
+
+  return false;
+}

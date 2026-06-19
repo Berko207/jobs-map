@@ -2,6 +2,7 @@
  * Build-time merge (mirrors src/data/merge.ts) — pure JS for Node without tsx.
  */
 import curatedFeatured from "../src/data/curatedFeatured.json" with { type: "json" };
+import { isStaffingAgency, shouldExcludeAdzunaEmployer } from "./adzuna-filters.mjs";
 
 const LEGAL_SUFFIXES =
   /\b(s\.?\s*a\.?\s*de\s*c\.?\s*v\.?|s\.?\s*de\s*r\.?\s*l\.?|s\.?\s*a\.?\s*p\.?\s*i\.?|sapi|sa de cv|sa|sc)\b/gi;
@@ -82,6 +83,8 @@ function applyDenue(map, records) {
 
 function applyAdzuna(map, records) {
   for (const a of records) {
+    if (shouldExcludeAdzunaEmployer(a.name)) continue;
+
     const b = ensureBucket(map, a.name);
     if (!b.sources.has("curated")) {
       b.name = a.name;
@@ -100,7 +103,7 @@ function applyAdzuna(map, records) {
       b.lastPostedAt = a.lastPostedAt;
     }
     b.hiringUrl = a.hiringUrl;
-    b.isAgency = a.isAgency || b.isAgency;
+    b.isAgency = a.isAgency || b.isAgency || isStaffingAgency(a.name);
     b.sources.add("adzuna");
   }
 }

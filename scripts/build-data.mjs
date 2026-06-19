@@ -11,6 +11,7 @@ import { spawnSync } from "node:child_process";
 import { gunzipSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { parse } from "csv-parse/sync";
+import { isStaffingAgency, shouldExcludeAdzunaEmployer } from "./adzuna-filters.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -64,17 +65,6 @@ const EXCLUDE_CODE_PREFIXES = ["46", "47", "72", "81", "812"];
 /** Micro-businesses misclassified under manufacturing codes in DENUE. */
 const EXCLUDE_ACTIVITY =
   /tortilla|panificaci[oó]n tradicional|abarrote|llanta|neum[aá]t|vulcaniz|revitalizaci[oó]n de llantas|peluquer|belleza|restaurante|ferreter[ií]a|miscel[aá]nea|lavander|tintorer|joyer[ií]a de metales|taquer|fonda|minisuper|dulces y materias primas|cerveza|plantas y flores|art[ií]culos usados|embutidos y otras conservas|helados y paletas|botanas|preparaci[oó]n de alimentos frescos|comercio al por menor/i;
-
-const AGENCY_TERMS = [
-  "reclutamiento",
-  "capital humano",
-  "staffing",
-  "manpower",
-  "page",
-  "adecco",
-  "kelly",
-  "randstad",
-];
 
 function writeJson(file, data) {
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
@@ -266,11 +256,6 @@ function isHermosilloArea(location) {
   );
 }
 
-function isAgency(name) {
-  const lower = name.toLowerCase();
-  return AGENCY_TERMS.some((t) => lower.includes(t));
-}
-
 function adzunaHiringUrl(companyName) {
   const q = encodeURIComponent(companyName);
   return `https://www.adzuna.com.mx/search?q=${q}&w=Hermosillo%2C%20Sonora`;
@@ -346,7 +331,7 @@ async function fetchAdzuna() {
             if (!isHermosilloArea(job.location)) continue;
 
             const displayName = job.company?.display_name?.trim();
-            if (!displayName) continue;
+            if (!displayName || shouldExcludeAdzunaEmployer(displayName)) continue;
 
             const key = normalizeName(displayName);
             const created = job.created ?? "";
@@ -363,7 +348,7 @@ async function fetchAdzuna() {
                 lat: lat != null ? Number(lat) : null,
                 lng: lng != null ? Number(lng) : null,
                 hiringUrl: adzunaHiringUrl(displayName),
-                isAgency: isAgency(displayName),
+                isAgency: isStaffingAgency(displayName),
               };
               byCompany.set(key, entry);
             }
@@ -472,7 +457,7 @@ async function fetchOutOfBoundCities() {
 
         for (const job of data.results ?? []) {
           const displayName = job.company?.display_name?.trim();
-          if (!displayName) continue;
+          if (!displayName || shouldExcludeAdzunaEmployer(displayName)) continue;
 
           const key = normalizeName(displayName);
           let lat = job.location?.latitude ?? job.latitude ?? null;
@@ -502,7 +487,7 @@ async function fetchOutOfBoundCities() {
               openRoles: 0,
               lastPostedAt: "",
               hiringUrl: cityHiringUrl(displayName, city.where),
-              isAgency: isAgency(displayName),
+              isAgency: isStaffingAgency(displayName),
               source: ["adzuna"],
             };
             byCompany.set(key, entry);

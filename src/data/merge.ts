@@ -1,3 +1,4 @@
+import { isStaffingAgency, shouldExcludeAdzunaEmployer } from "./adzunaFilters";
 import { CURATED_FEATURED } from "./curatedFeatured";
 import type {
   AdzunaRecord,
@@ -111,6 +112,8 @@ function applyDenue(map: Map<string, MergeBucket>, records: DenueRecord[]): void
 
 function applyAdzuna(map: Map<string, MergeBucket>, records: AdzunaRecord[]): void {
   for (const a of records) {
+    if (shouldExcludeAdzunaEmployer(a.name)) continue;
+
     const b = ensureBucket(map, a.name);
     if (!b.sources.has("curated")) {
       b.name = a.name;
@@ -129,7 +132,7 @@ function applyAdzuna(map: Map<string, MergeBucket>, records: AdzunaRecord[]): vo
       b.lastPostedAt = a.lastPostedAt;
     }
     b.hiringUrl = a.hiringUrl;
-    b.isAgency = a.isAgency || b.isAgency;
+    b.isAgency = a.isAgency || b.isAgency || isStaffingAgency(a.name);
     b.sources.add("adzuna");
   }
 }

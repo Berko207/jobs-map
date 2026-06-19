@@ -27,7 +27,7 @@ import {
   persistCompanyStates,
   syncStateToBackend,
 } from "@/lib/storage";
-import { jobLinks } from "@/lib/jobLinks";
+import { googleMapsUrl, jobLinks } from "@/lib/jobLinks";
 import SectorFilter from "./SectorFilter";
 import Sidebar, { ListView, SortOption } from "./Sidebar";
 
@@ -181,9 +181,19 @@ function MapPopupContent({
           Computrabajo
         </a>
         <a
+          href={googleMapsUrl(company.lat, company.lng, company.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Open pin in Google Maps"
+          className="rounded border border-red-200 px-2 py-0.5 text-[10px] font-medium text-red-700"
+        >
+          Maps
+        </a>
+        <a
           href={links.google}
           target="_blank"
           rel="noopener noreferrer"
+          title="Search jobs on Google"
           className="rounded border border-zinc-200 px-2 py-0.5 text-[10px] font-medium"
         >
           Google

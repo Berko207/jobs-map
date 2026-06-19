@@ -1,7 +1,7 @@
 "use client";
 
 import { CATEGORY_COLORS, Company, isHiring } from "@/data/companies";
-import { jobLinks } from "@/lib/jobLinks";
+import { googleMapsUrl, jobLinks } from "@/lib/jobLinks";
 
 interface CompanyCardProps {
   company: Company;
@@ -112,9 +112,19 @@ export default function CompanyCard({
           Computrabajo
         </a>
         <a
+          href={googleMapsUrl(company.lat, company.lng, company.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Open pin in Google Maps"
+          className="rounded border border-red-200 px-2 py-0.5 text-[10px] font-medium text-red-700 hover:bg-red-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500"
+        >
+          Maps
+        </a>
+        <a
           href={links.google}
           target="_blank"
           rel="noopener noreferrer"
+          title="Search jobs on Google"
           className="rounded border border-zinc-200 px-2 py-0.5 text-[10px] font-medium text-zinc-700 hover:bg-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500"
         >
           Google

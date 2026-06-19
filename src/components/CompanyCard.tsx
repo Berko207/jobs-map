@@ -24,7 +24,7 @@ export default function CompanyCard({
   isSelected,
   compact,
 }: CompanyCardProps) {
-  const links = jobLinks(company.name);
+  const links = jobLinks(company.name, company.city ?? "Hermosillo");
   const color = CATEGORY_COLORS[company.category];
   const hiring = isHiring(company);
 

@@ -4,6 +4,7 @@ export type {
   CompanySource,
   AdzunaRecord,
   DenueRecord,
+  CityConfig,
 } from "./types";
 
 export {
@@ -11,6 +12,9 @@ export {
   ALL_CATEGORIES,
   HERMOSILLO_CENTER,
   DEFAULT_ZOOM,
+  HOME_CITY,
+  CITIES,
+  cityConfig,
 } from "./types";
 
 export { normalizeName, mergeCompanies } from "./merge";

@@ -51,17 +51,17 @@ export const ALL_CATEGORIES: Category[] = Object.keys(
 export const HERMOSILLO_CENTER: [number, number] = [29.083, -110.96];
 export const DEFAULT_ZOOM = 12;
 
-/** Raw record shape written by scripts/scan-denue.mjs */
+/** Raw record shape written by scripts/build-denue.mjs */
 export interface DenueRecord {
-  id: string;
   name: string;
+  category: Category;
   activity: string;
-  sizeStrata?: number;
   size?: string;
   website?: string;
+  phone?: string;
   lat: number;
   lng: number;
-  category: Category;
+  source: "denue";
   zone?: string;
 }
 

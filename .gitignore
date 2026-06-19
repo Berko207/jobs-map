@@ -36,6 +36,9 @@ yarn-error.log*
 .env.*.local
 !.env.example
 
+# raw DENUE CSV (large; committed gzip is data/denue_sonora.csv.gz)
+/data/denue_sonora.csv
+
 # vercel
 .vercel
 

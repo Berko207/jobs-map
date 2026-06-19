@@ -2,8 +2,6 @@
 
 A sector-filtered employer finder for Hermosillo, Sonora. Plot local companies on a free CARTO/OpenStreetMap basemap, filter by industry (call centers, software, manufacturing, robotics, etc.), and jump to job-board searches for each employer.
 
-**No API keys required.** Runs entirely from committed seed data with optional Supabase for cloud persistence.
-
 ## Quick start
 
 ```bash
@@ -13,13 +11,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+Local dev uses the last committed `companies.merged.json`. Run `npm run build` to regenerate from the DENUE CSV and Adzuna (requires env vars for live hiring data).
+
 ## Deploy to Vercel
 
-1. Push this repo to GitHub.
-2. Import the project at [vercel.com/new](https://vercel.com/new).
-3. Deploy — no environment variables needed for the default experience.
+1. Push this repo to GitHub (includes `data/denue_sonora.csv.gz`).
+2. Import at [vercel.com/new](https://vercel.com/new).
+3. **Build Command:** `npm run build` (default — do not override).
+4. Optional env vars (Project Settings → Environment Variables):
+   - `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` — live "Hiring now" data from [developer.adzuna.com](https://developer.adzuna.com/). If missing or the API fails, the build continues with DENUE + curated only.
 
-Map tiles use **CARTO Voyager** (free). You must keep attribution visible: *© OpenStreetMap contributors © CARTO*.
+Every deploy runs `scripts/build-data.mjs` before `next build`: parses the committed DENUE gzip, fetches Adzuna (non-fatal), merges via `merge.ts` logic, writes `src/data/companies.merged.json`.
+
+Map tiles use **CARTO Voyager** (free). Keep attribution visible: *© OpenStreetMap contributors © CARTO*.
 
 ## Features
 
@@ -30,77 +34,42 @@ Map tiles use **CARTO Voyager** (free). You must keep attribution visible: *© O
 - **Hiring now** — filter employers with active Adzuna postings; open-role counts link to Adzuna searches.
 - **Save / Applied** — toggles persist in `localStorage` (default) or Supabase (optional).
 
-## Who's hiring scanners
+## Data pipeline (build-time)
 
-Employer data merges from three sources in `src/data/merge.ts`:
+Employer data merges from three sources:
 
-| Source | File | Script |
-|--------|------|--------|
-| Curated featured | `curatedFeatured.ts` | hand-edited |
-| DENUE (INEGI) | `companies.denue.json` | `npm run scan:denue` |
-| Adzuna jobs | `companies.adzuna.json` | `npm run scan:adzuna` |
+| Source | Input | Output |
+|--------|-------|--------|
+| Curated featured | `curatedFeatured.json` | hand-edited pins with ratings/notes |
+| DENUE (INEGI) | `data/denue_sonora.csv.gz` | Hermosillo establishments by SCIAN sector |
+| Adzuna jobs | Vercel env vars at build | active open-role counts |
 
-```bash
-# Optional — skips gracefully if keys are missing
-npm run scan        # DENUE only (alias for scan:denue)
-npm run scan:all    # denue → adzuna → geocode missing coords
+```
+data/denue_sonora.csv.gz  ─┐
+Vercel ADZUNA_* env vars  ─┼─► scripts/build-data.mjs ─► companies.merged.json ─► app
+curatedFeatured.json      ─┘
 ```
 
-### DENUE scanner
+### Updating DENUE data
 
-1. Register for a free token at [INEGI DENUE API](https://www.inegi.org.mx/servicios/api_denue.html).
-2. Add to `.env.local`:
+1. Download the Sonora CSV zip from [INEGI DENUE](https://www.inegi.org.mx/app/descarga/default.html?t=denue) (entidad 26).
+2. Gzip the CSV inside `conjunto_de_datos/`:
 
-   ```
-   DENUE_TOKEN=your-token
-   ```
-
-3. Run `npm run scan:denue` — writes `src/data/companies.denue.json`.
-
-The scanner searches Hermosillo metro (~14 km) by sector keywords and maps INEGI size strata to employer size buckets.
-
-### Adzuna scanner
-
-1. Sign up at [developer.adzuna.com](https://developer.adzuna.com/) and create an app.
-2. Add to `.env.local`:
-
-   ```
-   ADZUNA_APP_ID=your-app-id
-   ADZUNA_APP_KEY=your-app-key
+   ```bash
+   unzip -p denue_26_csv.zip conjunto_de_datos/denue_inegi_26_.csv | gzip -9 > data/denue_sonora.csv.gz
    ```
 
-3. Run `npm run scan:adzuna` — writes `src/data/companies.adzuna.json`.
-
-Staffing agencies (Adecco, Manpower, etc.) are flagged `isAgency: true` and down-ranked in the list.
-
-### Geocoding fallback
-
-Employers without coordinates are geocoded via Nominatim (≤1 req/sec) into `nominatim-cache.json`:
-
-```bash
-npm run geocode:missing
-```
+3. Commit `data/denue_sonora.csv.gz` (the raw `.csv` and `.zip` stay out of git).
 
 ## Adding employers
 
-Edit `src/data/curatedFeatured.ts` for hand-picked pins:
-
-### Geocoding with Nominatim (free)
-
-To get coordinates for a new address:
-
-```bash
-curl -A "HermosilloJobsMap/1.0 (your@email.com)" \
-  "https://nominatim.openstreetmap.org/search?q=YOUR+ADDRESS+Hermosillo+Sonora&format=json&limit=1"
-```
-
-**Rules:** max 1 request/second, include a descriptive `User-Agent` with contact info, and cache results in the seed file (don't geocode at runtime).
+Edit `src/data/curatedFeatured.json` for hand-picked pins (also exported via `curatedFeatured.ts`).
 
 ### Extending sectors
 
-1. Add the new label to the `Category` union type.
+1. Add the new label to the `Category` union type in `types.ts`.
 2. Add a hex color to `CATEGORY_COLORS`.
-3. The sector filter, map markers, and legend pick it up automatically.
+3. Update SCIAN / keyword rules in `scripts/build-data.mjs` if DENUE should map to the new sector.
 
 ## Optional Supabase persistence
 
@@ -110,14 +79,7 @@ To sync across devices:
 
 1. Create a free [Supabase](https://supabase.com) project.
 2. Run `supabase/schema.sql` in the SQL editor.
-3. Copy `.env.example` → `.env.local` and fill in:
-
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-   ```
-
-4. Restart the dev server.
+3. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Vercel env vars.
 
 If env vars are missing, the app silently falls back to `localStorage`.
 
@@ -133,9 +95,10 @@ If env vars are missing, the app silently falls back to `localStorage`.
 src/
   app/           # layout, page (dynamic JobsMap import)
   components/    # JobsMap, SectorFilter, Sidebar, CompanyCard
-  data/          # merge.ts, curatedFeatured, scanner JSON, types
+  data/          # merge.ts, curatedFeatured, companies.merged.json, types
   lib/           # jobLinks, storage
-scripts/         # scan-adzuna, scan-denue, geocode-missing
+scripts/         # build-data.mjs, merge-companies.mjs, write-merged.mjs
+data/            # denue_sonora.csv.gz (committed gzip of INEGI Sonora export)
 supabase/        # optional schema
 ```
 

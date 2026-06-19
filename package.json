@@ -4,17 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node scripts/build-data.mjs && next build",
     "start": "next start",
-    "lint": "eslint",
-    "scan": "node scripts/scan-denue.mjs",
-    "scan:denue": "node scripts/scan-denue.mjs",
-    "scan:adzuna": "node scripts/scan-adzuna.mjs",
-    "geocode:missing": "node scripts/geocode-missing.mjs",
-    "scan:all": "npm run scan:denue && npm run scan:adzuna && npm run geocode:missing"
+    "lint": "eslint"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
+    "csv-parse": "^7.0.0",
     "leaflet": "^1.9.4",
     "next": "16.2.9",
     "react": "19.2.4",

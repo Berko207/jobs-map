@@ -13,10 +13,13 @@ export {
   DEFAULT_ZOOM,
 } from "./types";
 
-export { normalizeName, mergeCompanies, COMPANIES } from "./merge";
-import { COMPANIES as _COMPANIES } from "./merge";
+export { normalizeName, mergeCompanies } from "./merge";
+import type { Company } from "./types";
+import mergedData from "./companies.merged.json";
 
-export const ZONES = [...new Set(_COMPANIES.map((c) => c.zone))].sort();
+export const COMPANIES = mergedData as Company[];
+
+export const ZONES = [...new Set(COMPANIES.map((c) => c.zone))].sort();
 
 const SIZE_ORDER: Record<string, number> = {
   "1–10": 1,

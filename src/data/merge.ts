@@ -1,7 +1,4 @@
 import { CURATED_FEATURED } from "./curatedFeatured";
-import denueData from "./companies.denue.json";
-import adzunaData from "./companies.adzuna.json";
-import nominatimCache from "./nominatim-cache.json";
 import type {
   AdzunaRecord,
   Category,
@@ -151,13 +148,18 @@ function applyNominatimCache(
   }
 }
 
-export function mergeCompanies(): Company[] {
+/** Merge curated featured + DENUE + Adzuna (+ optional Nominatim cache). */
+export function mergeCompanies(
+  denueData: DenueRecord[],
+  adzunaData: AdzunaRecord[],
+  cache: NominatimCache = {},
+): Company[] {
   const map = new Map<string, MergeBucket>();
 
   applyCurated(map);
-  applyDenue(map, denueData as DenueRecord[]);
-  applyAdzuna(map, adzunaData as AdzunaRecord[]);
-  applyNominatimCache(map, nominatimCache as NominatimCache);
+  applyDenue(map, denueData);
+  applyAdzuna(map, adzunaData);
+  applyNominatimCache(map, cache);
 
   const usedIds = new Set<string>();
   const companies: Company[] = [];
@@ -199,5 +201,3 @@ export function mergeCompanies(): Company[] {
     return a.name.localeCompare(b.name);
   });
 }
-
-export const COMPANIES = mergeCompanies();

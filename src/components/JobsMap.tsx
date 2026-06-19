@@ -93,7 +93,7 @@ function SelectedCompanyPopup({
   onToggleApplied: () => void;
 }) {
   return (
-    <Popup position={[company.lat, company.lng]} autoPan>
+    <Popup position={[company.lat, company.lng]}>
       <MapPopupContent
         company={company}
         saved={saved}
@@ -266,12 +266,14 @@ export default function JobsMap() {
 
   const selectCompany = useCallback((companyId: string, recenter: boolean) => {
     setSelectedCompanyId(companyId);
-    setOpenToken((t) => t + 1);
     if (recenter) {
+      setOpenToken((t) => t + 1);
       const company = COMPANIES.find((c) => c.id === companyId);
       if (company) {
         setFlyTarget({ lat: company.lat, lng: company.lng, token: Date.now() });
       }
+    } else {
+      setOpenToken(0);
     }
   }, []);
 
@@ -334,12 +336,12 @@ export default function JobsMap() {
     setSelectedCompanyId(null);
   }, []);
 
+  const activeCity = cityConfig(city);
+
   const selectedCompany = useMemo(
     () => COMPANIES.find((c) => c.id === selectedCompanyId) ?? null,
     [selectedCompanyId],
   );
-
-  const activeCity = cityConfig(city);
 
   if (!loaded) {
     return (
@@ -389,7 +391,7 @@ export default function JobsMap() {
             <TileLayer url={CARTO_TILE} attribution={CARTO_ATTRIBUTION} />
             <RecenterOnCity center={activeCity.center} zoom={activeCity.zoom} />
             <FlyToCompany target={flyTarget} />
-            {selectedCompany && (
+            {selectedCompany && openToken > 0 && (
               <SelectedCompanyPopup
                 key={openToken}
                 company={selectedCompany}
@@ -401,10 +403,14 @@ export default function JobsMap() {
                 }
               />
             )}
-            <MarkerClusterGroup chunkedLoading spiderfyOnMaxZoom={false}>
+            <MarkerClusterGroup chunkedLoading>
               {filteredCompanies.map((company) => {
                 const color = CATEGORY_COLORS[company.category];
                 const hiring = isHiring(company);
+                const state = companyStates[company.id] ?? {
+                  saved: false,
+                  applied: false,
+                };
                 const radius = sizeRadius(company.size, hiring);
                 return (
                   <Fragment key={company.id}>
@@ -435,7 +441,19 @@ export default function JobsMap() {
                       eventHandlers={{
                         click: () => selectCompany(company.id, false),
                       }}
-                    />
+                    >
+                      <Popup>
+                        <MapPopupContent
+                          company={company}
+                          saved={state.saved}
+                          applied={state.applied}
+                          onToggleSaved={() => updateState(company.id, "saved")}
+                          onToggleApplied={() =>
+                            updateState(company.id, "applied")
+                          }
+                        />
+                      </Popup>
+                    </CircleMarker>
                   </Fragment>
                 );
               })}

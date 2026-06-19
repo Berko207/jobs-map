@@ -204,5 +204,28 @@
     "size": "500+",
     "note": "North campus; innovation & prototyping habitat.",
     "featured": true
+  },
+  {
+    "id": "laboratorios-pisa",
+    "name": "Laboratorios PISA",
+    "category": "Pharmaceutical",
+    "zone": "Parque Industrial (Sur)",
+    "lat": 28.9953327,
+    "lng": -110.9085082,
+    "website": "https://www.pisa.com.mx",
+    "size": "500+",
+    "note": "Major pharma manufacturer; injectables, hospital products, distribution.",
+    "featured": true
+  },
+  {
+    "id": "animal-nutri-mexico",
+    "name": "Animal Nutri Mexico",
+    "category": "Veterinary / Animal Health",
+    "zone": "Parque Industrial (Sur)",
+    "lat": 29.0262596,
+    "lng": -110.9118207,
+    "size": "51–200",
+    "note": "Animal nutrition manufacturing; livestock & pet feed.",
+    "featured": true
   }
 ]

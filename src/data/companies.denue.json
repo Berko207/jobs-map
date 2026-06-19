@@ -101,7 +101,7 @@
   },
   {
     "name": "ABEDIJENA BIENESTAR",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Fabricación de preparaciones farmacéuticas",
     "size": "1–10",
     "website": "WWW.ABENDAJENABIENESTAR.COM",
@@ -434,6 +434,16 @@
     "source": "denue"
   },
   {
+    "name": "AFRICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623656099",
+    "lat": 29.08191283,
+    "lng": -110.97516828,
+    "source": "denue"
+  },
+  {
     "name": "AFTIVATE FISIOTERAPIA",
     "category": "Medical / Biomedical",
     "activity": "Consultorios del sector privado de audiología y de terapia ocupacional, física y del lenguaje",
@@ -484,12 +494,22 @@
   },
   {
     "name": "AGRIBRANDS PURINA MEXICO PLANTA HERMOSILLO",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "website": "WWW.NUTRIMENTOSPURINA.COM",
     "lat": 29.08954346,
     "lng": -111.04699205,
+    "source": "denue"
+  },
+  {
+    "name": "AGRIGA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "website": "WWW.AGRIGA.COM.MX",
+    "lat": 29.09731049,
+    "lng": -110.92821895,
     "source": "denue"
   },
   {
@@ -513,12 +533,99 @@
     "source": "denue"
   },
   {
+    "name": "AGROPECUARIA DASA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "lat": 29.09672671,
+    "lng": -110.96295267,
+    "source": "denue"
+  },
+  {
+    "name": "AGROPECUARIA EL ROY",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622569072",
+    "lat": 29.16999411,
+    "lng": -110.90087102,
+    "source": "denue"
+  },
+  {
+    "name": "AGROPECUARIA HUASABAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622880387",
+    "lat": 29.05476243,
+    "lng": -110.93010741,
+    "source": "denue"
+  },
+  {
+    "name": "AGROPECUARIA LAS CRUCES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "lat": 29.03207398,
+    "lng": -110.9384996,
+    "source": "denue"
+  },
+  {
     "name": "AGROPECUARIA MARTYA",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "lat": 29.26202315,
     "lng": -110.88703196,
+    "source": "denue"
+  },
+  {
+    "name": "AGROVETERINARIA DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "website": "WWW.AGROVETERINARIA.COM.MX",
+    "lat": 29.0870277,
+    "lng": -111.0577494,
+    "source": "denue"
+  },
+  {
+    "name": "AGROVETERINARIA DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "website": "WWW.AGROVETERINARIA.COM.MX",
+    "lat": 29.1709345,
+    "lng": -110.89959747,
+    "source": "denue"
+  },
+  {
+    "name": "AGROVETERINARIA DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "51–200",
+    "website": "WWW.AGROVETERINARIA.COM.MX",
+    "lat": 29.08141934,
+    "lng": -110.9450665,
+    "source": "denue"
+  },
+  {
+    "name": "AGROVETERINARIA DE SONORA CENTRO DE DISTRIBUCION",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "lat": 29.03011805,
+    "lng": -110.91264855,
+    "source": "denue"
+  },
+  {
+    "name": "AGROVETERINARIA EL GALLO LOCO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621434692",
+    "lat": 29.14680129,
+    "lng": -110.99661432,
     "source": "denue"
   },
   {
@@ -2115,6 +2222,15 @@
     "source": "denue"
   },
   {
+    "name": "ALI VET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.11943122,
+    "lng": -110.9602489,
+    "source": "denue"
+  },
+  {
     "name": "ALIGN DENTISTA",
     "category": "Medical / Biomedical",
     "activity": "Consultorios dentales del sector privado",
@@ -2122,6 +2238,26 @@
     "phone": "6622883518",
     "lat": 29.13414175,
     "lng": -110.9529659,
+    "source": "denue"
+  },
+  {
+    "name": "ALIMENTOS PARA ANIMALES EL PALENQUE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621691133",
+    "lat": 29.03091717,
+    "lng": -110.95250714,
+    "source": "denue"
+  },
+  {
+    "name": "ALIMENTOS PARA GALLOS LA GUADALUPANA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622828814",
+    "lat": 29.13827771,
+    "lng": -111.00711731,
     "source": "denue"
   },
   {
@@ -2777,12 +2913,42 @@
     "source": "denue"
   },
   {
+    "name": "ANIMAL HOME",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "website": "ANIMALHOMEVETERINARIA.COM",
+    "lat": 29.07334437,
+    "lng": -110.97258185,
+    "source": "denue"
+  },
+  {
+    "name": "ANIMAL KIT VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622000921",
+    "lat": 29.08850617,
+    "lng": -110.99221747,
+    "source": "denue"
+  },
+  {
     "name": "ANIMAL NUTRI MEXICO HERMOSILLO",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "lat": 29.02625956,
     "lng": -110.91182069,
+    "source": "denue"
+  },
+  {
+    "name": "ANIMAL PET VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623161640",
+    "lat": 29.09259926,
+    "lng": -111.02244043,
     "source": "denue"
   },
   {
@@ -2823,6 +2989,17 @@
     "phone": "6622565501",
     "lat": 29.08549222,
     "lng": -110.95366361,
+    "source": "denue"
+  },
+  {
+    "name": "AQUA BIOMAR",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "website": "WWW.ACUABIOMAR.COM.MX",
+    "phone": "6621008030",
+    "lat": 29.09385112,
+    "lng": -110.96485713,
     "source": "denue"
   },
   {
@@ -3237,6 +3414,16 @@
     "source": "denue"
   },
   {
+    "name": "ATENCION VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621261277",
+    "lat": 29.09599939,
+    "lng": -110.95840827,
+    "source": "denue"
+  },
+  {
     "name": "ATENCION Y CUIDADO DEL PIE",
     "category": "Medical / Biomedical",
     "activity": "Otros consultorios del sector privado para el cuidado de la salud",
@@ -3563,7 +3750,7 @@
   },
   {
     "name": "AXIMILAB",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.AXIMILAB.COM",
@@ -3620,7 +3807,7 @@
   },
   {
     "name": "BACHOCO PA COSTA MAR",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "lat": 29.08175456,
@@ -3735,7 +3922,7 @@
   },
   {
     "name": "BC PROVEEDORA HOSPITALARIA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.TIENDAMEDICADEHERMOSILLO.COM.MX",
@@ -4310,7 +4497,7 @@
   },
   {
     "name": "BODEGA DE INT Y SERVICIOS INDA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "lat": 29.09211559,
@@ -4627,7 +4814,7 @@
   },
   {
     "name": "BORREGAS Y CHIVOS RAMIREZ",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "1–10",
     "phone": "6621243373",
@@ -5067,6 +5254,16 @@
     "source": "denue"
   },
   {
+    "name": "CANELOS CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622266020",
+    "lat": 29.04428688,
+    "lng": -110.99339971,
+    "source": "denue"
+  },
+  {
     "name": "CAPI CLINICA DE ATENCION PSICOLOGICA INTEGRAL",
     "category": "Medical / Biomedical",
     "activity": "Consultorios de psicología del sector privado",
@@ -5196,7 +5393,7 @@
   },
   {
     "name": "CARGIL",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "1–10",
     "lat": 29.02642805,
@@ -7791,7 +7988,7 @@
   },
   {
     "name": "CASA VALDIVIA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.CASAVALDIVIA.COM",
@@ -8029,6 +8226,16 @@
     "size": "1–10",
     "lat": 29.11038591,
     "lng": -110.99227618,
+    "source": "denue"
+  },
+  {
+    "name": "CENTRO DE ATENCION CANINA Y FELINA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector público",
+    "size": "11–50",
+    "phone": "6623612765",
+    "lat": 29.11109299,
+    "lng": -110.99026206,
     "source": "denue"
   },
   {
@@ -8314,6 +8521,16 @@
     "size": "11–50",
     "lat": 28.84937621,
     "lng": -111.5008607,
+    "source": "denue"
+  },
+  {
+    "name": "CENTRO DE SALUD ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624361008",
+    "lat": 29.10521297,
+    "lng": -110.97353421,
     "source": "denue"
   },
   {
@@ -8721,6 +8938,26 @@
     "source": "denue"
   },
   {
+    "name": "CENTRO VETERINARIO ANDRADE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623966216",
+    "lat": 29.141392,
+    "lng": -110.97872144,
+    "source": "denue"
+  },
+  {
+    "name": "CENTRO VETERINARIO HERMOSILLO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621390594",
+    "lat": 29.08211909,
+    "lng": -110.98421991,
+    "source": "denue"
+  },
+  {
     "name": "CERAMICAS DE CUERNAVACA",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de yeso y productos de yeso",
@@ -8799,7 +9036,7 @@
   },
   {
     "name": "CHAVEZ OXIGENO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6623715318",
@@ -8829,7 +9066,7 @@
   },
   {
     "name": "CHEMICAL PRO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6622228643",
@@ -8839,7 +9076,7 @@
   },
   {
     "name": "CHEMIE NRW PRODUCTOS QUIMICOS INDUSTRIALES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.CHEMIEMEXICANA.COM",
@@ -9372,7 +9609,7 @@
   },
   {
     "name": "CLARVI",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.CLARVI.COM",
@@ -9691,6 +9928,15 @@
     "phone": "6621222204",
     "lat": 29.11614464,
     "lng": -110.95981405,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA DE ESTERILZACION GSL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.11894661,
+    "lng": -110.99780805,
     "source": "denue"
   },
   {
@@ -11022,6 +11268,160 @@
     "source": "denue"
   },
   {
+    "name": "CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623257836",
+    "lat": 29.14720436,
+    "lng": -111.01523575,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.08766427,
+    "lng": -110.98905996,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6626184229",
+    "lat": 29.09115905,
+    "lng": -110.9599383,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA 28",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624537756",
+    "lat": 29.11572984,
+    "lng": -110.99059375,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA ANIMAL PET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.12323213,
+    "lng": -110.98401202,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA BIENESTAR ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "website": "CLINICAVIENESTARANIMAL.COM",
+    "lat": 29.0908525,
+    "lng": -110.95414839,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA CHECK UP PET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622294157",
+    "lat": 29.07461252,
+    "lng": -110.97437162,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA DR ICEDO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6625173881",
+    "lat": 29.11465077,
+    "lng": -110.97376151,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA FIGVAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622447700",
+    "lat": 29.08481715,
+    "lng": -110.99746951,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA HUELLITAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.06231102,
+    "lng": -110.98550689,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA MON AMI",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.0721325,
+    "lng": -110.97364923,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA NUEVA ERA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.12228196,
+    "lng": -111.02945889,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA ODIN",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622764099",
+    "lat": 29.11507368,
+    "lng": -110.95953896,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA SAN ANTONIO ABAD",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621272984",
+    "lat": 29.0094862,
+    "lng": -110.92904706,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA VETSON",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623458491",
+    "lat": 29.11573188,
+    "lng": -110.98809062,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICA VETERINARIA VIDA ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.05491064,
+    "lng": -110.95512543,
+    "source": "denue"
+  },
+  {
     "name": "CLÍNICAS DE CONSULTORIOS MÉDICOS DEL SECTOR PRIVADO",
     "category": "Medical / Biomedical",
     "activity": "Clínicas de consultorios médicos del sector privado",
@@ -11029,6 +11429,16 @@
     "phone": "6622137034",
     "lat": 29.07571763,
     "lng": -110.96745644,
+    "source": "denue"
+  },
+  {
+    "name": "CLINICAT VETERINARIA DRA. WENDY",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622571183",
+    "lat": 29.09615911,
+    "lng": -110.99254935,
     "source": "denue"
   },
   {
@@ -11218,6 +11628,16 @@
     "source": "denue"
   },
   {
+    "name": "COCO BONGO PETS VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623109673",
+    "lat": 29.1434124,
+    "lng": -111.01107993,
+    "source": "denue"
+  },
+  {
     "name": "COCOS TECOMAN",
     "category": "Manufacturing / Automotive",
     "activity": "Elaboración de otros alimentos",
@@ -11229,7 +11649,7 @@
   },
   {
     "name": "COHETERIA SANDOVAL",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "phone": "6622189705",
@@ -11336,6 +11756,24 @@
     "source": "denue"
   },
   {
+    "name": "COMERCIAL RODA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.10207766,
+    "lng": -110.95965438,
+    "source": "denue"
+  },
+  {
+    "name": "COMERCIALIZACION DE MATERIA PRIMA PARA CONSUMO ANIMAL PROGRA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "lat": 29.09430065,
+    "lng": -111.01868246,
+    "source": "denue"
+  },
+  {
     "name": "COMERCIALIZADORA BALVAC DEL NORTE",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de anuncios y señalamientos",
@@ -11343,6 +11781,16 @@
     "phone": "6622197865",
     "lat": 29.11389921,
     "lng": -110.99943683,
+    "source": "denue"
+  },
+  {
+    "name": "COMERCIALIZADORA DE PRODUCTOS PARA CONSUMO ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622800531",
+    "lat": 29.1178751,
+    "lng": -110.89927422,
     "source": "denue"
   },
   {
@@ -11377,12 +11825,22 @@
   },
   {
     "name": "COMERMEX XXI",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.COMERMEDICS.COM",
     "lat": 29.08540283,
     "lng": -110.99136188,
+    "source": "denue"
+  },
+  {
+    "name": "COMITE DE CAMPAÑA PARA LA ERRADICACION DE LA TUBERCULOSIS BONINA Y BRUSELOSIS EN EL ESTADO DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para la ganadería prestados por el sector público",
+    "size": "1–10",
+    "phone": "6622418421",
+    "lat": 29.03847321,
+    "lng": -110.93512774,
     "source": "denue"
   },
   {
@@ -11427,8 +11885,18 @@
     "source": "denue"
   },
   {
+    "name": "COMPRA Y VENTA DE ALFALFA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621199731",
+    "lat": 29.03419065,
+    "lng": -111.00476148,
+    "source": "denue"
+  },
+  {
     "name": "COMPRA Y VENTA DE TANQUES DE GAS DE OXIGENO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6622875244",
@@ -14853,6 +15321,16 @@
     "source": "denue"
   },
   {
+    "name": "CONSULTORIO DOC PAYAN",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621338148",
+    "lat": 29.10983507,
+    "lng": -111.00076171,
+    "source": "denue"
+  },
+  {
     "name": "CONSULTORIO DOCTOR JOSE ROBERTO VICTORIA NANDAYAPA",
     "category": "Medical / Biomedical",
     "activity": "Consultorios de medicina especializada del sector privado",
@@ -17691,6 +18169,15 @@
     "source": "denue"
   },
   {
+    "name": "COREPA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.11353882,
+    "lng": -111.03673962,
+    "source": "denue"
+  },
+  {
     "name": "CORESEI",
     "category": "Medical / Biomedical",
     "activity": "Consultorios dentales del sector privado",
@@ -18425,7 +18912,7 @@
   },
   {
     "name": "COVAR",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.COVAR.COM.MX",
@@ -18435,7 +18922,7 @@
   },
   {
     "name": "COVORO MINING SOLUTIONS MEXICANA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.DRASLOVKA.COM",
@@ -18660,6 +19147,16 @@
     "source": "denue"
   },
   {
+    "name": "CUADRA EL HUISACHE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para la ganadería prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622279643",
+    "lat": 29.19083872,
+    "lng": -110.88206025,
+    "source": "denue"
+  },
+  {
     "name": "CUADROPOLIS",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de espumas y productos de poliestireno",
@@ -18712,7 +19209,7 @@
   },
   {
     "name": "CUMELAB",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "phone": "6621670417",
@@ -18887,7 +19384,7 @@
   },
   {
     "name": "DAYAR DISTRIBUCIONES MEDICAS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "phone": "6622102652",
@@ -18975,6 +19472,16 @@
     "source": "denue"
   },
   {
+    "name": "DE MILAN VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6629481809",
+    "lat": 29.09229983,
+    "lng": -110.94841726,
+    "source": "denue"
+  },
+  {
     "name": "DE OCHOA MUEBLES CARPINTERIA",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de muebles, excepto cocinas integrales, muebles modulares de baño y muebles de oficina y estantería",
@@ -19015,7 +19522,7 @@
   },
   {
     "name": "DEL RIO SEGURIDAD Y PRODUCTOS QUIMICOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6622010097",
@@ -19852,7 +20359,7 @@
   },
   {
     "name": "DEVENISH",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "phone": "6629346061",
@@ -19980,6 +20487,16 @@
     "source": "denue"
   },
   {
+    "name": "DIFARVET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "website": "WWW.DIFARVET.COM",
+    "lat": 29.08822105,
+    "lng": -110.9563395,
+    "source": "denue"
+  },
+  {
     "name": "DILA DESARROLLO INTEGRAL DE LENGUAJE",
     "category": "Medical / Biomedical",
     "activity": "Consultorios de psicología del sector privado",
@@ -20007,6 +20524,26 @@
     "phone": "6621514496",
     "lat": 29.10982029,
     "lng": -111.0119891,
+    "source": "denue"
+  },
+  {
+    "name": "DINAPCE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6624765579",
+    "lat": 29.09894316,
+    "lng": -110.9253182,
+    "source": "denue"
+  },
+  {
+    "name": "DINO VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623741897",
+    "lat": 29.01414856,
+    "lng": -110.94334248,
     "source": "denue"
   },
   {
@@ -20148,7 +20685,7 @@
   },
   {
     "name": "DISPOSITIVOS MEDICOS Y CATETERES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.DIMEDICA.COM.MX",
@@ -20159,7 +20696,7 @@
   },
   {
     "name": "DISTLAB",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "website": "WWW.DISTLAB.COM.MX",
@@ -20188,8 +20725,18 @@
     "source": "denue"
   },
   {
+    "name": "DISTRIBUIDORA CHINOIN",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6623114236",
+    "lat": 29.10243372,
+    "lng": -110.9898912,
+    "source": "denue"
+  },
+  {
     "name": "DISTRIBUIDORA DE MEDICAMENTO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "lat": 29.11684224,
@@ -20198,7 +20745,7 @@
   },
   {
     "name": "DISTRIBUIDORA FARMACIA ALIVIO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "phone": "6623003199",
@@ -20208,11 +20755,21 @@
   },
   {
     "name": "DISTRIBUIDORA FARMAT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "lat": 29.11449603,
     "lng": -110.97497436,
+    "source": "denue"
+  },
+  {
+    "name": "DISTRIBUIDORA VETERINARIA EL VAQUERO DE SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6623172960",
+    "lat": 29.02544903,
+    "lng": -110.95164648,
     "source": "denue"
   },
   {
@@ -20242,6 +20799,16 @@
     "website": "WWW.DISTRIBUIDORAZR.COM",
     "lat": 29.03016069,
     "lng": -110.91054581,
+    "source": "denue"
+  },
+  {
+    "name": "DIVALCO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622250931",
+    "lat": 29.10474664,
+    "lng": -110.97244286,
     "source": "denue"
   },
   {
@@ -20279,6 +20846,15 @@
     "size": "1–10",
     "lat": 29.11513569,
     "lng": -110.94983749,
+    "source": "denue"
+  },
+  {
+    "name": "DOC-VET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.06069195,
+    "lng": -110.95617206,
     "source": "denue"
   },
   {
@@ -20395,6 +20971,16 @@
     "phone": "6621373936",
     "lat": 29.17881663,
     "lng": -110.88459102,
+    "source": "denue"
+  },
+  {
+    "name": "DOGCATVET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621065667",
+    "lat": 29.10962279,
+    "lng": -110.97017504,
     "source": "denue"
   },
   {
@@ -22166,6 +22752,16 @@
     "source": "denue"
   },
   {
+    "name": "DWHOOPI VETERINARIA Y SPA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622964322",
+    "lat": 29.1177879,
+    "lng": -111.00569435,
+    "source": "denue"
+  },
+  {
     "name": "DYD",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de telas angostas de tejido de trama y pasamanería",
@@ -22215,7 +22811,7 @@
   },
   {
     "name": "ECOCAN CROQUETAS",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "1–10",
     "phone": "6621322538",
@@ -23017,7 +23613,7 @@
   },
   {
     "name": "ENAEX MEXICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.ENAEX.COM",
@@ -23252,7 +23848,7 @@
   },
   {
     "name": "EQUILIBRIO FARMACEUTICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.EQUILIBRIOFARMACEUTICO.COM.MX",
@@ -23302,7 +23898,7 @@
   },
   {
     "name": "EQUIPOS Y EXPLOSIVOS DEL NORESTE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "EYENESA.COM",
@@ -23540,6 +24136,16 @@
     "source": "denue"
   },
   {
+    "name": "ESTETICA CANINA PATITAS CARTAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623541572",
+    "lat": 29.00198857,
+    "lng": -110.91697214,
+    "source": "denue"
+  },
+  {
     "name": "ESTETICA DE LOS PIES SALOME",
     "category": "Medical / Biomedical",
     "activity": "Otros consultorios del sector privado para el cuidado de la salud",
@@ -23696,7 +24302,7 @@
   },
   {
     "name": "EXPLONITRATOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.EXPLONITRATOS.COM.MX",
@@ -23707,7 +24313,7 @@
   },
   {
     "name": "EXPLOSIVOS DEL PITIC",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "lat": 29.11145698,
@@ -23716,7 +24322,7 @@
   },
   {
     "name": "EXPLOSIVOS DEL PITIC",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "phone": "8713537604",
@@ -24393,7 +24999,7 @@
   },
   {
     "name": "FARMACEUTICA ROMERO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "phone": "6623561403",
@@ -24403,7 +25009,7 @@
   },
   {
     "name": "FARMACIA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "phone": "6624091483",
@@ -24412,8 +25018,18 @@
     "source": "denue"
   },
   {
+    "name": "FARMACIA AGROPECUARIA EL VAQUERO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6624477110",
+    "lat": 29.11193906,
+    "lng": -110.97552069,
+    "source": "denue"
+  },
+  {
     "name": "FARMACIA DARA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "lat": 29.11035238,
@@ -24459,7 +25075,7 @@
   },
   {
     "name": "FARMACIA MARGARITA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Fabricación de preparaciones farmacéuticas",
     "size": "1–10",
     "lat": 29.07774956,
@@ -24483,6 +25099,25 @@
     "size": "1–10",
     "lat": 29.02292387,
     "lng": -110.94319236,
+    "source": "denue"
+  },
+  {
+    "name": "FARMACIA Y CLINICA VETERINARIA DEL CAMPO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622410206",
+    "lat": 28.82662347,
+    "lng": -111.94177002,
+    "source": "denue"
+  },
+  {
+    "name": "FARMACIA Y CLINICA VETERINARIA EL LLANO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.09476444,
+    "lng": -111.0127226,
     "source": "denue"
   },
   {
@@ -24574,7 +25209,7 @@
   },
   {
     "name": "FARMACOS NACIONALES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "website": "WWW.FANASA.COM",
@@ -24584,7 +25219,7 @@
   },
   {
     "name": "FARMAMIGO HERMOSILLO F283",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.FARMAMIGO.COM",
@@ -24739,6 +25374,27 @@
     "phone": "6622334662",
     "lat": 28.82236639,
     "lng": -111.94216089,
+    "source": "denue"
+  },
+  {
+    "name": "FIGVAL VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "website": "WWW.VETERINARIAFIGVET.COM",
+    "phone": "6622100909",
+    "lat": 29.09835504,
+    "lng": -110.9592451,
+    "source": "denue"
+  },
+  {
+    "name": "FIGVET VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622447700",
+    "lat": 29.08171795,
+    "lng": -111.02011061,
     "source": "denue"
   },
   {
@@ -24946,6 +25602,55 @@
     "phone": "6623701499",
     "lat": 29.09923726,
     "lng": -110.98069644,
+    "source": "denue"
+  },
+  {
+    "name": "FORRAJERA SSN JUAN",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.03396455,
+    "lng": -111.00460168,
+    "source": "denue"
+  },
+  {
+    "name": "FORRAJES DE LA GRANJA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621042025",
+    "lat": 29.04457272,
+    "lng": -110.99082638,
+    "source": "denue"
+  },
+  {
+    "name": "FORRAJES EL BARRIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6624167802",
+    "lat": 29.03118845,
+    "lng": -111.00642546,
+    "source": "denue"
+  },
+  {
+    "name": "FORRAJES EL PAPALOTE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621670397",
+    "lat": 29.16832536,
+    "lng": -110.90312654,
+    "source": "denue"
+  },
+  {
+    "name": "FORRAJES EL POTRERITO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622569072",
+    "lat": 29.02109637,
+    "lng": -110.93322551,
     "source": "denue"
   },
   {
@@ -25187,7 +25892,7 @@
   },
   {
     "name": "GACHES CHIMIE MEXICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6221572485",
@@ -25385,7 +26090,7 @@
   },
   {
     "name": "GASES SOLDADURAS Y EQUIPOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "lat": 29.04722285,
@@ -25394,7 +26099,7 @@
   },
   {
     "name": "GASES Y EQUIPOS DE HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6622198634",
@@ -25438,6 +26143,16 @@
     "phone": "6623570075",
     "lat": 29.05790868,
     "lng": -111.0119278,
+    "source": "denue"
+  },
+  {
+    "name": "GAUMIAU VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621349254",
+    "lat": 29.17441124,
+    "lng": -111.01112735,
     "source": "denue"
   },
   {
@@ -25765,7 +26480,7 @@
   },
   {
     "name": "GOLDENMEDICA DEL PACIFICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.GOLDENVAC.COM.MX",
@@ -25861,6 +26576,17 @@
     "size": "1–10",
     "lat": 29.10760111,
     "lng": -111.03365934,
+    "source": "denue"
+  },
+  {
+    "name": "GRUPAC",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "website": "WWW.GRUPAC.COM.MX",
+    "phone": "6621150418",
+    "lat": 29.09467474,
+    "lng": -110.94470067,
     "source": "denue"
   },
   {
@@ -26340,7 +27066,7 @@
   },
   {
     "name": "HANKA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "51–200",
     "website": "WWW.HANKA.COM.MX",
@@ -26351,7 +27077,7 @@
   },
   {
     "name": "HANKA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "201–500",
     "website": "WWW.HANKA.COM.MX",
@@ -26378,6 +27104,16 @@
     "phone": "6624502125",
     "lat": 29.11596732,
     "lng": -110.97701077,
+    "source": "denue"
+  },
+  {
+    "name": "HAROS VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623250020",
+    "lat": 29.10992189,
+    "lng": -111.0025504,
     "source": "denue"
   },
   {
@@ -26510,7 +27246,7 @@
   },
   {
     "name": "HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.NADRO.COM.MX",
@@ -27750,6 +28486,16 @@
     "source": "denue"
   },
   {
+    "name": "HIGH CARE VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621864986",
+    "lat": 29.17343332,
+    "lng": -110.89625601,
+    "source": "denue"
+  },
+  {
     "name": "HIGH PERFORMANCE",
     "category": "Medical / Biomedical",
     "activity": "Consultorios del sector privado de audiología y de terapia ocupacional, física y del lenguaje",
@@ -27846,6 +28592,15 @@
     "source": "denue"
   },
   {
+    "name": "HOSPITAL CENTRAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.10346,
+    "lng": -110.95846049,
+    "source": "denue"
+  },
+  {
     "name": "HOSPITAL CIMA",
     "category": "Medical / Biomedical",
     "activity": "Hospitales del sector privado de otras especialidades médicas",
@@ -27863,6 +28618,17 @@
     "size": "500+",
     "lat": 29.10531072,
     "lng": -110.95249905,
+    "source": "denue"
+  },
+  {
+    "name": "HOSPITAL DE URGENCIAS VETERINARIAS BORGES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "website": "WWW.VETERINARIASBORGES.COM",
+    "phone": "6621880088",
+    "lat": 29.07270272,
+    "lng": -110.9804515,
     "source": "denue"
   },
   {
@@ -27944,6 +28710,45 @@
     "source": "denue"
   },
   {
+    "name": "HOSPITAL VETERINARIO ARTEMISA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6861139989",
+    "lat": 29.11137774,
+    "lng": -110.96150169,
+    "source": "denue"
+  },
+  {
+    "name": "HOSPITAL VETERINARIO ECONO PETS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "phone": "6622012211",
+    "lat": 29.11153642,
+    "lng": -110.9881501,
+    "source": "denue"
+  },
+  {
+    "name": "HOSPITAL VETERINARIO MONZALVO SUCURSAL COLOSIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621832427",
+    "lat": 29.08131148,
+    "lng": -111.02815587,
+    "source": "denue"
+  },
+  {
+    "name": "HOSPITAL VETERINARIO MUNDO CANINO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.10955155,
+    "lng": -110.98051067,
+    "source": "denue"
+  },
+  {
     "name": "HOSPITALES DEL SECTOR PRIVADO DE OTRAS ESPECIALIDADES MÉDICAS SIN NOMBRE",
     "category": "Medical / Biomedical",
     "activity": "Hospitales del sector privado de otras especialidades médicas",
@@ -27961,6 +28766,15 @@
     "phone": "6621396215",
     "lat": 29.12757744,
     "lng": -110.99270043,
+    "source": "denue"
+  },
+  {
+    "name": "HOTEL DE MASCOTAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.08902322,
+    "lng": -110.94367236,
     "source": "denue"
   },
   {
@@ -28001,6 +28815,15 @@
     "phone": "6624600099",
     "lat": 29.07648981,
     "lng": -110.95642975,
+    "source": "denue"
+  },
+  {
+    "name": "HVEN HOSPITAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.10814395,
+    "lng": -110.98010921,
     "source": "denue"
   },
   {
@@ -28796,6 +29619,16 @@
     "source": "denue"
   },
   {
+    "name": "IMPULSORA FARMACEUTICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "website": "WWW.GRUPAC.COM",
+    "lat": 29.09569518,
+    "lng": -110.94472779,
+    "source": "denue"
+  },
+  {
     "name": "IMPULSORA VINICOLA DECIMA",
     "category": "Manufacturing / Automotive",
     "activity": "Elaboración de bebidas alcohólicas a base de uva",
@@ -29004,7 +29837,7 @@
   },
   {
     "name": "INFRA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.GRUPOINFRA.COM",
@@ -29014,7 +29847,7 @@
   },
   {
     "name": "INFRA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.GRUPOINFRA.COM",
@@ -29024,7 +29857,7 @@
   },
   {
     "name": "INFRA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.GRUPOINFRA.COM",
@@ -29082,6 +29915,25 @@
     "phone": "6621157479",
     "lat": 29.09966855,
     "lng": -110.9725352,
+    "source": "denue"
+  },
+  {
+    "name": "INNOVACIONES ACUICOLAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "website": "WWW.CODEMET.COM.MX",
+    "lat": 29.09161741,
+    "lng": -110.9713404,
+    "source": "denue"
+  },
+  {
+    "name": "INOVACION AGRICOLA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.09581565,
+    "lng": -111.0407875,
     "source": "denue"
   },
   {
@@ -29143,8 +29995,17 @@
     "source": "denue"
   },
   {
+    "name": "INPROVET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.08808448,
+    "lng": -110.95401568,
+    "source": "denue"
+  },
+  {
     "name": "INSTALACIONES Y SERVICIOS INDA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.INDAMED.MX",
@@ -29547,7 +30408,7 @@
   },
   {
     "name": "JAV MINERALES Y NUTRIENTES",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "lat": 29.11804927,
@@ -29739,6 +30600,15 @@
     "source": "denue"
   },
   {
+    "name": "JR AGROPECUARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.07412367,
+    "lng": -110.98119673,
+    "source": "denue"
+  },
+  {
     "name": "JUEGO Y APRENDO MAS",
     "category": "Medical / Biomedical",
     "activity": "Consultorios del sector privado de audiología y de terapia ocupacional, física y del lenguaje",
@@ -29835,6 +30705,15 @@
     "phone": "6622565448",
     "lat": 29.14046067,
     "lng": -110.98063726,
+    "source": "denue"
+  },
+  {
+    "name": "KC CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.09920104,
+    "lng": -110.95304952,
     "source": "denue"
   },
   {
@@ -29990,6 +30869,16 @@
     "size": "1–10",
     "lat": 29.03092801,
     "lng": -110.9386312,
+    "source": "denue"
+  },
+  {
+    "name": "LA NUEVA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624250500",
+    "lat": 29.08090247,
+    "lng": -110.9919681,
     "source": "denue"
   },
   {
@@ -30378,6 +31267,15 @@
     "phone": "6621443351",
     "lat": 29.09810909,
     "lng": -110.9683188,
+    "source": "denue"
+  },
+  {
+    "name": "LABORATORIO DE ESTUDIOS CLINICOS ESPECIALIZADOS DE SANIDAD ANIMAL DE SONORA ECESAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para la ganadería prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.04232092,
+    "lng": -110.9368775,
     "source": "denue"
   },
   {
@@ -31036,7 +31934,7 @@
   },
   {
     "name": "LABORATORIOS PISA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Fabricación de preparaciones farmacéuticas",
     "size": "1–10",
     "website": "WWW.PISA.COM.MX",
@@ -31046,7 +31944,7 @@
   },
   {
     "name": "LABORATORIOS PIZA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.PIZA.COM.MX",
@@ -31766,6 +32664,16 @@
     "source": "denue"
   },
   {
+    "name": "LAVETSON LABORATORIO CLINICO VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "website": "WWW.LAVETSON.COM",
+    "lat": 29.09294361,
+    "lng": -110.97204372,
+    "source": "denue"
+  },
+  {
     "name": "LAZ FOOD STORE",
     "category": "Manufacturing / Automotive",
     "activity": "Congelación de guisos y otros alimentos preparados",
@@ -31802,6 +32710,16 @@
     "phone": "6626189191",
     "lat": 29.09101252,
     "lng": -110.95803337,
+    "source": "denue"
+  },
+  {
+    "name": "LEIJA HOSPITAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621390026",
+    "lat": 29.07237963,
+    "lng": -110.94335882,
     "source": "denue"
   },
   {
@@ -31853,11 +32771,21 @@
   },
   {
     "name": "LEVIC DISTRIBUIDORA DE MEDICAMENTOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "201–500",
     "lat": 29.09812777,
     "lng": -110.9722546,
+    "source": "denue"
+  },
+  {
+    "name": "LEYVA SERVICIOS VETERINARIOS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622798058",
+    "lat": 29.07665756,
+    "lng": -110.98654829,
     "source": "denue"
   },
   {
@@ -31931,7 +32859,7 @@
   },
   {
     "name": "LICAN",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "website": "LICANFOOD.COM",
@@ -32181,7 +33109,7 @@
   },
   {
     "name": "M FARMACOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "phone": "6623188033",
@@ -32741,8 +33669,18 @@
     "source": "denue"
   },
   {
+    "name": "MARIO EL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624207961",
+    "lat": 29.14539549,
+    "lng": -110.96590325,
+    "source": "denue"
+  },
+  {
     "name": "MARKETIN MEDICINAL DISTRIBUIDORA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "phone": "6621880801",
@@ -33156,7 +34094,7 @@
   },
   {
     "name": "MCF PRODUCTOS CIENTIFICOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.QUIMICOSDIRECTO.COM",
@@ -33217,7 +34155,7 @@
   },
   {
     "name": "MEDBELLA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.MEDBELLA.MX",
@@ -33256,7 +34194,7 @@
   },
   {
     "name": "MEDICA INTEGRAL HDM SA DE CV",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "lat": 29.14886449,
@@ -33322,7 +34260,7 @@
   },
   {
     "name": "MEDICAL UNION",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "lat": 29.10882179,
@@ -33419,7 +34357,7 @@
   },
   {
     "name": "MEDICINE DEPOT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.DFCALDERON.COM",
@@ -33575,13 +34513,22 @@
   },
   {
     "name": "MEDIEMEX PHARMA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.MEDIMEXPHARMA.COM",
     "phone": "6624359749",
     "lat": 29.07625565,
     "lng": -110.97966535,
+    "source": "denue"
+  },
+  {
+    "name": "MEGAVET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.10881565,
+    "lng": -110.98158105,
     "source": "denue"
   },
   {
@@ -33742,6 +34689,15 @@
     "source": "denue"
   },
   {
+    "name": "MI MASCOTA CLINICA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.08531686,
+    "lng": -110.94939048,
+    "source": "denue"
+  },
+  {
     "name": "MIA POLANCO DISEÑADORA DE MODAS",
     "category": "Manufacturing / Automotive",
     "activity": "Confección de prendas de vestir sobre medida",
@@ -33773,7 +34729,7 @@
   },
   {
     "name": "MIFSA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.MIFSA.COM",
@@ -34005,7 +34961,7 @@
   },
   {
     "name": "MOLINO",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "51–200",
     "website": "WWW.BACHOCO.COM",
@@ -34092,6 +35048,15 @@
     "source": "denue"
   },
   {
+    "name": "MONZALVO HOSPITAL VETERINARIO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.10445448,
+    "lng": -110.95075867,
+    "source": "denue"
+  },
+  {
     "name": "MOOSNI INTERNACIONAL",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de artículos deportivos",
@@ -34163,7 +35128,7 @@
   },
   {
     "name": "MR BONES",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "1–10",
     "website": "MRBONES.COM",
@@ -34371,7 +35336,7 @@
   },
   {
     "name": "MULTISERVICIOS METZOR",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "lat": 29.09222312,
@@ -34414,6 +35379,16 @@
     "website": "WWW.MULTISITEMAS.MX",
     "lat": 29.07639198,
     "lng": -110.963393,
+    "source": "denue"
+  },
+  {
+    "name": "MUNDO CANINO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621947704",
+    "lat": 29.11580695,
+    "lng": -111.01468433,
     "source": "denue"
   },
   {
@@ -35015,6 +35990,16 @@
     "source": "denue"
   },
   {
+    "name": "NUTRIMENTOS PURINA EL MEZQUITE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622951872",
+    "lat": 29.05147846,
+    "lng": -110.96327755,
+    "source": "denue"
+  },
+  {
     "name": "NUTRIOLOGA",
     "category": "Medical / Biomedical",
     "activity": "Consultorios de nutriólogos y dietistas del sector privado",
@@ -35114,7 +36099,7 @@
   },
   {
     "name": "NUTRIONIX",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "lat": 29.02750374,
@@ -35143,7 +36128,7 @@
   },
   {
     "name": "OASA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "lat": 29.10029068,
@@ -35723,7 +36708,7 @@
   },
   {
     "name": "ORBEX CHEMICAL",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.ORBEXCHEMICAL.COM",
@@ -36106,12 +37091,21 @@
   },
   {
     "name": "OXIGENO LIQUIDO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6621527226",
     "lat": 29.10164568,
     "lng": -111.01590061,
+    "source": "denue"
+  },
+  {
+    "name": "PACAS Y FORRAJES EL ROY",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.17135638,
+    "lng": -110.89902611,
     "source": "denue"
   },
   {
@@ -36370,6 +37364,16 @@
     "source": "denue"
   },
   {
+    "name": "PC VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6623552825",
+    "lat": 29.17354972,
+    "lng": -110.89609875,
+    "source": "denue"
+  },
+  {
     "name": "PCBITS",
     "category": "Call Center / BPO",
     "activity": "Servicios de acceso a computadoras",
@@ -36386,6 +37390,15 @@
     "phone": "6622436907",
     "lat": 29.14031801,
     "lng": -110.96636652,
+    "source": "denue"
+  },
+  {
+    "name": "PECUARIA PIMA NOROESTE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "lat": 29.09582476,
+    "lng": -110.94474792,
     "source": "denue"
   },
   {
@@ -36532,6 +37545,16 @@
     "source": "denue"
   },
   {
+    "name": "PEIRO VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "phone": "6622103332",
+    "lat": 29.08583264,
+    "lng": -110.97129107,
+    "source": "denue"
+  },
+  {
     "name": "PENSANDO EN CASA",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de persianas y cortineros",
@@ -36634,6 +37657,16 @@
     "source": "denue"
   },
   {
+    "name": "PET CARE CENTER",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "website": "WWW.PETCARETRAINNING.BLOGSPOT.COM",
+    "lat": 29.07987207,
+    "lng": -110.96796513,
+    "source": "denue"
+  },
+  {
     "name": "PETROGAS",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de artículos de alfarería, porcelana y loza",
@@ -36644,8 +37677,48 @@
     "source": "denue"
   },
   {
+    "name": "PETS CENTER",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621105261",
+    "lat": 29.10985082,
+    "lng": -110.96139012,
+    "source": "denue"
+  },
+  {
+    "name": "PETS CLINIC",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622249239",
+    "lat": 29.11466182,
+    "lng": -110.95946535,
+    "source": "denue"
+  },
+  {
+    "name": "PETS HOUSE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622247896",
+    "lat": 29.14432188,
+    "lng": -110.96853686,
+    "source": "denue"
+  },
+  {
+    "name": "PETXPRESS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "phone": "6622791887",
+    "lat": 29.11407018,
+    "lng": -110.95310172,
+    "source": "denue"
+  },
+  {
     "name": "PHARMACEUTIX HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "lat": 29.09516865,
@@ -37035,7 +38108,7 @@
   },
   {
     "name": "PLANTA DE ALIMENTOS DE ACUICOLA SEASON",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "11–50",
     "lat": 29.06709196,
@@ -37189,7 +38262,7 @@
   },
   {
     "name": "POCHTECA MATERIAS PRIMAS SUCURSAL HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "51–200",
     "website": "WWW.POCHTECA.COM.MX",
@@ -37314,7 +38387,7 @@
   },
   {
     "name": "PRAXAIR MEXICO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "HTTPS://WWW.LINDE.MX/",
@@ -37569,7 +38642,7 @@
   },
   {
     "name": "PRODUCTOS EIFEEL",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "PRODUCTOSEIFFEL.COM",
@@ -37589,7 +38662,7 @@
   },
   {
     "name": "PRODUCTOS HOSPITALARIOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Fabricación de preparaciones farmacéuticas",
     "size": "51–200",
     "website": "WWW.SANEFRO.COM",
@@ -37785,6 +38858,16 @@
     "source": "denue"
   },
   {
+    "name": "PROMINERALES Y SUPLEMENTOS SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621272879",
+    "lat": 29.18520912,
+    "lng": -110.8887881,
+    "source": "denue"
+  },
+  {
     "name": "PROMO LOGOS",
     "category": "Manufacturing / Automotive",
     "activity": "Impresión de formas continuas y otros impresos",
@@ -37855,7 +38938,7 @@
   },
   {
     "name": "PROVEDORA HOSPITALARIA DEL NOROESTE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "phone": "6622607480",
@@ -38838,7 +39921,7 @@
   },
   {
     "name": "QUIMICA MEXICANA HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.QUIMICAMEXICANA.MX",
@@ -38849,7 +39932,7 @@
   },
   {
     "name": "QUIMICA PIMA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.QUIMICAPIMA.COM",
@@ -39247,6 +40330,16 @@
     "source": "denue"
   },
   {
+    "name": "REPRO FARMACIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6622296281",
+    "lat": 29.09311721,
+    "lng": -110.96983116,
+    "source": "denue"
+  },
+  {
     "name": "REUMATOLOGIA",
     "category": "Medical / Biomedical",
     "activity": "Consultorios de medicina especializada del sector privado",
@@ -39292,6 +40385,16 @@
     "website": "WWW.RINOFASTSONORA.COM.MX",
     "lat": 29.08663145,
     "lng": -110.95493822,
+    "source": "denue"
+  },
+  {
+    "name": "RIVAS VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622029201",
+    "lat": 29.14474694,
+    "lng": -110.97183751,
     "source": "denue"
   },
   {
@@ -39478,7 +40581,7 @@
   },
   {
     "name": "RUBIO PHARMA Y ASOCIADOS",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "51–200",
     "website": "WWW.RUBIOPHARMA.COM",
@@ -39764,6 +40867,16 @@
     "source": "denue"
   },
   {
+    "name": "SAMS VETERINARIOS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622158989",
+    "lat": 29.10723764,
+    "lng": -110.95133628,
+    "source": "denue"
+  },
+  {
     "name": "SAN ANTONIO CLEAR WATER",
     "category": "Manufacturing / Automotive",
     "activity": "Purificación y embotellado de agua",
@@ -39813,7 +40926,7 @@
   },
   {
     "name": "SANE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "lat": 29.09309611,
@@ -39852,7 +40965,7 @@
   },
   {
     "name": "SANTE",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "11–50",
     "website": "WWW.SANTEAGLE.COM",
@@ -40104,7 +41217,7 @@
   },
   {
     "name": "SELECTA DE GUAYMAS",
-    "category": "Manufacturing / Automotive",
+    "category": "Veterinary / Animal Health",
     "activity": "Elaboración de alimentos para animales",
     "size": "51–200",
     "website": "WWW.SELECTA.COM.MX",
@@ -40310,7 +41423,7 @@
   },
   {
     "name": "SERVI-GASES INDUSTRIALES",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "phone": "6621403565",
@@ -40435,6 +41548,15 @@
     "phone": "6622144625",
     "lat": 29.09536008,
     "lng": -110.96484,
+    "source": "denue"
+  },
+  {
+    "name": "SERVICIO VETERINARIO SIN NOMBRE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para la ganadería prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.03977286,
+    "lng": -110.94631388,
     "source": "denue"
   },
   {
@@ -40615,6 +41737,35 @@
     "size": "1–10",
     "lat": 29.10115957,
     "lng": -110.9837949,
+    "source": "denue"
+  },
+  {
+    "name": "SERVICIOS VETERINARIOS PARA LA GANADERÍA PRESTADOS POR EL SECTOR PRIVADO SIN NOMBRE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para la ganadería prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622147005",
+    "lat": 29.09455289,
+    "lng": -110.9325652,
+    "source": "denue"
+  },
+  {
+    "name": "SERVICIOS VETERINARIOS SAMANIEGO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6625427547",
+    "lat": 29.08932206,
+    "lng": -110.9398468,
+    "source": "denue"
+  },
+  {
+    "name": "SERVICIOS VETERINARIOS SELECTO KRSNA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.10546988,
+    "lng": -110.96343569,
     "source": "denue"
   },
   {
@@ -41175,6 +42326,16 @@
     "source": "denue"
   },
   {
+    "name": "SOCOGOS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "website": "WWW.SOCOGOS.COM",
+    "lat": 29.04322299,
+    "lng": -110.93637984,
+    "source": "denue"
+  },
+  {
     "name": "SODESI",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de otra maquinaria y equipo para la industria en general",
@@ -41430,6 +42591,25 @@
     "source": "denue"
   },
   {
+    "name": "SON PETS VETERIANARIA Y ESTETICA CANINA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621398889",
+    "lat": 29.12178558,
+    "lng": -111.03336916,
+    "source": "denue"
+  },
+  {
+    "name": "SON PETS VETERINARIA & ESTETICA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.11204133,
+    "lng": -110.97257773,
+    "source": "denue"
+  },
+  {
     "name": "SON PIÑATAS",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de otros productos de cartón y papel",
@@ -41450,7 +42630,7 @@
   },
   {
     "name": "SONNAT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.SONNAT.COM.MX",
@@ -41460,7 +42640,7 @@
   },
   {
     "name": "SONNAT",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "website": "WWW.SONNAT.COM.MX",
@@ -41481,7 +42661,7 @@
   },
   {
     "name": "SONORA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "lat": 29.03638602,
@@ -41655,6 +42835,15 @@
     "source": "denue"
   },
   {
+    "name": "SONPETS VETERINARIA Y ESTETICA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.14207841,
+    "lng": -110.97545306,
+    "source": "denue"
+  },
+  {
     "name": "SONRIE DENTAL",
     "category": "Medical / Biomedical",
     "activity": "Consultorios dentales del sector privado",
@@ -41823,6 +43012,16 @@
     "source": "denue"
   },
   {
+    "name": "SR. PERRO ESTETICA CANINA VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623383996",
+    "lat": 29.02341897,
+    "lng": -110.94463595,
+    "source": "denue"
+  },
+  {
     "name": "SSG",
     "category": "Call Center / BPO",
     "activity": "Servicios de recepción de llamadas telefónicas y promoción por teléfono",
@@ -41930,7 +43129,7 @@
   },
   {
     "name": "SUCURSAL HERMOSILLO",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "51–200",
     "lat": 29.11265888,
@@ -41958,7 +43157,7 @@
   },
   {
     "name": "SUPER NATURISTA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.SMN.COM.MX",
@@ -42282,7 +43481,7 @@
   },
   {
     "name": "TALLER DE CAMIONES DE QUIMICA PIMA",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "11–50",
     "website": "WWW.QUIMICAPIMA.COM",
@@ -48385,6 +49584,16 @@
     "source": "denue"
   },
   {
+    "name": "VENTA ALIMENOS PARA GALLOS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6624179030",
+    "lat": 29.03005063,
+    "lng": -110.97796542,
+    "source": "denue"
+  },
+  {
     "name": "VENTA DE AGUA PURIFICADA AQUA ASSUL",
     "category": "Manufacturing / Automotive",
     "activity": "Purificación y embotellado de agua",
@@ -48606,6 +49815,26 @@
     "source": "denue"
   },
   {
+    "name": "VENTA DE PACAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621423445",
+    "lat": 29.18688461,
+    "lng": -110.88873682,
+    "source": "denue"
+  },
+  {
+    "name": "VENTA DE PAKAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6623459749",
+    "lat": 29.0208412,
+    "lng": -110.93278474,
+    "source": "denue"
+  },
+  {
     "name": "VENTA DE PINOLE",
     "category": "Manufacturing / Automotive",
     "activity": "Elaboración de dulces, chicles y productos de confitería que no sean de chocolate",
@@ -48695,6 +49924,15 @@
     "source": "denue"
   },
   {
+    "name": "VENTAS DE PACAS DE ALFALFA SIN NOMBRE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.03491106,
+    "lng": -110.94912535,
+    "source": "denue"
+  },
+  {
     "name": "VENTAS HOLCIM HERMOSILLO",
     "category": "Manufacturing / Automotive",
     "activity": "Fabricación de cemento y productos a base de cemento en plantas integradas",
@@ -48741,6 +49979,413 @@
     "size": "1–10",
     "lat": 29.11195891,
     "lng": -110.98830037,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARI ANIMALIA VETERINARIA INTEGRAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622109007",
+    "lat": 29.10491935,
+    "lng": -110.97116694,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.00409648,
+    "lng": -110.93856619,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA ALTARES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.01167507,
+    "lng": -110.9435668,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA ALTARES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.01170289,
+    "lng": -110.94356574,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA AMIPETS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621155833",
+    "lat": 29.11848603,
+    "lng": -110.96758159,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA ANIMAL HOME",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.11384849,
+    "lng": -110.9856281,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA BLUES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621244810",
+    "lat": 29.14727782,
+    "lng": -110.9700774,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA BORGES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "website": "WWW.VETERINARIASBORGES.COM",
+    "lat": 29.08228841,
+    "lng": -111.02272623,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA CAMPEON",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622522291",
+    "lat": 29.01685753,
+    "lng": -110.93189368,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA CANNIS-FELISS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621931135",
+    "lat": 29.03143059,
+    "lng": -110.9576472,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA CARRANZA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.09882206,
+    "lng": -110.92110737,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA DE LA DR LIZETH",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623353493",
+    "lat": 29.10343165,
+    "lng": -111.00654613,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA DEL CAMPO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621558056",
+    "lat": 28.84061017,
+    "lng": -111.48855658,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA DEL CAMPO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622410260",
+    "lat": 28.83955826,
+    "lng": -111.47703385,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA DEL CARMEN",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621420259",
+    "lat": 29.07528438,
+    "lng": -110.94822726,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA DEL NORTE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621577398",
+    "lat": 29.13363779,
+    "lng": -110.99341011,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA DEL VALLE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621289850",
+    "lat": 29.10030811,
+    "lng": -111.01332676,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA EL MORO DE CUMPAS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 28.82389648,
+    "lng": -111.94090717,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA EL RANCHITO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622910938",
+    "lat": 29.08245272,
+    "lng": -110.9207897,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA FRANCISCO JAVIER POHLS PADILLA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621480104",
+    "lat": 29.07879965,
+    "lng": -110.94003405,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA GUAPERRISIMO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624492907",
+    "lat": 29.04313931,
+    "lng": -110.94489792,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA HEREFORD",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622504816",
+    "lat": 29.0562152,
+    "lng": -110.9554393,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA LOS JARDINES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621341146",
+    "lat": 29.12960612,
+    "lng": -110.98292203,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA LOS PARIENTES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621030560",
+    "lat": 29.05678119,
+    "lng": -110.96764239,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA LOVET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.09541457,
+    "lng": -110.95677476,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA MININOS KAN",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624604791",
+    "lat": 29.0635278,
+    "lng": -110.99010802,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA MUNDO ANIMAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.12069839,
+    "lng": -111.02341064,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PALO VERDE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622061816",
+    "lat": 29.05607524,
+    "lng": -110.96398919,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PAOLA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.09654599,
+    "lng": -110.95861169,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PEDIGREE",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621150065",
+    "lat": 29.12445702,
+    "lng": -110.98892698,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PEQUEÑAS ESPECIES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.1071804,
+    "lng": -110.98200403,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PERROS Y GATOS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "website": "VETERINARIAPERROSYGATOS.COM",
+    "lat": 29.09074926,
+    "lng": -110.94996603,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PETS & PETS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621005209",
+    "lat": 29.11797608,
+    "lng": -110.9993382,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA PLAYPETS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621209034",
+    "lat": 29.03924132,
+    "lng": -110.94509744,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA ROSA PET",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6623734683",
+    "lat": 29.10209081,
+    "lng": -111.00299939,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA SAN PEDRO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "lat": 29.17806088,
+    "lng": -110.8880806,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA SPAY SONORA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.11755365,
+    "lng": -110.96554754,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA TECNOANIMAL",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6624589777",
+    "lat": 29.04317414,
+    "lng": -110.96408743,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA VET SHOP",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "lat": 29.10539566,
+    "lng": -111.0231789,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA VETGO",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621672479",
+    "lat": 29.11392324,
+    "lng": -110.96681684,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA Y ESTETICA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "phone": "6624791431",
+    "lat": 29.12394585,
+    "lng": -110.9834341,
+    "source": "denue"
+  },
+  {
+    "name": "VETERINARIA YSAAC",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "11–50",
+    "phone": "6623101112",
+    "lat": 29.061782,
+    "lng": -110.96654819,
     "source": "denue"
   },
   {
@@ -48894,6 +50539,16 @@
     "source": "denue"
   },
   {
+    "name": "VIMIFOS",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "11–50",
+    "website": "VIMIFOS.COM",
+    "lat": 29.07829478,
+    "lng": -111.07444798,
+    "source": "denue"
+  },
+  {
     "name": "VINCCO CENTRO DE CONTACTO",
     "category": "Call Center / BPO",
     "activity": "Servicios de recepción de llamadas telefónicas y promoción por teléfono",
@@ -49011,7 +50666,7 @@
   },
   {
     "name": "VM VITAMEX",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos farmacéuticos",
     "size": "1–10",
     "website": "WWW.VITAMEX.COM.MX",
@@ -49155,8 +50810,18 @@
     "source": "denue"
   },
   {
+    "name": "WILDLIFE VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6622072626",
+    "lat": 29.08997807,
+    "lng": -110.97035561,
+    "source": "denue"
+  },
+  {
     "name": "WINNEMUCCA CHEMICALS SA DE CV",
-    "category": "Medical / Biomedical",
+    "category": "Pharmaceutical",
     "activity": "Comercio al por mayor de productos químicos para la industria farmacéutica y para otro uso industrial",
     "size": "1–10",
     "lat": 29.09743516,
@@ -49300,6 +50965,16 @@
     "source": "denue"
   },
   {
+    "name": "Z SUPPLIES",
+    "category": "Veterinary / Animal Health",
+    "activity": "Comercio al por mayor de medicamentos veterinarios y alimentos para animales, excepto mascotas",
+    "size": "1–10",
+    "phone": "6621004757",
+    "lat": 29.08174255,
+    "lng": -110.95703228,
+    "source": "denue"
+  },
+  {
     "name": "ZEN WATER",
     "category": "Manufacturing / Automotive",
     "activity": "Purificación y embotellado de agua",
@@ -49344,6 +51019,16 @@
     "size": "1–10",
     "lat": 29.09570475,
     "lng": -110.95599743,
+    "source": "denue"
+  },
+  {
+    "name": "ZINCORE VETERINARIA",
+    "category": "Veterinary / Animal Health",
+    "activity": "Servicios veterinarios para mascotas prestados por el sector privado",
+    "size": "1–10",
+    "phone": "6621088770",
+    "lat": 29.03553097,
+    "lng": -110.95034359,
     "source": "denue"
   },
   {

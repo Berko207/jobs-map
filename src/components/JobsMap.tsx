@@ -28,6 +28,7 @@ import {
   syncStateToBackend,
 } from "@/lib/storage";
 import { googleMapsUrl, jobLinks } from "@/lib/jobLinks";
+import { matchesCompanySearch } from "@/lib/search";
 import SectorFilter from "./SectorFilter";
 import Sidebar, { ListView, SortOption } from "./Sidebar";
 
@@ -35,17 +36,6 @@ const CARTO_TILE =
   "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
 const CARTO_ATTRIBUTION =
   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
-
-function matchesSearch(company: Company, query: string): boolean {
-  if (!query) return true;
-  const needle = query.toLowerCase();
-  return (
-    company.name.toLowerCase().includes(needle) ||
-    company.category.toLowerCase().includes(needle) ||
-    company.zone.toLowerCase().includes(needle) ||
-    (company.note?.toLowerCase().includes(needle) ?? false)
-  );
-}
 
 function FlyToCompany({
   target,
@@ -306,7 +296,7 @@ export default function JobsMap() {
         return false;
       }
       if (zone && c.zone !== zone) return false;
-      if (!matchesSearch(c, search)) return false;
+      if (!matchesCompanySearch(c, search)) return false;
       const state = companyStates[c.id];
       if (listView === "saved" && !state?.saved) return false;
       if (listView === "applied" && !state?.applied) return false;
@@ -332,7 +322,7 @@ export default function JobsMap() {
         return false;
       }
       if (zone && c.zone !== zone) return false;
-      if (!matchesSearch(c, search)) return false;
+      if (!matchesCompanySearch(c, search)) return false;
       const state = companyStates[c.id];
       if (listView === "saved" && !state?.saved) return false;
       if (listView === "applied" && !state?.applied) return false;

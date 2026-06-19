@@ -1,5 +1,7 @@
 # Hermosillo Jobs Map
 
+**Live:** [jobs-map.vercel.app](https://jobs-map.vercel.app)
+
 A sector-filtered employer finder for Hermosillo, Sonora. Plot local companies on a free CARTO/OpenStreetMap basemap, filter by industry (call centers, software, manufacturing, robotics, etc.), and jump to job-board searches for each employer.
 
 ## Quick start
@@ -16,12 +18,22 @@ Local dev uses the last committed `companies.merged.json`. Run `npm run build` t
 ## Deploy to Vercel
 
 1. Push this repo to GitHub (includes `data/denue_sonora.csv.gz`).
-2. Import at [vercel.com/new](https://vercel.com/new).
+2. Import at [vercel.com/new](https://vercel.com/new) and connect the GitHub repo.
 3. **Build Command:** `npm run build` (default — do not override).
 4. Optional env vars (Project Settings → Environment Variables):
    - `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` — live "Hiring now" data from [developer.adzuna.com](https://developer.adzuna.com/). If missing or the API fails, the build continues with DENUE + curated only.
+   - `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` — optional Save/Applied sync (see below).
 
 Every deploy runs `scripts/build-data.mjs` before `next build`: parses the committed DENUE gzip, fetches Adzuna (non-fatal), merges via `merge.ts` logic, writes `src/data/companies.merged.json`.
+
+### GitHub commit email
+
+Vercel blocks Git-triggered deploys when the commit author email is not linked to your GitHub account. Either:
+
+- Add your commit email under [GitHub → Settings → Emails](https://github.com/settings/emails), or
+- Set `git config user.email` to an email already verified on GitHub before pushing.
+
+Manual redeploys from the Vercel dashboard are not affected.
 
 Map tiles use **CARTO Voyager** (free). Keep attribution visible: *© OpenStreetMap contributors © CARTO*.
 
@@ -36,19 +48,23 @@ Map tiles use **CARTO Voyager** (free). Keep attribution visible: *© OpenStreet
 
 ## Data pipeline (build-time)
 
-Employer data merges from three sources:
+Employer data merges from four inputs:
 
-| Source | Input | Output |
-|--------|-------|--------|
-| Curated featured | `curatedFeatured.json` | hand-edited pins with ratings/notes |
+| Source | Input | Role |
+|--------|-------|------|
+| Curated featured | `curatedFeatured.json` | Hand-edited pins with ratings/notes (authoritative coords) |
 | DENUE (INEGI) | `data/denue_sonora.csv.gz` | Hermosillo establishments by SCIAN sector |
-| Adzuna jobs | Vercel env vars at build | active open-role counts |
+| Adzuna jobs | Vercel env vars at build | Active open-role counts |
+| Nominatim cache | `nominatim-cache.json` | Fallback coords for records missing lat/lng |
 
 ```
 data/denue_sonora.csv.gz  ─┐
-Vercel ADZUNA_* env vars  ─┼─► scripts/build-data.mjs ─► companies.merged.json ─► app
-curatedFeatured.json      ─┘
+Vercel ADZUNA_* env vars  ─┼─► scripts/build-data.mjs ─► write-merged.mjs ─► companies.merged.json ─► app
+curatedFeatured.json      ─┤         (parse + fetch)         (merge)
+nominatim-cache.json      ─┘
 ```
+
+Do not edit `companies.merged.json`, `companies.denue.json`, or `companies.adzuna.json` by hand — they are build artifacts. Edit `curatedFeatured.json` or re-run the pipeline.
 
 ### Updating DENUE data
 
@@ -63,7 +79,7 @@ curatedFeatured.json      ─┘
 
 ## Adding employers
 
-Edit `src/data/curatedFeatured.json` for hand-picked pins (also exported via `curatedFeatured.ts`).
+Edit `src/data/curatedFeatured.json` for hand-picked pins (re-exported via `curatedFeatured.ts`).
 
 ### Extending sectors
 
@@ -85,7 +101,7 @@ If env vars are missing, the app silently falls back to `localStorage`.
 
 ## Stack
 
-- Next.js (App Router) + TypeScript + Tailwind CSS
+- Next.js 16 (App Router) + TypeScript + Tailwind CSS
 - react-leaflet v4 + leaflet + react-leaflet-cluster
 - CARTO Voyager tiles over OpenStreetMap data
 
@@ -97,7 +113,10 @@ src/
   components/    # JobsMap, SectorFilter, Sidebar, CompanyCard
   data/          # merge.ts, curatedFeatured, companies.merged.json, types
   lib/           # jobLinks, storage
-scripts/         # build-data.mjs, merge-companies.mjs, write-merged.mjs
+scripts/
+  build-data.mjs       # DENUE parse + Adzuna fetch → source JSON
+  merge-companies.mjs  # JS mirror of merge.ts (used at build time)
+  write-merged.mjs     # merge sources → companies.merged.json
 data/            # denue_sonora.csv.gz (committed gzip of INEGI Sonora export)
 supabase/        # optional schema
 ```

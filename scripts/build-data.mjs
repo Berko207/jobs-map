@@ -11,7 +11,11 @@ import { spawnSync } from "node:child_process";
 import { gunzipSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
 import { parse } from "csv-parse/sync";
-import { isStaffingAgency, shouldExcludeAdzunaEmployer } from "./adzuna-filters.mjs";
+import {
+  isStaffingAgency,
+  jobMatchesAdzunaCategory,
+  shouldExcludeAdzunaEmployer,
+} from "./adzuna-filters.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -41,7 +45,12 @@ const OUT_OF_BOUND_CITIES = [
 ];
 
 const SECTOR_KEYWORDS = {
-  "Call Center / BPO": ["call center", "centro de contacto", "bilingual"],
+  "Call Center / BPO": [
+    "call center",
+    "centro de contacto",
+    "telemarketing",
+    "atencion a clientes",
+  ],
   Software: ["software", "desarrollador", "developer"],
   "Telemetry / IoT": ["telemetria", "iot", "gps"],
   "Robotics / Automation": ["automatizacion", "robotics", "controls"],
@@ -77,6 +86,10 @@ const EXCLUDE_CODE_PREFIXES = ["46", "47", "72", "81", "812"];
 /** Micro-businesses misclassified under manufacturing codes in DENUE. */
 const EXCLUDE_ACTIVITY =
   /tortilla|panificaci[oó]n tradicional|abarrote|llanta|neum[aá]t|vulcaniz|revitalizaci[oó]n de llantas|peluquer|belleza|restaurante|ferreter[ií]a|miscel[aá]nea|lavander|tintorer|joyer[ií]a de metales|taquer|fonda|minisuper|dulces y materias primas|cerveza|plantas y flores|art[ií]culos usados|embutidos y otras conservas|helados y paletas|botanas|preparaci[oó]n de alimentos frescos|comercio al por menor/i;
+
+/** Establishment names that are not career-target employers even if SCIAN says call center. */
+const EXCLUDE_ESTABLISHMENT_NAME =
+  /caf[eé]\s*internet|ciber(net|\s)|papeler[ií]a|copiad|fotocopi|\bcopy\b|estacionamiento|^\s*bodega\b|consultor[ií]a legal|credito y cobranza/i;
 
 function writeJson(file, data) {
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
@@ -123,7 +136,8 @@ function shouldExcludeDenueRow(codigoAct, nombreAct, nomEstab) {
     return true;
   }
   const text = `${nombreAct ?? ""} ${nomEstab ?? ""}`;
-  return EXCLUDE_ACTIVITY.test(text);
+  if (EXCLUDE_ACTIVITY.test(text)) return true;
+  return EXCLUDE_ESTABLISHMENT_NAME.test(String(nomEstab ?? ""));
 }
 
 function categorize(codigoAct, nombreAct) {
@@ -178,7 +192,14 @@ function categorize(codigoAct, nombreAct) {
     return "Medical / Biomedical";
   }
 
-  if (code.startsWith("561422") || code.startsWith("5614")) {
+  if (code.startsWith("561421") || code.startsWith("561422")) {
+    return "Call Center / BPO";
+  }
+  if (
+    /servicios de recepci[oó]n de llamadas|promoci[oó]n por tel[eé]fono|centros de llamadas|telemarketing|call center|centro de contacto/i.test(
+      act,
+    )
+  ) {
     return "Call Center / BPO";
   }
   if (code.startsWith("5415") || code.startsWith("5112")) {
@@ -373,6 +394,7 @@ async function fetchAdzuna() {
 
             const displayName = job.company?.display_name?.trim();
             if (!displayName || shouldExcludeAdzunaEmployer(displayName)) continue;
+            if (!jobMatchesAdzunaCategory(job.title, category)) continue;
 
             const key = normalizeName(displayName);
             const created = job.created ?? "";
@@ -499,6 +521,7 @@ async function fetchOutOfBoundCities() {
         for (const job of data.results ?? []) {
           const displayName = job.company?.display_name?.trim();
           if (!displayName || shouldExcludeAdzunaEmployer(displayName)) continue;
+          if (!jobMatchesAdzunaCategory(job.title, category)) continue;
 
           const key = normalizeName(displayName);
           let lat = job.location?.latitude ?? job.latitude ?? null;

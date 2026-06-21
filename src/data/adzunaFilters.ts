@@ -37,6 +37,45 @@ const AGGREGATOR_TERMS = [
   "bumeran",
 ];
 
+/** Supermarket / retail chains — excluded from DENUE; don't re-import via Adzuna as BPO. */
+const RETAIL_CHAIN_TERMS = [
+  "casa ley",
+  "soriana",
+  "chedraui",
+  "walmart",
+  "bodega aurrera",
+  "oxxo",
+  "circle k",
+  "seven eleven",
+  "7 eleven",
+  "alsuper",
+  "calimax",
+  "heb",
+  "costco",
+  "sam s club",
+  "sams club",
+  "tiendas extra",
+  "la comer",
+  "fresko",
+  "tienda neto",
+  "supermercado",
+  "minisuper",
+  "abarrotes",
+];
+
+/** Generic Adzuna placeholders — not real employer names. */
+const GENERIC_EMPLOYER_TERMS = [
+  "importante empresa",
+  "empresa del sector",
+  "empresa lider",
+  "empresa reconocida",
+  "empresa confidencial",
+  "nombre confidencial",
+  "global company",
+  "multinational company",
+  "important company",
+];
+
 function normalize(name: string): string {
   return String(name ?? "")
     .toLowerCase()
@@ -63,6 +102,8 @@ export function shouldExcludeAdzunaEmployer(name: string): boolean {
     return true;
   }
   if (AGGREGATOR_TERMS.some((term) => norm.includes(term))) return true;
+  if (RETAIL_CHAIN_TERMS.some((term) => norm.includes(term))) return true;
+  if (GENERIC_EMPLOYER_TERMS.some((term) => norm.includes(term))) return true;
 
   return false;
 }

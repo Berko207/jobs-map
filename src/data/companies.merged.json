@@ -667,20 +667,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "activo-liquido",
-    "name": "ACTIVO LIQUIDO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07031697,
-    "lng": -110.9594795,
-    "website": "WWW.ACTIVOLIQUIDO.COM",
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "actus",
     "name": "ACTUS",
     "category": "Software",
@@ -2863,19 +2849,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "aisha-papeleria-y-mas",
-    "name": "AISHA PAPELERIA Y MAS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.03203021,
-    "lng": -110.94598581,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "akimore-serigrafia",
     "name": "AKIMORE SERIGRAFIA",
     "category": "Manufacturing / Automotive",
@@ -3747,19 +3720,6 @@
     "lat": 29.09676151,
     "lng": -110.99580165,
     "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "ana-gom",
-    "name": "ANA.GOM",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10556678,
-    "lng": -110.91941743,
-    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -5206,19 +5166,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "bce-center",
-    "name": "BCE CENTER",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08540283,
-    "lng": -110.99136188,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "bd-bector-dickinson",
     "name": "BD BECTOR DICKINSON",
     "category": "Medical / Biomedical",
@@ -5670,547 +5617,6 @@
     "zone": "Hermosillo",
     "lat": 29.10983841,
     "lng": -110.98039216,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega",
-    "name": "BODEGA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09205491,
-    "lng": -110.96186608,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-amapolas-del-imparcial",
-    "name": "BODEGA AMAPOLAS DEL IMPARCIAL",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09499297,
-    "lng": -110.92136263,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-arrieta",
-    "name": "BODEGA ARRIETA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.08035019,
-    "lng": -110.95070257,
-    "website": "WWW.ARRIETA.MX",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliar",
-    "name": "BODEGA AUXILIAR",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.11555309,
-    "lng": -110.98370966,
-    "website": "WWW.ECOLIM.MX",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliar-de-grubo-cubits",
-    "name": "BODEGA AUXILIAR DE GRUBO CUBITS",
-    "category": "Software",
-    "zone": "Hermosillo",
-    "lat": 29.04466618,
-    "lng": -110.95639046,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliar-de-plasticos-del-desierto",
-    "name": "BODEGA AUXILIAR DE PLASTICOS DEL DESIERTO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.02561611,
-    "lng": -110.91073351,
-    "website": "WWW.PLASTICOSDELDESIERTO.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliar-mapisa",
-    "name": "BODEGA AUXILIAR MAPISA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.14751909,
-    "lng": -111.00509303,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliar-quesos-la-vaquita",
-    "name": "BODEGA AUXILIAR QUESOS LA VAQUITA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.17533483,
-    "lng": -110.89365613,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliar-taller-carpinteria",
-    "name": "BODEGA AUXILIAR TALLER CARPINTERIA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09540876,
-    "lng": -110.95688447,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-auxiliauikiaf-de-pinatas",
-    "name": "BODEGA AUXILIAUIKIAF DE PIÑATAS",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09683961,
-    "lng": -110.98324975,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-carpinteria-el-chicano",
-    "name": "BODEGA CARPINTERIA EL CHICANO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.12786746,
-    "lng": -110.97052697,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-carpinteria-el-pelon",
-    "name": "BODEGA CARPINTERIA EL PELON",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.12306212,
-    "lng": -110.97582178,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-carpinteria-yedra",
-    "name": "BODEGA CARPINTERIA YEDRA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.10099041,
-    "lng": -110.96704518,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-celulosa-y-corrugados-de-sonora",
-    "name": "BODEGA CELULOSA Y CORRUGADOS DE SONORA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.0301275,
-    "lng": -110.91206186,
-    "website": "WWW.CESO.MX",
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-andamios",
-    "name": "BODEGA DE ANDAMIOS",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.10590517,
-    "lng": -110.96310999,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-carbon",
-    "name": "BODEGA DE CARBON",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.11466876,
-    "lng": -110.98121381,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-carbon-lopez-de-castillo",
-    "name": "BODEGA DE CARBON LOPEZ DE CASTILLO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.11466876,
-    "lng": -110.98121381,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-carpinteria",
-    "name": "BODEGA DE CARPINTERIA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.13654828,
-    "lng": -110.98122341,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-carpinteria-dt",
-    "name": "BODEGA DE CARPINTERIA DT",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.13257211,
-    "lng": -110.97442804,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-cercos-de-hermosillo",
-    "name": "BODEGA DE CERCOS DE HERMOSILLO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.03067454,
-    "lng": -110.97853679,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-enmarcado-san-benito",
-    "name": "BODEGA DE ENMARCADO SAN BENITO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.10681871,
-    "lng": -111.01082624,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-int-y-servicios-inda",
-    "name": "BODEGA DE INT Y SERVICIOS INDA",
-    "category": "Pharmaceutical",
-    "zone": "Hermosillo",
-    "lat": 29.09211559,
-    "lng": -110.96018281,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-madera-palapas-rusticas-de-sonora",
-    "name": "BODEGA DE MADERA PALAPAS RUSTICAS DE SONORA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.15535526,
-    "lng": -111.00836297,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-muebles-economicos",
-    "name": "BODEGA DE MUEBLES ECONOMICOS",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.10578538,
-    "lng": -110.97973507,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-mufas-y-placas-de-cemento-sin-nombre",
-    "name": "BODEGA DE MUFAS Y PLACAS DE CEMENTO SIN NOMBRE",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.12527434,
-    "lng": -110.97569977,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-ortodiagnostico-digital",
-    "name": "BODEGA DE ORTODIAGNOSTICO DIGITAL",
-    "category": "Medical / Biomedical",
-    "zone": "Hermosillo",
-    "lat": 29.08708795,
-    "lng": -110.95206453,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-salsa-chiltepinos",
-    "name": "BODEGA DE SALSA CHILTEPINOS",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09702952,
-    "lng": -110.96519724,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-servicios-industriales-del-rio",
-    "name": "BODEGA DE SERVICIOS INDUSTRIALES DEL RIO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.00385105,
-    "lng": -110.94290703,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-tarimas",
-    "name": "BODEGA DE TARIMAS",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.10813451,
-    "lng": -110.91447342,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-de-tubos-chulavista",
-    "name": "BODEGA DE TUBOS CHULAVISTA",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.0904665,
-    "lng": -110.92331784,
-    "website": "WWW.TUBOSCHULAVISTA.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-el-mandadito",
-    "name": "BODEGA EL MANDADITO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.1153903,
-    "lng": -110.95310568,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-etiqueta-express",
-    "name": "BODEGA ETIQUETA EXPRESS",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.11090121,
-    "lng": -110.97751397,
-    "website": "WWW.ETIQUETASEXPRESS.C0M",
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-hermosillo",
-    "name": "BODEGA HERMOSILLO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09652325,
-    "lng": -110.92054802,
-    "website": "WWW.MOCTEZUMA.COM.MX",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-herreria-del-pacifico",
-    "name": "BODEGA HERRERIA DEL PACIFICO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.14296488,
-    "lng": -111.02939505,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-hieleria-veracruz",
-    "name": "BODEGA HIELERIA VERACRUZ",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.09114621,
-    "lng": -110.96316257,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-marmoleria-palo-verde",
-    "name": "BODEGA MARMOLERIA PALO VERDE",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.04989708,
-    "lng": -110.97362002,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-queseria-san-ramon",
-    "name": "BODEGA QUESERIA SAN RAMON",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.1313179,
-    "lng": -110.96974336,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-sin-nombre",
-    "name": "BODEGA SIN NOMBRE",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.10402033,
-    "lng": -110.97311188,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-t-y-t",
-    "name": "BODEGA T Y T",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.0866067,
-    "lng": -110.95230099,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-te-connectivity",
-    "name": "BODEGA TE CONNECTIVITY",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.13243561,
-    "lng": -111.01595025,
-    "website": "WWW.TECONNECTIVITY.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "bodega-ventas-de-loza-ollas-de-barro",
-    "name": "BODEGA VENTAS DE LOZA OLLAS DE BARRO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.12122385,
-    "lng": -110.97208258,
     "size": "1–10",
     "source": [
       "denue"
@@ -6686,84 +6092,6 @@
     "zone": "Hermosillo",
     "lat": 29.00989267,
     "lng": -110.94575492,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cafe-internet",
-    "name": "CAFE INTERNET",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.12500331,
-    "lng": -111.00050763,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cafe-internet-interanet",
-    "name": "CAFE INTERNET INTERANET",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.12288958,
-    "lng": -110.99979091,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cafe-internet-kaziim",
-    "name": "CAFE INTERNET KAZIIM",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.1021462,
-    "lng": -110.99580312,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cafe-internet-mei-bit",
-    "name": "CAFE INTERNET MEI-BIT",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.05118578,
-    "lng": -110.95673947,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cafe-internet-omega",
-    "name": "CAFE INTERNET OMEGA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.06047099,
-    "lng": -110.96641095,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cafe-internet-sin-nombre",
-    "name": "CAFE INTERNET SIN NOMBRE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.12716025,
-    "lng": -111.01666357,
     "size": "1–10",
     "source": [
       "denue"
@@ -9394,19 +8722,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "centro-de-agencias-cce",
-    "name": "CENTRO DE AGENCIAS CCE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08900843,
-    "lng": -110.99151648,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "centro-de-apoyo-psicologa-dulce-sanchez",
     "name": "CENTRO DE APOYO PSICOLOGA DULCE SANCHEZ",
     "category": "Medical / Biomedical",
@@ -9466,33 +8781,6 @@
     "lat": 29.07442144,
     "lng": -110.96772364,
     "website": "WWW.UBADUVADENT.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "centro-de-copiado-escuela-de-derecho",
-    "name": "CENTRO DE COPIADO ESCUELA DE DERECHO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08450444,
-    "lng": -110.96236766,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "centro-de-credencializacion-une-plaza-lomas-peri",
-    "name": "CENTRO DE CREDENCIALIZACION UNE PLAZA LOMAS PERISUR",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.03843929,
-    "lng": -110.93943557,
-    "website": "UNESONORA.COM",
     "size": "1–10",
     "source": [
       "denue"
@@ -10716,45 +10004,6 @@
     "zone": "Hermosillo",
     "lat": 29.00534659,
     "lng": -110.94331369,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "ciber-espacio-net",
-    "name": "CIBER ESPACIO NET",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.84462141,
-    "lng": -111.50198412,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "ciber-sabino",
-    "name": "CIBER SABINO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.1103239,
-    "lng": -110.92137569,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cibernet-pc",
-    "name": "CIBERNET PC",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.03493602,
-    "lng": -110.98263953,
     "size": "1–10",
     "source": [
       "denue"
@@ -13512,32 +12761,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "cobachat",
-    "name": "COBACHAT",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.0110786,
-    "lng": -110.92887618,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "cobilers",
-    "name": "COBILERS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07032131,
-    "lng": -110.96090445,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "cocinas-arman",
     "name": "COCINAS ARMAN",
     "category": "Manufacturing / Automotive",
@@ -13919,19 +13142,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "compas-papeleria",
-    "name": "COMPAS PAPELERIA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.15157284,
-    "lng": -111.01900051,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "compomex",
     "name": "COMPOMEX",
     "category": "Manufacturing / Automotive",
@@ -14209,20 +13419,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "consorcio-juridico",
-    "name": "CONSORCIO JURIDICO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.0764504,
-    "lng": -110.95757607,
-    "website": "WWW.CJC.MX",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "construcciones-servicios-y-distribuciones-de-bc",
     "name": "CONSTRUCCIONES, SERVICIOS Y DISTRIBUCIONES DE BC",
     "category": "Manufacturing / Automotive",
@@ -14269,20 +13465,6 @@
     "zone": "Hermosillo",
     "lat": 29.09229784,
     "lng": -110.94944023,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "consultoria-legal-y-empresarial-del-noroeste",
-    "name": "CONSULTORIA LEGAL Y EMPRESARIAL DEL NOROESTE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07483795,
-    "lng": -110.95999041,
-    "website": "WWW.CONSULTORIALEGALYEMPRESARIALDELNOROESTE.COM.COM",
     "size": "1–10",
     "source": [
       "denue"
@@ -19592,59 +18774,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "copiadora-del-departamento-de-enfermeria-de-la-u",
-    "name": "COPIADORA DEL DEPARTAMENTO DE ENFERMERIA DE LA UNIVERSIDAD DE SONORA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.0846927,
-    "lng": -110.96240052,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copias-inpreciones-papeleria",
-    "name": "COPIAS INPRECIONES PAPELERIA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.05308822,
-    "lng": -110.98397335,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copicentro-xerox",
-    "name": "COPICENTRO XEROX",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07638524,
-    "lng": -110.95781396,
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copired-centro-de-diseno-y-copiado-profesional",
-    "name": "COPIRED CENTRO DE DISEÑO Y COPIADO PROFESIONAL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08667928,
-    "lng": -110.97492851,
-    "website": "WWW.COPICENTROXEROX.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "coprose-hermosillo",
     "name": "COPROSE HERMOSILLO",
     "category": "Telemetry / IoT",
@@ -19652,85 +18781,6 @@
     "lat": 29.02454347,
     "lng": -110.94183203,
     "size": "51–200",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copy-centro",
-    "name": "COPY CENTRO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11533351,
-    "lng": -110.99229443,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copy-march",
-    "name": "COPY MARCH",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10379413,
-    "lng": -110.95272029,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copy-one",
-    "name": "COPY ONE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07382011,
-    "lng": -110.97462974,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copy-sol",
-    "name": "COPY SOL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08855674,
-    "lng": -110.96498036,
-    "website": "COPYSOL.COM.MX",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copy-twins",
-    "name": "COPY TWINS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11572538,
-    "lng": -110.98845029,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "copytuza",
-    "name": "COPYTUZA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08777514,
-    "lng": -110.96952002,
-    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -19848,20 +18898,6 @@
     "lat": 29.08704333,
     "lng": -110.95205759,
     "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "corporativo-de-servicios-legaxxi",
-    "name": "CORPORATIVO DE SERVICIOS LEGAXXI",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09743569,
-    "lng": -110.94050511,
-    "website": "WWW.LEGAXXI.COM",
-    "size": "500+",
     "source": [
       "denue"
     ],
@@ -27182,86 +26218,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "estacionamiento-auxiliar-remyco",
-    "name": "ESTACIONAMIENTO AUXILIAR REMYCO",
-    "category": "Manufacturing / Automotive",
-    "zone": "Hermosillo",
-    "lat": 29.0957559,
-    "lng": -110.96611575,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "estacionamiento-clinica-cerro",
-    "name": "ESTACIONAMIENTO CLINICA CERRO",
-    "category": "Medical / Biomedical",
-    "zone": "Hermosillo",
-    "lat": 29.07613115,
-    "lng": -110.96607647,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "estacionamiento-clinica-san-leo",
-    "name": "ESTACIONAMIENTO CLINICA SAN LEO",
-    "category": "Medical / Biomedical",
-    "zone": "Hermosillo",
-    "lat": 29.0928329,
-    "lng": -110.9509122,
-    "website": "WWW.DENTALSANLEO.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "estacionamiento-frente-a-hospital-san-benito",
-    "name": "ESTACIONAMIENTO FRENTE A HOSPITAL SAN BENITO",
-    "category": "Medical / Biomedical",
-    "zone": "Hermosillo",
-    "lat": 29.0898233,
-    "lng": -110.95876488,
-    "website": "WWW.HSANBENITO.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "estacionamiento-multicopi",
-    "name": "ESTACIONAMIENTO MULTICOPI",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09362999,
-    "lng": -110.9564916,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "estacionamiento-swann-oftalmologia-y-laser-hermo",
-    "name": "ESTACIONAMIENTO SWANN OFTALMOLOGIA Y LASER HERMOSILLO",
-    "category": "Medical / Biomedical",
-    "zone": "Hermosillo",
-    "lat": 29.10016295,
-    "lng": -110.95179237,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "estacionemiento-hieleria-veracruz",
     "name": "ESTACIONEMIENTO HIELERIA VERACRUZ",
     "category": "Manufacturing / Automotive",
@@ -29178,19 +28134,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "frente-estatal-de-organizaciones-del-sector-soci",
-    "name": "FRENTE ESTATAL DE ORGANIZACIONES DEL SECTOR SOCIAL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11642483,
-    "lng": -111.00548085,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "fresh-water",
     "name": "FRESH WATER",
     "category": "Manufacturing / Automotive",
@@ -29389,40 +28332,12 @@
     "city": "Hermosillo"
   },
   {
-    "id": "ga-hipotecario",
-    "name": "GA HIPOTECARIO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09057805,
-    "lng": -111.00697101,
-    "website": "WWW.GAHIPOTECARIO.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "gabinete-de-rayos-x-mamografia-y-ultrasonido",
     "name": "GABINETE DE RAYOS X MAMOGRAFIA Y ULTRASONIDO",
     "category": "Medical / Biomedical",
     "zone": "Hermosillo",
     "lat": 29.08374105,
     "lng": -110.98464997,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "gabssa-hermosillo",
-    "name": "GABSSA HERMOSILLO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07350916,
-    "lng": -110.96003585,
-    "website": "WWW.GABSSA.COM.MX",
     "size": "1–10",
     "source": [
       "denue"
@@ -29582,19 +28497,6 @@
     "zone": "Hermosillo",
     "lat": 29.1121825,
     "lng": -111.00782163,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "garabatos-papeleria",
-    "name": "GARABATOS PAPELERIA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10991698,
-    "lng": -111.01919701,
     "size": "1–10",
     "source": [
       "denue"
@@ -29832,19 +28734,6 @@
     "zone": "Hermosillo",
     "lat": 29.12159189,
     "lng": -110.95136247,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "gestion-de-creditos-hipotecarios-creditage",
-    "name": "GESTION DE CREDITOS HIPOTECARIOS CREDITAGE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08540283,
-    "lng": -110.99136188,
     "size": "1–10",
     "source": [
       "denue"
@@ -30327,33 +29216,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "grupo-acser",
-    "name": "GRUPO ACSER",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07027829,
-    "lng": -110.95661117,
-    "website": "ACSER.NET",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "grupo-actuarial-de-servicios",
-    "name": "GRUPO ACTUARIAL DE SERVICIOS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07524792,
-    "lng": -110.97473987,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "grupo-aguilas-seguridad-privada",
     "name": "GRUPO AGUILAS SEGURIDAD PRIVADA",
     "category": "Telemetry / IoT",
@@ -30673,19 +29535,6 @@
     "zone": "Hermosillo",
     "lat": 29.0855082,
     "lng": -110.97078908,
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "grupo-tormenz",
-    "name": "GRUPO TORMENZ",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08483638,
-    "lng": -110.97633583,
     "size": "11–50",
     "source": [
       "denue"
@@ -33487,19 +32336,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "impresiones-pantonex",
-    "name": "IMPRESIONES PANTONEX",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07770418,
-    "lng": -110.95569467,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "impresiones-print-station",
     "name": "IMPRESIONES PRINT STATION",
     "category": "Manufacturing / Automotive",
@@ -33520,45 +32356,6 @@
     "lat": 29.09252351,
     "lng": -110.96131664,
     "website": "WWW.IMPSEL.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "impresiones-y-copias",
-    "name": "IMPRESIONES Y COPIAS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.00038953,
-    "lng": -110.91719228,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "impresiones-y-copias-estrella",
-    "name": "IMPRESIONES Y COPIAS ESTRELLA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.99574367,
-    "lng": -110.95988887,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "impresiones-y-copias-sin-nombre",
-    "name": "IMPRESIONES Y COPIAS SIN NOMBRE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.17508975,
-    "lng": -111.01489692,
     "size": "1–10",
     "source": [
       "denue"
@@ -34339,19 +33136,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "intercopy",
-    "name": "INTERCOPY",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10379397,
-    "lng": -110.95225664,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "interlogic",
     "name": "INTERLOGIC",
     "category": "Manufacturing / Automotive",
@@ -34374,97 +33158,6 @@
     "lng": -110.99677483,
     "website": "WWW.INTERLOGIC.COM.MX",
     "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internek-san-andres",
-    "name": "INTERNEK SAN ANDRES",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.84131468,
-    "lng": -111.48154582,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internet-el-venado",
-    "name": "INTERNET EL VENADO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.14305231,
-    "lng": -110.96655863,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internet-en-farmacia",
-    "name": "INTERNET EN FARMACIA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.0442542,
-    "lng": -110.99508936,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internet-g-bytes",
-    "name": "INTERNET G BYTES",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11873224,
-    "lng": -111.02274425,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internet-martin-fierros",
-    "name": "INTERNET MARTIN FIERROS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.84502551,
-    "lng": -111.49522019,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internet-meda",
-    "name": "INTERNET MEDA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.13297302,
-    "lng": -110.97736455,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "internet-sin-nombre",
-    "name": "INTERNET SIN NOMBRE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.84576323,
-    "lng": -111.50782162,
-    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -35002,19 +33695,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "kafe-internet-kolash-centromultimedia-com",
-    "name": "KAFE INTERNET KOLASH CENTROMULTIMEDIA.COM",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11648865,
-    "lng": -110.97330288,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "kale-fans-america",
     "name": "KALE FANS AMERICA",
     "category": "Manufacturing / Automotive",
@@ -35199,19 +33879,6 @@
     "isAgency": false,
     "source": [
       "adzuna"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "konica-minolta",
-    "name": "KONICA MINOLTA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08779059,
-    "lng": -110.97824342,
-    "size": "1–10",
-    "source": [
-      "denue"
     ],
     "city": "Hermosillo"
   },
@@ -37076,19 +35743,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "lic-luis-carlos-ainza-hijo",
-    "name": "LIC LUIS CARLOS AINZA HIJO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07821211,
-    "lng": -110.95067412,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "lic-steffani-lomeli-salas-nutricion-oncologica",
     "name": "LIC. STEFFANI LOMELI SALAS NUTRICION ONCOLOGICA",
     "category": "Medical / Biomedical",
@@ -37110,19 +35764,6 @@
     "lng": -110.90256647,
     "website": "LICANFOOD.COM",
     "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "licuados-y-jugos-el-naranjerito",
-    "name": "LICUADOS Y JUGOS EL NARANJERITO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10966369,
-    "lng": -110.99356955,
-    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -37190,19 +35831,6 @@
     "zone": "Hermosillo",
     "lat": 29.10697099,
     "lng": -111.00547408,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "local-de-internet-gamer",
-    "name": "LOCAL DE INTERNET GAMER",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09266296,
-    "lng": -111.006536,
     "size": "1–10",
     "source": [
       "denue"
@@ -39259,19 +37887,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "merceria-y-regalos-el-bombon",
-    "name": "MERCERIA Y REGALOS EL BOMBON",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.1003168,
-    "lng": -110.92755878,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "mesabi",
     "name": "MESABI",
     "category": "Manufacturing / Automotive",
@@ -39464,19 +38079,6 @@
     "zone": "Hermosillo",
     "lat": 29.10583532,
     "lng": -110.95133896,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "micro-r",
-    "name": "MICRO R",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07886106,
-    "lng": -110.95674802,
     "size": "1–10",
     "source": [
       "denue"
@@ -40220,20 +38822,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "multicopy-digital",
-    "name": "MULTICOPY DIGITAL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09369747,
-    "lng": -110.95647259,
-    "website": "WWW.MULTYCOPYHMO.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "multiformas-de-sonora",
     "name": "MULTIFORMAS DE SONORA",
     "category": "Manufacturing / Automotive",
@@ -40794,19 +39382,6 @@
     "lat": 29.09949932,
     "lng": -110.97113111,
     "website": "NEWDIETCENTER.COM",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "new-space-cafe-internet",
-    "name": "NEW SPACE CAFE INTERNET",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.82248257,
-    "lng": -111.94118028,
     "size": "1–10",
     "source": [
       "denue"
@@ -41445,19 +40020,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "oficina-alterna-phoenix",
-    "name": "OFICINA ALTERNA PHOENIX",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09464805,
-    "lng": -110.96463148,
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "oficina-de-una-carpinteria-sin-nombre",
     "name": "OFICINA DE UNA CARPINTERIA SIN NOMBRE",
     "category": "Manufacturing / Automotive",
@@ -41505,19 +40067,6 @@
     "lng": -110.93844002,
     "website": "WWW.WALDEN.MX",
     "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "oficinas-credito-y-cobranza-banco-azteca",
-    "name": "OFICINAS CREDITO Y COBRANZA BANCO AZTECA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11137936,
-    "lng": -110.97898328,
-    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -42576,201 +41125,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "papeleria-betel",
-    "name": "PAPELERIA BETEL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.12320927,
-    "lng": -111.01612842,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-cbtis-11",
-    "name": "PAPELERIA CBTIS 11",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.11474133,
-    "lng": -110.95215015,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-diana-lexx",
-    "name": "PAPELERIA DIANA LEXX",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10083094,
-    "lng": -111.01583622,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-el-dino",
-    "name": "PAPELERIA EL DINO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.03993079,
-    "lng": -110.94458518,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-intercopy",
-    "name": "PAPELERIA INTERCOPY",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10379419,
-    "lng": -110.95287483,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-internet-y-videojuegos-astian",
-    "name": "PAPELERIA INTERNET Y VIDEOJUEGOS ASTIAN",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.00441391,
-    "lng": -110.94580341,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-jire",
-    "name": "PAPELERIA JIRE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.01440067,
-    "lng": -110.97742602,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-la-caridad",
-    "name": "PAPELERIA LA CARIDAD",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.14797742,
-    "lng": -110.98217991,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-la-pape-y-mas",
-    "name": "PAPELERIA LA PAPE Y MAS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10334148,
-    "lng": -111.00538606,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-maria-mia",
-    "name": "PAPELERIA MARIA MIA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09895331,
-    "lng": -110.92656708,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-millan",
-    "name": "PAPELERIA MILLAN",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10943605,
-    "lng": -110.97422363,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-plaza-futura",
-    "name": "PAPELERIA PLAZA FUTURA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.01462681,
-    "lng": -110.92414161,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-prisma",
-    "name": "PAPELERIA PRISMA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09459248,
-    "lng": -110.9404384,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-sin-nombre",
-    "name": "PAPELERIA SIN NOMBRE",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09916444,
-    "lng": -110.92534032,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "papeleria-y-cyber-ranchito",
-    "name": "PAPELERIA Y CYBER RANCHITO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08379405,
-    "lng": -110.92631235,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "paqueteria-envia",
     "name": "PAQUETERIA ENVIA",
     "category": "Mobility",
@@ -42845,32 +41199,6 @@
     "zone": "Hermosillo",
     "lat": 29.17354972,
     "lng": -110.89609875,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "pcbits",
-    "name": "PCBITS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08113046,
-    "lng": -110.94280601,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "pcbits-internet",
-    "name": "PCBITS INTERNET",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.14031801,
-    "lng": -110.96636652,
     "size": "1–10",
     "source": [
       "denue"
@@ -43092,20 +41420,6 @@
     "zone": "Hermosillo",
     "lat": 29.10471153,
     "lng": -110.91883494,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "pentagono-asesoria-legal-y-comercio",
-    "name": "PENTAGONO ASESORIA LEGAL Y COMERCIO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09795159,
-    "lng": -110.94482431,
-    "website": "WWW.PENTAGONOLEGAL.COM",
     "size": "1–10",
     "source": [
       "denue"
@@ -44652,20 +42966,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "prolegal",
-    "name": "PROLEGAL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09778687,
-    "lng": -110.9453761,
-    "website": "WWW.PROLEGAL.COM.MX",
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "promad-carpinteria",
     "name": "PROMAD CARPINTERIA",
     "category": "Manufacturing / Automotive",
@@ -44832,20 +43132,6 @@
     "lng": -110.99106771,
     "website": "WWW.PROSEGUR.COM.MX",
     "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "prosepago",
-    "name": "PROSEPAGO",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.0977806,
-    "lng": -111.0226508,
-    "website": "WWW.PROSEPAGO.COM",
-    "size": "11–50",
     "source": [
       "denue"
     ],
@@ -46833,19 +45119,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "rodriguez-baggio-y-asociados",
-    "name": "RODRIGUEZ BAGGIO Y ASOCIADOS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09246348,
-    "lng": -110.95927658,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "rogelio-nava-duarte",
     "name": "ROGELIO NAVA. DUARTE",
     "category": "Manufacturing / Automotive",
@@ -46957,19 +45230,6 @@
     "zone": "Hermosillo",
     "lat": 29.11151785,
     "lng": -110.95296113,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "rr-agencia",
-    "name": "RR AGENCIA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.1114741,
-    "lng": -110.97833035,
     "size": "1–10",
     "source": [
       "denue"
@@ -47557,20 +45817,6 @@
     "lat": 29.09686837,
     "lng": -111.02771894,
     "website": "WWW.SAPIPRECISON.COM",
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "saza-express",
-    "name": "SAZA EXPRESS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.07707863,
-    "lng": -110.95770546,
-    "website": "WWW.SAZAEXPRESS.COM",
     "size": "11–50",
     "source": [
       "denue"
@@ -48169,19 +46415,6 @@
     "zone": "Hermosillo",
     "lat": 29.11592474,
     "lng": -110.96727494,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "servicio-de-valuacion",
-    "name": "SERVICIO DE VALUACION",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08085097,
-    "lng": -110.98635081,
     "size": "1–10",
     "source": [
       "denue"
@@ -49988,19 +48221,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "sopextra",
-    "name": "SOPEXTRA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10406417,
-    "lng": -110.95801423,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "sp-rotulacion-impresion",
     "name": "SP ROTULACION IMPRESION",
     "category": "Manufacturing / Automotive",
@@ -50454,20 +48674,6 @@
     "lat": 29.10006769,
     "lng": -110.95126988,
     "website": "WWW.CLINICASWANN.COM",
-    "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "sytec",
-    "name": "SYTEC",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08751835,
-    "lng": -110.95573881,
-    "website": "WWW.CORPORATIVOSYTEC.COM",
     "size": "11–50",
     "source": [
       "denue"
@@ -54559,32 +52765,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "tramites-consulares-america",
-    "name": "TRAMITES CONSULARES AMERICA",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08908226,
-    "lng": -110.98275303,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "tramitex",
-    "name": "TRAMITEX",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.06818641,
-    "lng": -110.95771873,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "transportacion-foranea-de-la-sierra-sonorense",
     "name": "TRANSPORTACION FORANEA DE LA SIERRA SONORENSE",
     "category": "Mobility",
@@ -54966,19 +53146,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "tu-asesor-legal",
-    "name": "TU ASESOR LEGAL",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.09616012,
-    "lng": -110.93195875,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "tucson-water",
     "name": "TUCSON WATER",
     "category": "Manufacturing / Automotive",
@@ -55143,32 +53310,6 @@
     "lat": 29.06307262,
     "lng": -110.96335424,
     "size": "11–50",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "uni-copy",
-    "name": "UNI COPY",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.08061606,
-    "lng": -110.95858952,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "unicornio-accesorios",
-    "name": "UNICORNIO ACCESORIOS",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.10788314,
-    "lng": -110.96577388,
-    "size": "1–10",
     "source": [
       "denue"
     ],
@@ -57300,19 +55441,6 @@
     "city": "Hermosillo"
   },
   {
-    "id": "voibe-tech",
-    "name": "VOIBE-TECH",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 29.00827023,
-    "lng": -110.93950498,
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
     "id": "vr-manufacturas",
     "name": "VR MANUFACTURAS",
     "category": "Manufacturing / Automotive",
@@ -57543,19 +55671,6 @@
     "lat": 29.14577489,
     "lng": -110.96763124,
     "website": "WWW.NUTREA.REDUCTIVO",
-    "size": "1–10",
-    "source": [
-      "denue"
-    ],
-    "city": "Hermosillo"
-  },
-  {
-    "id": "xiber",
-    "name": "XIBER",
-    "category": "Call Center / BPO",
-    "zone": "Hermosillo",
-    "lat": 28.99901371,
-    "lng": -110.94466314,
     "size": "1–10",
     "source": [
       "denue"

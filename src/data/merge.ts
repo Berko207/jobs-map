@@ -115,7 +115,7 @@ function applyAdzuna(map: Map<string, MergeBucket>, records: AdzunaRecord[]): vo
     if (shouldExcludeAdzunaEmployer(a.name)) continue;
 
     const b = ensureBucket(map, a.name);
-    if (!b.sources.has("curated")) {
+    if (!b.sources.has("curated") && !b.sources.has("denue")) {
       b.name = a.name;
       b.category = a.category;
     }

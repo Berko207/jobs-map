@@ -61,6 +61,16 @@ const RETAIL_CHAIN_TERMS = [
   "supermercado",
   "minisuper",
   "abarrotes",
+  "grupo fame",
+  "calzado fame",
+  "banco azteca",
+  "elektra",
+  "coppel",
+  "liverpool",
+  "palacio de hierro",
+  "suburbia",
+  "office depot",
+  "office max",
 ];
 
 /** Generic Adzuna placeholders — not real employer names. */
@@ -74,7 +84,15 @@ const GENERIC_EMPLOYER_TERMS = [
   "global company",
   "multinational company",
   "important company",
+  "leading company",
+  "reputable company",
 ];
+
+/** Job titles must match for sector assignment (Adzuna tags by search keyword). */
+const ADZUNA_JOB_TITLE_RULES: Partial<Record<string, RegExp>> = {
+  "Call Center / BPO":
+    /call center|centro de contacto|telemarketing|atencion a clientes|atenci[oó]n a clientes|servicio al cliente|customer service|agente telef[oó]nic|ejecutivo telef[oó]nic|representante telef[oó]nic/i,
+};
 
 function normalize(name: string): string {
   return String(name ?? "")
@@ -106,4 +124,17 @@ export function shouldExcludeAdzunaEmployer(name: string): boolean {
   if (GENERIC_EMPLOYER_TERMS.some((term) => norm.includes(term))) return true;
 
   return false;
+}
+
+export function jobMatchesAdzunaCategory(
+  title: string | undefined,
+  category: string,
+): boolean {
+  const pattern = ADZUNA_JOB_TITLE_RULES[category];
+  if (!pattern) return true;
+  const text = String(title ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "");
+  return pattern.test(text);
 }

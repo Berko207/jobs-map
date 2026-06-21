@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Company, HOME_CITY, isHiring, sizeSortValue } from "@/data/companies";
 import CompanyCard from "./CompanyCard";
 import { CompanyStates } from "@/lib/storage";
@@ -25,6 +25,7 @@ interface SidebarProps {
   listView: ListView;
   onListViewChange: (value: ListView) => void;
   city: string;
+  filterKey: string;
 }
 
 export default function Sidebar({
@@ -44,8 +45,14 @@ export default function Sidebar({
   listView,
   onListViewChange,
   city,
+  filterKey,
 }: SidebarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const listRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    listRef.current?.scrollTo({ top: 0 });
+  }, [filterKey]);
 
   const sorted = useMemo(() => {
     const list = [...companies];
@@ -157,7 +164,7 @@ export default function Sidebar({
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-3">
+      <div ref={listRef} className="flex-1 overflow-y-auto p-3">
         <p className="mb-2 text-xs text-zinc-500">
           {filteredByView.length} employer
           {filteredByView.length !== 1 ? "s" : ""}

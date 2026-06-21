@@ -287,14 +287,8 @@ export default function JobsMap() {
     [cityCompanies],
   );
 
-  const filteredCompanies = useMemo(() => {
+  const companiesMatchingFilters = useMemo(() => {
     return cityCompanies.filter((c) => {
-      if (
-        selectedCategories.length > 0 &&
-        !selectedCategories.includes(c.category)
-      ) {
-        return false;
-      }
       if (zone && c.zone !== zone) return false;
       if (!matchesCompanySearch(c, search)) return false;
       const state = companyStates[c.id];
@@ -303,38 +297,39 @@ export default function JobsMap() {
       if (hiringNow && !isHiring(c)) return false;
       return true;
     });
-  }, [
-    cityCompanies,
-    selectedCategories,
+  }, [cityCompanies, zone, search, listView, companyStates, hiringNow]);
+
+  const filteredCompanies = useMemo(() => {
+    if (selectedCategories.length === 0) return companiesMatchingFilters;
+    return companiesMatchingFilters.filter((c) =>
+      selectedCategories.includes(c.category),
+    );
+  }, [companiesMatchingFilters, selectedCategories]);
+
+  const sectorFilterKey = [
+    city,
     zone,
     search,
     listView,
-    companyStates,
     hiringNow,
-  ]);
-
-  const sectorFilterCompanies = useMemo(() => {
-    return cityCompanies.filter((c) => {
-      if (
-        selectedCategories.length > 0 &&
-        !selectedCategories.includes(c.category)
-      ) {
-        return false;
-      }
-      if (zone && c.zone !== zone) return false;
-      if (!matchesCompanySearch(c, search)) return false;
-      const state = companyStates[c.id];
-      if (listView === "saved" && !state?.saved) return false;
-      if (listView === "applied" && !state?.applied) return false;
-      return true;
-    });
-  }, [cityCompanies, selectedCategories, zone, search, listView, companyStates]);
+    selectedCategories.join(","),
+  ].join("|");
 
   const handleCityChange = useCallback((next: string) => {
     setCity(next);
     setZone("");
     setSelectedCompanyId(null);
   }, []);
+
+  useEffect(() => {
+    if (
+      selectedCompanyId &&
+      !filteredCompanies.some((c) => c.id === selectedCompanyId)
+    ) {
+      setSelectedCompanyId(null);
+      setOpenToken(0);
+    }
+  }, [filteredCompanies, selectedCompanyId]);
 
   const activeCity = cityConfig(city);
 
@@ -356,7 +351,7 @@ export default function JobsMap() {
       <SectorFilter
         selected={selectedCategories}
         onChange={setSelectedCategories}
-        companies={sectorFilterCompanies}
+        companies={companiesMatchingFilters}
         hiringNow={hiringNow}
         onHiringNowChange={setHiringNow}
         city={city}
@@ -380,6 +375,7 @@ export default function JobsMap() {
           listView={listView}
           onListViewChange={setListView}
           city={city}
+          filterKey={sectorFilterKey}
         />
         <div className="relative flex-1 pb-12 md:pb-0">
           <MapContainer
@@ -403,7 +399,7 @@ export default function JobsMap() {
                 }
               />
             )}
-            <MarkerClusterGroup chunkedLoading>
+            <MarkerClusterGroup key={sectorFilterKey} chunkedLoading>
               {filteredCompanies.map((company) => {
                 const color = CATEGORY_COLORS[company.category];
                 const hiring = isHiring(company);

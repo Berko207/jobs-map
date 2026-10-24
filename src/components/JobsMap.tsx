@@ -235,7 +235,7 @@ function MapPopupContent({
           href={links.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          title="Search jobs on LinkedIn"
+          title="Search LinkedIn"
           className="rounded bg-[#0A66C2] px-2 py-0.5 text-[10px] font-medium text-white"
         >
           LinkedIn

@@ -47,7 +47,7 @@ Employer map for Hermosillo, Sonora. Production: [jobs-map.vercel.app](https://j
 
 ## UI
 
-- Job links: `src/lib/jobLinks.ts`. Indeed, Computrabajo, LinkedIn, and Google. No scraping.
+- Job links: `src/lib/jobLinks.ts`. Indeed (`/jobs?q=&l=`, the homepage form), Computrabajo (`/trabajo-de-{name}-en-{city}`), LinkedIn homepage search (`/search/results/all`, not `/jobs`), and Google. No scraping.
 - Search: `src/lib/search.ts`.
 - Save / Applied: `src/lib/storage.ts`.
 

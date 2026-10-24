@@ -30,7 +30,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files — never commit secrets; .env.example is tracked
+# secrets go in .env.local (copy from .env.example). never commit them.
 .env
 .env.local
 .env.*.local
@@ -38,6 +38,9 @@ yarn-error.log*
 
 # raw DENUE CSV (large; committed gzip is data/denue_sonora.csv.gz)
 /data/denue_sonora.csv
+
+# generated from node_modules/maplibre-gl by scripts/copy-maplibre-worker.mjs
+/public/vendor/
 
 # vercel
 .vercel

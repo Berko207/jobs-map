@@ -9,6 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { gunzipSync } from "node:zlib";
+import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import { parse } from "csv-parse/sync";
 import {
@@ -17,8 +18,14 @@ import {
   shouldExcludeAdzunaEmployer,
 } from "./adzuna-filters.mjs";
 
+const { loadEnvConfig } = createRequire(import.meta.url)("@next/env");
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
+
+// Next loads .env* for `next dev` / `next build`. This script runs first, so
+// load the same files here. Existing process env (Vercel) is left as-is.
+loadEnvConfig(ROOT, false);
 const GZ_PATH = path.join(ROOT, "data/denue_sonora.csv.gz");
 const DENUE_OUT = path.join(ROOT, "src/data/companies.denue.json");
 const ADZUNA_OUT = path.join(ROOT, "src/data/companies.adzuna.json");
@@ -349,7 +356,7 @@ async function fetchAdzuna() {
       "Warning: ADZUNA_APP_ID / ADZUNA_APP_KEY not set — skipping Adzuna fetch.",
     );
     console.warn(
-      "  Add both in Vercel → Project Settings → Environment Variables.",
+      "  Set both in .env.local or in Vercel → Project Settings → Environment Variables.",
     );
     return readJson(ADZUNA_OUT, []);
   }

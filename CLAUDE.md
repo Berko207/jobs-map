@@ -1,3 +1,3 @@
 @AGENTS.md
 
-Project: Hermosillo Jobs Map — sector-filtered employer finder with build-time DENUE + Adzuna merge. Live at https://jobs-map.vercel.app.
+Claude Code loads this file only. Project rules live in AGENTS.md. Edit that file.

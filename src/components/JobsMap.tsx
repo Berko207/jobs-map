@@ -3,12 +3,14 @@
 import { useCallback, useEffect, useMemo, useRef, useState, Fragment } from "react";
 import {
   MapContainer,
-  TileLayer,
   CircleMarker,
   Popup,
   useMap,
 } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
+import L, { type Layer } from "leaflet";
+import { setWorkerUrl } from "maplibre-gl";
+import { maplibreGL } from "@maplibre/maplibre-gl-leaflet";
 import {
   CATEGORY_COLORS,
   Category,
@@ -32,10 +34,69 @@ import { matchesCompanySearch } from "@/lib/search";
 import SectorFilter from "./SectorFilter";
 import Sidebar, { ListView, SortOption } from "./Sidebar";
 
-const CARTO_TILE =
-  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
-const CARTO_ATTRIBUTION =
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+// CARTO raster tiles have required an API key since 2026-09-25. Requests
+// without one render an "API KEY REQUIRED" watermark instead of streets.
+// OpenFreeMap serves the same OpenStreetMap data with no key.
+const OPENFREEMAP_STYLE = "https://tiles.openfreemap.org/styles/liberty";
+
+let mapLibreWorkerReady = false;
+
+function configureMapLibreWorker() {
+  if (mapLibreWorkerReady) return;
+  setWorkerUrl("/vendor/maplibre-gl-worker.mjs");
+  mapLibreWorkerReady = true;
+}
+
+const OSM_RASTER =
+  "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const OSM_ATTRIBUTION =
+  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+
+function canUseWebGL2() {
+  try {
+    const canvas = document.createElement("canvas");
+    return Boolean(canvas.getContext("webgl2"));
+  } catch {
+    return false;
+  }
+}
+
+function addOsmRaster(map: L.Map) {
+  const tiles = L.tileLayer(OSM_RASTER, { attribution: OSM_ATTRIBUTION });
+  tiles.addTo(map);
+  return () => {
+    map.removeLayer(tiles);
+  };
+}
+
+function OpenFreeMapLayer() {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!canUseWebGL2()) return addOsmRaster(map);
+
+    configureMapLibreWorker();
+    let layer: Layer | null = null;
+    try {
+      layer = maplibreGL({ style: OPENFREEMAP_STYLE }) as Layer;
+      layer.addTo(map);
+    } catch (error) {
+      console.warn("OpenFreeMap basemap failed; using OSM raster tiles.", error);
+      return addOsmRaster(map);
+    }
+
+    return () => {
+      if (!layer || !map.hasLayer(layer)) return;
+      try {
+        map.removeLayer(layer);
+      } catch {
+        // The adapter throws in onRemove if WebGL never finished starting.
+      }
+    };
+  }, [map]);
+
+  return null;
+}
 
 function FlyToCompany({
   target,
@@ -381,10 +442,12 @@ export default function JobsMap() {
           <MapContainer
             center={HERMOSILLO_CENTER}
             zoom={DEFAULT_ZOOM}
+            minZoom={2}
+            maxZoom={19}
             className="h-full w-full"
             scrollWheelZoom
           >
-            <TileLayer url={CARTO_TILE} attribution={CARTO_ATTRIBUTION} />
+            <OpenFreeMapLayer />
             <RecenterOnCity center={activeCity.center} zoom={activeCity.zoom} />
             <FlyToCompany target={flyTarget} />
             {selectedCompany && openToken > 0 && (

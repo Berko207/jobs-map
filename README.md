@@ -2,9 +2,9 @@
 
 **Live:** [jobs-map.vercel.app](https://jobs-map.vercel.app)
 
-A sector-filtered employer finder for Hermosillo, Sonora. Plot local companies on a free CARTO/OpenStreetMap basemap, filter by industry (call centers, software, manufacturing, robotics, etc.), and jump to job-board searches for each employer.
+Employer map for Hermosillo, Sonora. Filter companies by sector, see who is hiring, and open a job-board search for each one.
 
-## Quick start
+## Run locally
 
 ```bash
 npm install
@@ -13,114 +13,97 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-Local dev uses the last committed `companies.merged.json`. Run `npm run build` to regenerate from the DENUE CSV and Adzuna (requires env vars for live hiring data).
+`npm run dev` serves the last committed `src/data/companies.merged.json`. It does not call Adzuna. Run `npm run build` when you want a fresh merge from DENUE and Adzuna.
 
-## Deploy to Vercel
+## Environment
 
-1. Push this repo to GitHub (includes `data/denue_sonora.csv.gz`).
-2. Import at [vercel.com/new](https://vercel.com/new) and connect the GitHub repo.
-3. **Build Command:** `npm run build` (default — do not override).
-4. Optional env vars (Project Settings → Environment Variables):
-   - `ADZUNA_APP_ID` / `ADZUNA_APP_KEY` — live "Hiring now" data from [developer.adzuna.com](https://developer.adzuna.com/). If missing or the API fails, the build continues with DENUE + curated only.
-   - `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` — optional Save/Applied sync (see below).
+Two files, two jobs:
 
-Every deploy runs `scripts/build-data.mjs` before `next build`: parses the committed DENUE gzip, fetches Adzuna (non-fatal), merges via `merge.ts` logic, writes `src/data/companies.merged.json`.
+| File | Committed | What it is |
+|------|-----------|------------|
+| `.env.example` | yes | Template. Names only, no secrets. |
+| `.env.local` | no | Your real values. Already gitignored. |
 
-### GitHub commit email
+Copy from the example if `.env.local` is missing: `cp .env.example .env.local`.
 
-Vercel blocks Git-triggered deploys when the commit author email is not linked to your GitHub account. Either:
+| Variable | Required | Used for |
+|----------|----------|----------|
+| `ADZUNA_APP_ID`, `ADZUNA_APP_KEY` | no | Live "Hiring now" counts at build time. From [developer.adzuna.com](https://developer.adzuna.com/). |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | no | Save / Applied sync across devices. |
 
-- Add your commit email under [GitHub → Settings → Emails](https://github.com/settings/emails), or
-- Set `git config user.email` to an email already verified on GitHub before pushing.
+On Vercel, set the same names in Project Settings → Environment Variables. A missing Adzuna key or a failed fetch does not fail the build. A missing Supabase key keeps Save / Applied in `localStorage`.
 
-Manual redeploys from the Vercel dashboard are not affected.
+The map does not use an API key.
 
-Map tiles use **CARTO Voyager** (free). Keep attribution visible: *© OpenStreetMap contributors © CARTO*.
+## Map
 
-## Features
+Streets come from [OpenFreeMap](https://openfreemap.org/) (Liberty style, OpenStreetMap data), drawn with MapLibre under the Leaflet markers. No key, no request cap, commercial use allowed.
 
-- **Sector filter** — multi-select chips with live counts; filters map markers and sidebar list together.
-- **Map** — colored `circleMarker` pins by sector, clustered when zoomed out.
-- **Sidebar** — search, zone filter, sort (rating / size / name), ranked employer cards.
-- **Find roles** — deep links to Indeed, Computrabajo, and Google job searches (no API).
-- **Hiring now** — filter employers with active Adzuna postings; open-role counts link to Adzuna searches.
-- **Save / Applied** — toggles persist in `localStorage` (default) or Supabase (optional).
+`npm run dev` and `npm run build` copy the MapLibre worker into `public/vendor/` before the app starts. That folder is generated. Do not commit it.
 
-## Data pipeline (build-time)
+Browsers without WebGL2 fall back to OpenStreetMap raster tiles. Leave the attribution on the map: OpenFreeMap, OpenMapTiles, OpenStreetMap.
 
-Employer data merges from four inputs:
+## Data
 
-| Source | Input | Role |
-|--------|-------|------|
-| Curated featured | `curatedFeatured.json` | Hand-edited pins with ratings/notes (authoritative coords) |
-| DENUE (INEGI) | `data/denue_sonora.csv.gz` | Hermosillo establishments by SCIAN sector |
-| Adzuna jobs | Vercel env vars at build | Active open-role counts |
-| Nominatim cache | `nominatim-cache.json` | Fallback coords for records missing lat/lng |
+The app reads `src/data/companies.merged.json`. That file is a build artifact. So are `companies.denue.json` and `companies.adzuna.json`. Do not edit them by hand.
+
+| Input | File | Role |
+|-------|------|------|
+| Curated pins | `src/data/curatedFeatured.json` | Hand-edited employers. These coordinates win. |
+| DENUE | `data/denue_sonora.csv.gz` | INEGI establishments in Hermosillo. |
+| Adzuna | env vars at build | Open-role counts. |
+| Nominatim cache | `src/data/nominatim-cache.json` | Fallback coordinates. |
 
 ```
-data/denue_sonora.csv.gz  ─┐
-Vercel ADZUNA_* env vars  ─┼─► scripts/build-data.mjs ─► write-merged.mjs ─► companies.merged.json ─► app
-curatedFeatured.json      ─┤         (parse + fetch)         (merge)
-nominatim-cache.json      ─┘
+data/denue_sonora.csv.gz ─┐
+.env.local ADZUNA_*      ─┼─► scripts/build-data.mjs ─► companies.merged.json
+curatedFeatured.json     ─┤
+nominatim-cache.json     ─┘
 ```
 
-Do not edit `companies.merged.json`, `companies.denue.json`, or `companies.adzuna.json` by hand — they are build artifacts. Edit `curatedFeatured.json` or re-run the pipeline.
+`src/data/merge.ts` is the merge used by the app. `scripts/merge-companies.mjs` is the copy used at build time. Change both together.
 
-### Updating DENUE data
+### Update DENUE
 
-1. Download the Sonora CSV zip from [INEGI DENUE](https://www.inegi.org.mx/app/descarga/default.html?t=denue) (entidad 26).
-2. Gzip the CSV inside `conjunto_de_datos/`:
+1. Download the Sonora export from [INEGI DENUE](https://www.inegi.org.mx/app/descarga/default.html?t=denue) (entidad 26).
+2. Replace the gzip:
 
    ```bash
    unzip -p denue_26_csv.zip conjunto_de_datos/denue_inegi_26_.csv | gzip -9 > data/denue_sonora.csv.gz
    ```
 
-3. Commit `data/denue_sonora.csv.gz` (the raw `.csv` and `.zip` stay out of git).
+3. Commit `data/denue_sonora.csv.gz`. The raw `.csv` and the zip stay out of git.
 
-## Adding employers
+### Add an employer or a sector
 
-Edit `src/data/curatedFeatured.json` for hand-picked pins (re-exported via `curatedFeatured.ts`).
+Hand-picked pins go in `src/data/curatedFeatured.json`.
 
-### Extending sectors
+For a new sector: add the label to `Category` and a color to `CATEGORY_COLORS` in `src/data/types.ts`, then update the SCIAN and keyword rules in `scripts/build-data.mjs` if DENUE should map into it.
 
-1. Add the new label to the `Category` union type in `types.ts`.
-2. Add a hex color to `CATEGORY_COLORS`.
-3. Update SCIAN / keyword rules in `scripts/build-data.mjs` if DENUE should map to the new sector.
+## Save / Applied
 
-## Optional Supabase persistence
+The browser stores toggles in `localStorage`. To sync across devices, create a Supabase project, run `supabase/schema.sql` in the SQL editor, and set the two `NEXT_PUBLIC_SUPABASE_*` variables.
 
-By default, Save/Applied state is stored in the browser via `localStorage`.
+## Deploy
 
-To sync across devices:
+The repo is already on Vercel via GitHub. Production builds use `npm run build`: data script, then `next build`. Do not override the build command.
 
-1. Create a free [Supabase](https://supabase.com) project.
-2. Run `supabase/schema.sql` in the SQL editor.
-3. Add `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` in Vercel env vars.
-
-If env vars are missing, the app silently falls back to `localStorage`.
+Vercel skips a Git deploy when the commit email is not on the GitHub account. Add the email under [GitHub → Settings → Emails](https://github.com/settings/emails), or commit with an email that is already verified. A redeploy from the Vercel dashboard is not affected.
 
 ## Stack
 
-- Next.js 16 (App Router) + TypeScript + Tailwind CSS
-- react-leaflet v4 + leaflet + react-leaflet-cluster
-- CARTO Voyager tiles over OpenStreetMap data
-
-## Project structure
+Next.js 16 (App Router), TypeScript, Tailwind CSS, Leaflet, react-leaflet-cluster, MapLibre GL.
 
 ```
-src/
-  app/           # layout, page (dynamic JobsMap import)
-  components/    # JobsMap, SectorFilter, Sidebar, CompanyCard
-  data/          # merge.ts, curatedFeatured, companies.merged.json, types
-  lib/           # jobLinks, storage
-scripts/
-  build-data.mjs       # DENUE parse + Adzuna fetch → source JSON
-  merge-companies.mjs  # JS mirror of merge.ts (used at build time)
-  write-merged.mjs     # merge sources → companies.merged.json
-data/            # denue_sonora.csv.gz (committed gzip of INEGI Sonora export)
-supabase/        # optional schema
+src/app/            layout and page
+src/components/     JobsMap, filters, sidebar, cards
+src/data/           types, curated pins, merge, generated JSON
+src/lib/            job links, search, storage
+scripts/            DENUE parse, Adzuna fetch, merge, MapLibre worker copy
+data/               denue_sonora.csv.gz
+supabase/           optional schema
 ```
 
 ## License
 
-MIT — map data © OpenStreetMap contributors; tiles © CARTO.
+MIT. Map data © OpenStreetMap contributors. Tiles via OpenFreeMap © OpenMapTiles.

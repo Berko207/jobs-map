@@ -232,6 +232,15 @@ function MapPopupContent({
           Computrabajo
         </a>
         <a
+          href={links.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Search jobs on LinkedIn"
+          className="rounded bg-[#0A66C2] px-2 py-0.5 text-[10px] font-medium text-white"
+        >
+          LinkedIn
+        </a>
+        <a
           href={googleMapsUrl(company.lat, company.lng, company.name)}
           target="_blank"
           rel="noopener noreferrer"

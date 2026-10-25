@@ -88,10 +88,23 @@ const GENERIC_EMPLOYER_TERMS = [
   "reputable company",
 ];
 
-/** Job titles must match for sector assignment (Adzuna tags by search keyword). */
+/** Job titles must match. Adzuna returns the search keyword, not a sector. */
 const ADZUNA_JOB_TITLE_RULES: Partial<Record<string, RegExp>> = {
   "Call Center / BPO":
     /call center|centro de contacto|telemarketing|atencion a clientes|atenci[oó]n a clientes|servicio al cliente|customer service|agente telef[oó]nic|ejecutivo telef[oó]nic|representante telef[oó]nic/i,
+  Software:
+    /\bsoftware\b|desarrollador|developer|programmer|programador|full[\s-]?stack/i,
+  "Telemetry / IoT": /telemetr|rastreo|\bgps\b|\biot\b|flotilla/i,
+  "Robotics / Automation":
+    /automatizaci[oó]n|rob[oó]tic|\bplc\b|control industrial/i,
+  "Manufacturing / Automotive":
+    /automotriz|autoparte|aeroespacial|maquila|ensamble|operador de producci[oó]n/i,
+  "Medical / Biomedical":
+    /biomed|laboratorio cl[ií]nico|equipo m[eé]dico|hospital/i,
+  "Veterinary / Animal Health": /veterinar|zootec|pecuario|mascota/i,
+  Pharmaceutical: /farmac[eé]utic|medicamento/i,
+  Media: /periodista|reportero|redactor|locutor|noticiero|conductor de noticias/i,
+  Mobility: /conductor|repartidor|log[ií]stica|chofer|ultima milla/i,
 };
 
 function normalize(name: string): string {
@@ -131,7 +144,7 @@ export function jobMatchesAdzunaCategory(
   category: string,
 ): boolean {
   const pattern = ADZUNA_JOB_TITLE_RULES[category];
-  if (!pattern) return true;
+  if (!pattern) return false;
   const text = String(title ?? "")
     .toLowerCase()
     .normalize("NFD")

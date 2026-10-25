@@ -52,39 +52,24 @@ const OUT_OF_BOUND_CITIES = [
 ];
 
 const SECTOR_KEYWORDS = {
-  "Call Center / BPO": [
-    "call center",
-    "centro de contacto",
-    "telemarketing",
-    "atencion a clientes",
+  "Call Center / BPO": ["call center", "centro de contacto", "telemarketing"],
+  Software: ["software", "desarrollador de software", "software developer"],
+  "Telemetry / IoT": ["telemetria", "rastreo satelital", "iot"],
+  "Robotics / Automation": [
+    "automatizacion industrial",
+    "robotica",
+    "robotics",
   ],
-  Software: ["software", "desarrollador", "developer"],
-  "Telemetry / IoT": ["telemetria", "iot", "gps"],
-  "Robotics / Automation": ["automatizacion", "robotics", "controls"],
-  "Manufacturing / Automotive": ["manufactura", "produccion", "automotriz"],
-  "Medical / Biomedical": [
-    "medico",
-    "enfermer",
-    "biomed",
-    "laboratorio clinico",
-    "hospital",
-  ],
+  "Manufacturing / Automotive": ["automotriz", "autopartes", "aeroespacial"],
+  "Medical / Biomedical": ["biomedico", "laboratorio clinico", "equipo medico"],
   "Veterinary / Animal Health": [
-    "veterin",
-    "animal health",
-    "mascota",
-    "zootec",
+    "veterinario",
+    "zootecnia",
     "alimentos para animales",
   ],
-  Pharmaceutical: [
-    "farmaceut",
-    "pharmaceutical",
-    "laboratorio",
-    "biotecn",
-    "quimico farmaceut",
-  ],
-  Media: ["medios", "periodista", "contenido"],
-  Mobility: ["logistica", "transporte"],
+  Pharmaceutical: ["farmaceutico", "pharmaceutical", "industria farmaceutica"],
+  Media: ["periodista", "reportero", "noticiero"],
+  Mobility: ["conductor de plataforma", "repartidor", "ultima milla"],
 };
 
 /** Retail, food service, and personal services — not career-target employers. */
@@ -96,7 +81,7 @@ const EXCLUDE_ACTIVITY =
 
 /** Establishment names that are not career-target employers even if SCIAN says call center. */
 const EXCLUDE_ESTABLISHMENT_NAME =
-  /caf[eé]\s*internet|ciber(net|\s)|papeler[ií]a|copiad|fotocopi|\bcopy\b|estacionamiento|^\s*bodega\b|consultor[ií]a legal|credito y cobranza/i;
+  /caf[eé]\s*internet|ciber(net|\s)|papeler[ií]a|copiad|fotocopi|\bcopy\b|estacionamiento|^\s*bodega\b|consultor[ií]a legal|credito y cobranza|sin nombre|recuperaci[oó]n de datos|\bcompu ventas\b/i;
 
 function writeJson(file, data) {
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n");
@@ -147,19 +132,32 @@ function shouldExcludeDenueRow(codigoAct, nombreAct, nomEstab) {
   return EXCLUDE_ESTABLISHMENT_NAME.test(String(nomEstab ?? ""));
 }
 
-function categorize(codigoAct, nombreAct) {
-  const code = String(codigoAct ?? "").trim();
-  const act = String(nombreAct ?? "").toLowerCase();
+function fold(text) {
+  return String(text ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "");
+}
 
-  if (
-    code.startsWith("3254") ||
-    code.startsWith("433110") ||
-    code.startsWith("434222")
-  ) {
+/**
+ * Map a DENUE SCIAN code to a career sector.
+ * Prefixes are the specific class, not the 2-digit sector: 31–33 is every
+ * workshop, 621 is every consultorio, and 5616 security text contains
+ * "monitoreo". Those three were the wrong labels on the map.
+ */
+function categorize(codigoAct, nombreAct, nomEstab) {
+  const code = String(codigoAct ?? "").trim();
+  const act = fold(nombreAct);
+  const name = fold(nomEstab);
+  const security =
+    code.startsWith("5616") ||
+    /proteccion y custodia|sistemas de seguridad/.test(act);
+
+  if (code.startsWith("3254") || code.startsWith("433110")) {
     return "Pharmaceutical";
   }
   if (
-    /fabricaci[oó]n de preparaciones farmac[eé]uticas|productos farmac[eé]uticos|qu[ií]micos para la industria farmac[eé]utica/i.test(
+    /fabricacion de preparaciones farmaceuticas|comercio al por mayor de productos farmaceuticos/.test(
       act,
     )
   ) {
@@ -174,25 +172,24 @@ function categorize(codigoAct, nombreAct) {
     return "Veterinary / Animal Health";
   }
   if (
-    /servicios veterinarios|medicamentos veterinarios|alimentos para animales|zootec/i.test(
+    /servicios veterinarios|medicamentos veterinarios|alimentos para animales|zootec/.test(
       act,
     )
   ) {
     return "Veterinary / Animal Health";
   }
 
+  // Devices, diagnostic labs, and hospitals. Not 6211–6214 consultorios.
   if (
     code.startsWith("33911") ||
-    code.startsWith("541714") ||
-    code.startsWith("541380") ||
-    code.startsWith("6215") ||
-    code.startsWith("622") ||
-    /^621[1-9]/.test(code)
+    code.startsWith("334519") ||
+    code.startsWith("62151") ||
+    code.startsWith("622")
   ) {
     return "Medical / Biomedical";
   }
   if (
-    /biomed|equipo m[eé]dico|dispositivo m[eé]dic|instrumento.*m[eé]dic|laboratorio cl[ií]nico|hospital|cl[ií]nica/i.test(
+    /equipo no electronico para uso medico|material desechable de uso medico|laboratorios medicos y de diagnostico|^hospitales /.test(
       act,
     )
   ) {
@@ -203,38 +200,87 @@ function categorize(codigoAct, nombreAct) {
     return "Call Center / BPO";
   }
   if (
-    /servicios de recepci[oó]n de llamadas|promoci[oó]n por tel[eé]fono|centros de llamadas|telemarketing|call center|centro de contacto/i.test(
+    /servicios de recepcion de llamadas|promocion por telefono|centros de llamadas|telemarketing|call center|centro de contacto/.test(
       act,
     )
   ) {
     return "Call Center / BPO";
   }
-  if (code.startsWith("5415") || code.startsWith("5112")) {
-    return "Software";
+
+  // Name before the software code, so an integrator coded 541510 stays robotics.
+  if (
+    !security &&
+    !/^(81|46|47|72|23|61)/.test(code) &&
+    /automatizacion|integracion robotica|robots?|robotica/.test(name)
+  ) {
+    return "Robotics / Automation";
   }
   if (
-    code.startsWith("31") ||
-    code.startsWith("32") ||
-    code.startsWith("33")
+    !security &&
+    /automatizacion|robotica|control industrial/.test(act)
+  ) {
+    return "Robotics / Automation";
+  }
+
+  if (
+    !security &&
+    !code.startsWith("72") &&
+    /telemetria|\bgps\b|rastreo satelital|rastreo vehicular/.test(`${name} ${act}`)
+  ) {
+    return "Telemetry / IoT";
+  }
+
+  if (
+    code.startsWith("541510") ||
+    code.startsWith("513210") ||
+    code.startsWith("518210") ||
+    code.startsWith("511210")
+  ) {
+    return "Software";
+  }
+
+  // 336 transportation equipment (auto, parts, aerospace), electronic
+  // components, and the plastic-autoparts class. Not the rest of 31–33.
+  if (
+    code.startsWith("336") ||
+    code.startsWith("326192") ||
+    code.startsWith("334410") ||
+    code.startsWith("334110")
   ) {
     return "Manufacturing / Automotive";
   }
   if (
-    code.startsWith("511") ||
-    code.startsWith("515") ||
-    code.startsWith("5191")
+    /vehiculos automotores|autopartes|equipo aeroespacial|automoviles y camionetas/.test(
+      act,
+    )
+  ) {
+    return "Manufacturing / Automotive";
+  }
+
+  // Newspapers, magazines, radio, TV, and audiovisual production.
+  // 512130 is movie exhibition, 51921 is libraries.
+  if (
+    code.startsWith("51311") ||
+    code.startsWith("51312") ||
+    code.startsWith("51611") ||
+    code.startsWith("51612") ||
+    code.startsWith("512112") ||
+    code.startsWith("512113") ||
+    code.startsWith("512230") ||
+    code.startsWith("512250")
   ) {
     return "Media";
   }
-  if (code.startsWith("485")) {
-    return "Mobility";
-  }
 
-  if (/telemetr|rastreo|gps|monitoreo/i.test(act)) {
-    return "Telemetry / IoT";
-  }
-  if (/automatiz|robot|control industrial/i.test(act)) {
-    return "Robotics / Automation";
+  // Chauffeur and other passenger service. Fixed-route buses are 4851/4852/4854/4855.
+  // A few bus lines and rent-a-car desks are filed under the chauffeur class.
+  if (
+    code.startsWith("48531") ||
+    code.startsWith("48532") ||
+    code.startsWith("48599")
+  ) {
+    if (/autobus|pullman|rent a car|renta de autos?/.test(name)) return null;
+    return "Mobility";
   }
 
   return null;
@@ -285,7 +331,7 @@ function parseDenueCsvGz() {
     const activity = String(row.nombre_act ?? "").trim();
     if (shouldExcludeDenueRow(row.codigo_act, activity, name)) continue;
 
-    const category = categorize(row.codigo_act, activity);
+    const category = categorize(row.codigo_act, activity, name);
     if (!category) continue;
 
     const website = String(row.www ?? "").trim() || undefined;
